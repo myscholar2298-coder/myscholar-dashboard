@@ -117,7 +117,6 @@ def load_data_from_sheet():
         "https://www.googleapis.com/auth/drive"
     ]
     
-    # Authenticate using Streamlit secrets for cloud deployment or fallback to local credentials.json for testing
     if "gcp_service_account" in st.secrets:
         creds_dict = dict(st.secrets["gcp_service_account"])
         creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
