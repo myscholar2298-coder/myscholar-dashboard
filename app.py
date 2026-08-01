@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for compact header and clean responsive column grid styling
+# Custom CSS for 3-column desktop and 2-column mobile grid without horizontal scrolling
 st.markdown("""
     <style>
     .main .block-container {
@@ -56,28 +56,34 @@ st.markdown("""
         font-style: italic;
     }
 
-    /* Responsive grid styling for native Streamlit columns */
+    /* Desktop layout: 3 columns */
+    [data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        width: 31.5% !important;
+        flex: 1 1 31.5% !important;
+        min-width: 100px !important;
+    }
+
+    /* Mobile layout: Transform 3 columns into a clean 2x6 grid without horizontal scroll */
     @media (max-width: 768px) {
         [data-testid="stHorizontalBlock"] {
-            display: flex !important;
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            gap: 4px !important;
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 6px !important;
         }
         [data-testid="stHorizontalBlock"] > [data-testid="column"] {
-            width: 50% !important;
-            flex: 1 1 50% !important;
+            width: 100% !important;
+            flex: unset !important;
             min-width: 0 !important;
         }
         button[kind="secondary"], button[kind="primary"] {
             font-size: 11px !important;
             padding: 6px 2px !important;
-        }
-    }
-    @media (min-width: 769px) {
-        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
-            width: 33.333% !important;
-            flex: 1 1 33.333% !important;
         }
     }
     </style>
@@ -243,7 +249,7 @@ try:
         st.divider()
 
         # ==========================================
-        # RESPONSIVE NATIVE ROUTE GRID (2x6 Mobile, 3x4 Desktop)
+        # NATIVE 3x4 GRID (Desktop: 3x4 | Mobile CSS Grid: 2x6)
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -258,10 +264,10 @@ try:
 
         routes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-        # 2 columns per row on mobile (via CSS override), 3 columns on desktop
-        for i in range(0, len(routes), 2):
-            col1, col2 = st.columns(2)
-            row_routes = [routes[i], routes[i+1] if i+1 < len(routes) else None]
+        # 3 columns for desktop
+        for i in range(0, len(routes), 3):
+            col1, col2, col3 = st.columns(3)
+            row_routes = [routes[i], routes[i+1] if i+1 < len(routes) else None, routes[i+2] if i+2 < len(routes) else None]
             
             for idx, r in enumerate(row_routes):
                 if r is not None:
@@ -273,7 +279,7 @@ try:
                     is_selected = (st.session_state.selected_route == r)
                     btn_label = f"{'⭐ ' if is_selected else ''}{r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
                     
-                    target_col = [col1, col2][idx]
+                    target_col = [col1, col2, col3][idx]
                     with target_col:
                         if st.button(btn_label, key=f"btn_route_{r}", use_container_width=True, type="primary" if is_selected else "secondary"):
                             st.session_state.selected_route = r
