@@ -139,7 +139,6 @@ def load_data_from_sheet():
             if last_mod:
                 dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
                 dt_malaysia = dt_utc + datetime.timedelta(hours=8)
-                # Updated to AM/PM format using %I:%M:%S %p
                 pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
     except:
         malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
