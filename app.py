@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
-import io
+import gspread
+from google.oauth2.service_account import Credentials
+import base64
 
 # 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
@@ -83,7 +85,6 @@ st.markdown("""
 # ==========================================
 # HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER
 # ==========================================
-import base64
 def get_base64_image(image_path):
     try:
         with open(image_path, "rb") as img_file:
@@ -106,29 +107,40 @@ st.markdown(f"""
 
 st.divider()
 
-# Point directly to your local CSV file for local testing
-CSV_FILE_PATH = "Extract_Dispatch_Data.csv"
-
+# ==========================================
+# GOOGLE SHEETS LIVE DATA LOADER
+# ==========================================
 @st.cache_data(ttl=300)
-def load_data(path):
-    with open(path, 'rb') as f:
-        content = f.read()
-    idx_group = content.find(b'Group,')
-    data_bytes = content[idx_group:] if idx_group != -1 else content
-    return pd.read_csv(io.BytesIO(data_bytes), encoding='cp1252', encoding_errors='replace', on_bad_lines="skip", low_memory=False)
+def load_data_from_sheet():
+    SCOPES = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive"
+    ]
+    
+    # Authenticate using Streamlit secrets for cloud deployment or fallback to local credentials.json for testing
+    if "gcp_service_account" in st.secrets:
+        creds_dict = dict(st.secrets["gcp_service_account"])
+        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+    else:
+        creds = Credentials.from_service_file("credentials.json", scopes=SCOPES)
+        
+    client = gspread.authorize(creds)
+    sheet = client.open("MyScholar_Operations_Live").sheet1
+    data = sheet.get_all_records()
+    return pd.DataFrame(data)
 
 try:
-    with st.spinner("Syncing data..."):
-        df = load_data(CSV_FILE_PATH)
+    with st.spinner("Syncing live data from cloud..."):
+        df = load_data_from_sheet()
 
     # Clean up column names safely
     df.columns = df.columns.str.strip()
     
-    # Remove repeated header rows
+    # Remove repeated header rows if present
     if "School Name" in df.columns:
         df = df[df["School Name"] != "School Name"]
     
-    # Slice to exact primary execution block
+    # Slice to exact primary execution block if needed
     if len(df) > 136:
         df = df.iloc[0:136]
 
@@ -253,7 +265,6 @@ try:
         for r in routes:
             active_class = "active" if st.session_state.selected_route == r else ""
             label = f"⭐ {r}" if active_class else f"{r}"
-            # target='_self' ensures it opens in the exact same tab without any new windows/tabs
             grid_html += f"<a href='?route={r}' target='_self' class='route-btn {active_class}'>{label}</a>"
         grid_html += "</div>"
 
@@ -350,7 +361,6 @@ try:
         
         panitia_df = valid_df[panitia_mask].copy()
         
-        # Split Pending vs Other and drop duplicates
         pending_df = panitia_df[panitia_df["Task"].astype(str).str.strip().str.lower() == "pending"].drop_duplicates(subset=["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"])
         pending_df = pending_df.sort_values(by="Date", na_position="last").reset_index(drop=True)
         
