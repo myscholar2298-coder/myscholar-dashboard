@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for compact header and forced 3x4 mobile grid layout
+# Custom CSS for responsive grid (2 columns on mobile, 3 columns on desktop)
 st.markdown("""
     <style>
     .main .block-container {
@@ -56,23 +56,51 @@ st.markdown("""
         font-style: italic;
     }
 
-    /* FORCE 3-COLUMN GRID ON MOBILE PHONES */
+    /* Responsive Route Grid: 2 columns on mobile, 3 columns on desktop */
+    .route-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        margin-bottom: 15px;
+    }
     @media (max-width: 768px) {
-        [data-testid="stHorizontalBlock"] {
-            display: flex !important;
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            gap: 4px !important;
+        .route-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
         }
-        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
-            width: 33.333% !important;
-            flex: 1 1 33.333% !important;
-            min-width: 0 !important;
-        }
-        button[kind="secondary"], button[kind="primary"] {
-            font-size: 10px !important;
-            padding: 4px 1px !important;
-        }
+    }
+    .route-btn {
+        background-color: #f0f2f6;
+        border: 1px solid #d6d9dc;
+        border-radius: 6px;
+        padding: 8px 4px;
+        text-align: center;
+        text-decoration: none;
+        color: #262730;
+        display: block;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .route-btn:hover {
+        background-color: #e0e2e6;
+        color: #000;
+    }
+    .route-btn.active {
+        background-color: #ff4b4b;
+        color: white;
+        border-color: #ff4b4b;
+    }
+    .route-title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .route-sub {
+        font-size: 10px;
+        margin-top: 2px;
+        opacity: 0.9;
+        line-height: 1.2;
+    }
+    .route-btn.active .route-sub {
+        opacity: 0.95;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -237,7 +265,7 @@ try:
         st.divider()
 
         # ==========================================
-        # NATIVE 3x4 GRID BUTTONS (FORCED HORIZONTAL ON MOBILE)
+        # RESPONSIVE ROUTE GRID (2x6 Mobile, 3x4 Desktop)
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -252,25 +280,25 @@ try:
 
         routes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-        for i in range(0, len(routes), 3):
-            col1, col2, col3 = st.columns(3)
-            row_routes = [routes[i], routes[i+1] if i+1 < len(routes) else None, routes[i+2] if i+2 < len(routes) else None]
+        grid_html = "<div class='route-grid'>"
+        for r in routes:
+            active_class = "active" if st.session_state.selected_route == r else ""
             
-            for idx, r in enumerate(row_routes):
-                if r is not None:
-                    r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
-                    r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
-                    r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
-                    r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
-                    
-                    is_selected = (st.session_state.selected_route == r)
-                    btn_label = f"{'⭐ ' if is_selected else ''}{r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
-                    
-                    target_col = [col1, col2, col3][idx]
-                    with target_col:
-                        if st.button(btn_label, key=f"btn_route_{r}", use_container_width=True, type="primary" if is_selected else "secondary"):
-                            st.session_state.selected_route = r
-                            st.rerun()
+            r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
+            r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
+            r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
+            r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
+            
+            title_prefix = "⭐ " if active_class else ""
+            grid_html += f"""
+                <a href='?route={r}' target='_self' class='route-btn {active_class}'>
+                    <div class='route-title'>{title_prefix}{r}</div>
+                    <div class='route-sub'>🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}</div>
+                </a>
+            """
+        grid_html += "</div>"
+
+        st.markdown(grid_html, unsafe_allow_html=True)
 
         selected_route = st.session_state.selected_route
         route_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(selected_route.upper())].reset_index(drop=True)
