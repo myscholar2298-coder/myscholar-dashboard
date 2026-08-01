@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import base64
+import urllib.request
+import datetime
 
 # 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
@@ -27,7 +29,7 @@ st.markdown("""
         display: flex;
         align-items: center;
         gap: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
     }
     .header-logo img {
         width: 75px !important;
@@ -46,6 +48,12 @@ st.markdown("""
         font-weight: 600 !important;
         letter-spacing: 0.5px !important;
         color: #333 !important;
+    }
+    .sync-timestamp {
+        font-size: 11px;
+        color: #666;
+        margin-bottom: 10px;
+        font-style: italic;
     }
 
     /* Clean 4x3 Route Button Grid */
@@ -103,20 +111,36 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
-st.divider()
-
 # ==========================================
-# DIRECT GOOGLE DRIVE CSV CLOUD LOADER
+# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
     file_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
     csv_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-    return pd.read_csv(csv_url)
+    
+    # Fetch last modified timestamp from URL headers if available
+    pub_time_str = "Live Sync Active"
+    try:
+        req = urllib.request.Request(csv_url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            last_mod = response.headers.get('Last-Modified')
+            if last_mod:
+                dt = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
+                # Convert to local Malaysian time (+8 hours) if needed, or display UTC
+                pub_time_str = dt.strftime('%Y-%m-%d %H:%M:%S UTC')
+    except:
+        pub_time_str = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    df = pd.read_csv(csv_url)
+    return df, pub_time_str
 
 try:
     with st.spinner("Syncing live data from cloud..."):
-        df = load_data_from_sheet()
+        df, published_time = load_data_from_sheet()
+
+    st.markdown(f"<div class='sync-timestamp'>🕒 Data Published / Updated: <b>{published_time}</b></div>", unsafe_allow_html=True)
+    st.divider()
 
     # Clean up column names safely
     df.columns = df.columns.str.strip()
