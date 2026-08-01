@@ -124,7 +124,8 @@ def load_data_from_sheet():
         creds = Credentials.from_service_file("credentials.json", scopes=SCOPES)
         
     client = gspread.authorize(creds)
-    sheet = client.open("MyScholar_Operations_Live").sheet1
+    spreadsheet = client.open("MyScholar_Operations_Live")
+    sheet = spreadsheet.get_worksheet(0)
     data = sheet.get_all_records()
     return pd.DataFrame(data)
 
