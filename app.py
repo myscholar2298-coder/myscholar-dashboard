@@ -124,7 +124,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP (Malaysia Time)
+# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP (Malaysia Time AM/PM)
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
@@ -139,10 +139,11 @@ def load_data_from_sheet():
             if last_mod:
                 dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
                 dt_malaysia = dt_utc + datetime.timedelta(hours=8)
-                pub_time_str = dt_malaysia.strftime('%Y-%m-%d %H:%M:%S MYT')
+                # Updated to AM/PM format using %I:%M:%S %p
+                pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
     except:
         malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
-        pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %H:%M:%S MYT')
+        pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %I:%M:%S %p MYT')
 
     df = pd.read_csv(csv_url)
     return df, pub_time_str
@@ -279,7 +280,6 @@ try:
         for r in routes:
             active_class = "active" if st.session_state.selected_route == r else ""
             
-            # Calculate counts for this route from filtered dataset
             r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
             r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
             r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
