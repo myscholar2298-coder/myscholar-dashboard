@@ -110,9 +110,9 @@ st.divider()
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
-    # Replace this placeholder link with your actual Google Sheet share link
-    sheet_url = "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=sharing"
-    csv_url = sheet_url.replace('/edit?usp=sharing', '/export?format=csv')
+    # PASTE YOUR ACTUAL GOOGLE SHEET ID BELOW IN PLACE OF THE PLACEHOLDER
+    sheet_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
+    csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
     return pd.read_csv(csv_url)
 
 try:
