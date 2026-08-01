@@ -126,8 +126,14 @@ def load_data_from_sheet():
     client = gspread.authorize(creds)
     spreadsheet = client.open("MyScholar_Operations_Live")
     sheet = spreadsheet.get_worksheet(0)
-    data = sheet.get_all_records()
-    return pd.DataFrame(data)
+    
+    rows = sheet.get_all_values()
+    if not rows or len(rows) < 2:
+        return pd.DataFrame()
+        
+    header = rows[0]
+    data = rows[1:]
+    return pd.DataFrame(data, columns=header)
 
 try:
     with st.spinner("Syncing live data from cloud..."):
