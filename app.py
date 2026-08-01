@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for compact header, side-by-side logo/title, and clean 4x3 route button matrix
+# Custom CSS for compact header, side-by-side logo/title, and clean 3x4 route button matrix with full counts
 st.markdown("""
     <style>
     .main .block-container {
@@ -56,21 +56,19 @@ st.markdown("""
         font-style: italic;
     }
 
-    /* Clean 4x3 Route Button Grid */
+    /* Clean 3x4 Route Button Grid */
     .route-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 6px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
         margin-bottom: 15px;
     }
     .route-btn {
         background-color: #f0f2f6;
         border: 1px solid #d6d9dc;
         border-radius: 6px;
-        padding: 10px 0px;
+        padding: 8px 4px;
         text-align: center;
-        font-weight: bold;
-        font-size: 15px;
         text-decoration: none;
         color: #262730;
         display: block;
@@ -84,6 +82,20 @@ st.markdown("""
         background-color: #ff4b4b;
         color: white;
         border-color: #ff4b4b;
+    }
+    .route-title {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .route-sub {
+        font-size: 10px;
+        margin-top: 3px;
+        opacity: 0.9;
+        line-height: 1.3;
+    }
+    .route-btn.active .route-sub {
+        opacity: 0.95;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -126,11 +138,9 @@ def load_data_from_sheet():
             last_mod = response.headers.get('Last-Modified')
             if last_mod:
                 dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
-                # Convert UTC to Malaysia Time (UTC +8 hours)
                 dt_malaysia = dt_utc + datetime.timedelta(hours=8)
                 pub_time_str = dt_malaysia.strftime('%Y-%m-%d %H:%M:%S MYT')
     except:
-        # Fallback to current Malaysia local time
         malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
         pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %H:%M:%S MYT')
 
@@ -147,19 +157,15 @@ try:
     # Clean up column names safely
     df.columns = df.columns.str.strip()
     
-    # Remove repeated header rows if present
     if "School Name" in df.columns:
         df = df[df["School Name"] != "School Name"]
     
-    # Slice to exact primary execution block if needed
     if len(df) > 136:
         df = df.iloc[0:136]
 
-    # Normalize column names for delivery
     if '\\#Delivery' in df.columns:
         df = df.rename(columns={'\\#Delivery': '#Delivery'})
 
-    # Ensure all required text columns exist to prevent errors
     expected_cols = ["Group", "Date", "School Name", "Teacher", "Task", "Route", "Remark", "Title/Panitia", "Sample", "Qty", "#Delivery"]
     for col in expected_cols:
         if col not in df.columns:
@@ -167,7 +173,6 @@ try:
         else:
             df[col] = df[col].fillna("").astype(str)
 
-    # Helper function to format quantities without decimals
     def format_qty(val):
         try:
             if pd.isna(val) or str(val).strip() == "" or str(val).lower() == "nan":
@@ -190,7 +195,6 @@ try:
     )
     st.divider()
 
-    # Common masks & valid data
     valid_df = df[df["School Name"].str.strip() != ""].copy()
     
     def is_panitia_row(title, task):
@@ -214,7 +218,6 @@ try:
     if page_mode == "🏠 Main Dashboard":
         st.subheader("📊 Overview Summary")
 
-        # Checkbox filters evaluation
         exclude_no_stock = st.checkbox("🚫 Exclude 'No Sample' / 'No Stock'", value=True)
         exclude_pending = st.checkbox("🚫 Exclude 'Pending' Tasks", value=True)
         
@@ -257,7 +260,7 @@ try:
         st.divider()
 
         # ==========================================
-        # TRUE 4x3 ROUTE MATRIX (Same Tab, target="_self")
+        # INFORMATIVE 3x4 ROUTE MATRIX WITH SCHOOLS, TEACHERS & CHEQUES
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -275,8 +278,20 @@ try:
         grid_html = "<div class='route-grid'>"
         for r in routes:
             active_class = "active" if st.session_state.selected_route == r else ""
-            label = f"⭐ {r}" if active_class else f"{r}"
-            grid_html += f"<a href='?route={r}' target='_self' class='route-btn {active_class}'>{label}</a>"
+            
+            # Calculate counts for this route from filtered dataset
+            r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
+            r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
+            r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
+            r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
+            
+            title_prefix = "⭐ " if active_class else ""
+            grid_html += f"""
+                <a href='?route={r}' target='_self' class='route-btn {active_class}'>
+                    <div class='route-title'>{title_prefix}Route {r}</div>
+                    <div class='route-sub'>🏫 {r_sch_count} &nbsp;|&nbsp; 👨‍🏫 {r_tch_count}<br>💳 {r_chq_count} Cheques</div>
+                </a>
+            """
         grid_html += "</div>"
 
         st.markdown(grid_html, unsafe_allow_html=True)
@@ -299,15 +314,15 @@ try:
             def highlight_full_row(row):
                 task_val = str(row["Task"]).strip().lower()
                 if "delivery" in task_val:
-                    return ['background-color: #d1e7dd; color: #0f5132'] * len(row)      # Soft Green
+                    return ['background-color: #d1e7dd; color: #0f5132'] * len(row)
                 elif "cheque" in task_val:
-                    return ['background-color: #fff3cd; color: #664d03'] * len(row)      # Soft Yellow
+                    return ['background-color: #fff3cd; color: #664d03'] * len(row)
                 elif "payment" in task_val:
-                    return ['background-color: #e2d9f3; color: #3b1f6e'] * len(row)      # Soft Purple
+                    return ['background-color: #e2d9f3; color: #3b1f6e'] * len(row)
                 elif "return" in task_val:
-                    return ['background-color: #cfe2ff; color: #084298'] * len(row)      # Soft Blue
+                    return ['background-color: #cfe2ff; color: #084298'] * len(row)
                 else:
-                    return ['background-color: #f8f9fa; color: #383d41'] * len(row)      # Default Light Gray
+                    return ['background-color: #f8f9fa; color: #383d41'] * len(row)
 
             styled_table = display_list.style.apply(highlight_full_row, axis=1)
 
