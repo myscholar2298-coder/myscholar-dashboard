@@ -112,25 +112,27 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP
+# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP (Malaysia Time)
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
     file_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
     csv_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     
-    # Fetch last modified timestamp from URL headers if available
     pub_time_str = "Live Sync Active"
     try:
         req = urllib.request.Request(csv_url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             last_mod = response.headers.get('Last-Modified')
             if last_mod:
-                dt = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
-                # Convert to local Malaysian time (+8 hours) if needed, or display UTC
-                pub_time_str = dt.strftime('%Y-%m-%d %H:%M:%S UTC')
+                dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
+                # Convert UTC to Malaysia Time (UTC +8 hours)
+                dt_malaysia = dt_utc + datetime.timedelta(hours=8)
+                pub_time_str = dt_malaysia.strftime('%Y-%m-%d %H:%M:%S MYT')
     except:
-        pub_time_str = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        # Fallback to current Malaysia local time
+        malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
+        pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %H:%M:%S MYT')
 
     df = pd.read_csv(csv_url)
     return df, pub_time_str
