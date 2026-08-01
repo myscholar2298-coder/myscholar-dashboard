@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for compact header
+# Custom CSS for compact header and forcing 3-column native layout on mobile
 st.markdown("""
     <style>
     .main .block-container {
@@ -54,6 +54,26 @@ st.markdown("""
         color: #666;
         margin-bottom: 10px;
         font-style: italic;
+    }
+
+    /* Force Streamlit Columns into a 3-Column Grid on Mobile */
+    @media (max-width: 768px) {
+        [data-testid="column"] {
+            width: 33.333% !important;
+            flex: 33.333% !important;
+            min-width: 33.333% !important;
+            padding: 0 2px !important;
+        }
+        [data-testid="horizontal-block"] {
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            gap: 4px !important;
+        }
+        /* Make button text fit nicely in 3 columns */
+        button[kind="secondary"], button[kind="primary"] {
+            font-size: 11px !important;
+            padding: 6px 2px !important;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -218,7 +238,7 @@ try:
         st.divider()
 
         # ==========================================
-        # NATIVE 3x4 ROUTE MATRIX BUTTONS (GUARANTEED NO HTML GLITCH)
+        # NATIVE 3x4 ROUTE MATRIX BUTTONS (Shortened without 'Route' word)
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -246,7 +266,8 @@ try:
                     r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
                     
                     is_selected = (st.session_state.selected_route == r)
-                    btn_label = f"{'⭐ ' if is_selected else ''}Route {r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
+                    # Removed the word "Route" to keep it compact: e.g., "⭐ A | 🏫3 👨‍🏫3 💳1"
+                    btn_label = f"{'⭐ ' if is_selected else ''}{r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
                     
                     with cols[j]:
                         if st.button(btn_label, key=f"btn_route_{r}", use_container_width=True, type="primary" if is_selected else "secondary"):
