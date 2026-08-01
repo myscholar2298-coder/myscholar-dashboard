@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import gspread
+from google.oauth2.service_account import Credentials
 import base64
 
 # 1. Page Configuration optimized for mobile viewport
@@ -106,14 +108,28 @@ st.markdown(f"""
 st.divider()
 
 # ==========================================
-# GOOGLE SHEETS DIRECT CSV CLOUD LOADER
+# GSPREAD SERVICE ACCOUNT CLOUD LOADER
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
-    # PASTE YOUR ACTUAL GOOGLE SHEET ID BELOW IN PLACE OF THE PLACEHOLDER
-    sheet_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
-    csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
-    return pd.read_csv(csv_url)
+    SCOPES = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive"
+    ]
+    
+    if "gcp_service_account" in st.secrets:
+        creds_dict = dict(st.secrets["gcp_service_account"])
+        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+    else:
+        creds = Credentials.from_service_file("credentials.json", scopes=SCOPES)
+        
+    client = gspread.authorize(creds)
+    
+    # Open the file by its exact name in Google Drive
+    spreadsheet = client.open("Extract_Dispatch_Data")
+    sheet = spreadsheet.get_worksheet(0)
+    data = sheet.get_all_records()
+    return pd.DataFrame(data)
 
 try:
     with st.spinner("Syncing live data from cloud..."):
