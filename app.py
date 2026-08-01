@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import gspread
-from google.oauth2.service_account import Credentials
 import base64
 
 # 1. Page Configuration optimized for mobile viewport
@@ -108,32 +106,14 @@ st.markdown(f"""
 st.divider()
 
 # ==========================================
-# GOOGLE SHEETS LIVE DATA LOADER
+# GOOGLE SHEETS DIRECT CSV CLOUD LOADER
 # ==========================================
 @st.cache_data(ttl=300)
 def load_data_from_sheet():
-    SCOPES = [
-        "https://www.googleapis.com/auth/spreadsheets",
-        "https://www.googleapis.com/auth/drive"
-    ]
-    
-    if "gcp_service_account" in st.secrets:
-        creds_dict = dict(st.secrets["gcp_service_account"])
-        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
-    else:
-        creds = Credentials.from_service_file("credentials.json", scopes=SCOPES)
-        
-    client = gspread.authorize(creds)
-    spreadsheet = client.open("MyScholar_Operations_Live")
-    sheet = spreadsheet.get_worksheet(0)
-    
-    rows = sheet.get_all_values()
-    if not rows or len(rows) < 2:
-        return pd.DataFrame()
-        
-    header = rows[0]
-    data = rows[1:]
-    return pd.DataFrame(data, columns=header)
+    # Replace this placeholder link with your actual Google Sheet share link
+    sheet_url = "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=sharing"
+    csv_url = sheet_url.replace('/edit?usp=sharing', '/export?format=csv')
+    return pd.read_csv(csv_url)
 
 try:
     with st.spinner("Syncing live data from cloud..."):
