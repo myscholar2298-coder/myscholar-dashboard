@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for compact header and clean styling
+# Custom CSS for 4 columns desktop, and cleanly transforming into a 2x6 grid on mobile
 st.markdown("""
     <style>
     .main .block-container {
@@ -54,6 +54,37 @@ st.markdown("""
         color: #666;
         margin-bottom: 10px;
         font-style: italic;
+    }
+
+    /* Desktop layout: 4 columns per row */
+    [data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        width: 23.5% !important;
+        flex: 1 1 23.5% !important;
+        min-width: 80px !important;
+    }
+
+    /* Mobile layout: Transform into a clean 2x6 grid */
+    @media (max-width: 768px) {
+        [data-testid="stHorizontalBlock"] {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 4px !important;
+        }
+        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+            width: 100% !important;
+            flex: unset !important;
+            min-width: 0 !important;
+        }
+        button[kind="secondary"], button[kind="primary"] {
+            font-size: 10px !important;
+            padding: 6px 2px !important;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -218,7 +249,7 @@ try:
         st.divider()
 
         # ==========================================
-        # 2x6 MOBILE GRID
+        # 4 COLUMNS DESKTOP / 2x6 MOBILE RESPONSIVE GRID
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -233,9 +264,15 @@ try:
 
         routes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-        for i in range(0, len(routes), 2):
-            col1, col2 = st.columns(2)
-            row_routes = [routes[i], routes[i+1] if i+1 < len(routes) else None]
+        # 4 columns for desktop layout
+        for i in range(0, len(routes), 4):
+            col1, col2, col3, col4 = st.columns(4)
+            row_routes = [
+                routes[i], 
+                routes[i+1] if i+1 < len(routes) else None, 
+                routes[i+2] if i+2 < len(routes) else None,
+                routes[i+3] if i+3 < len(routes) else None
+            ]
             
             for idx, r in enumerate(row_routes):
                 if r is not None:
@@ -247,7 +284,7 @@ try:
                     is_selected = (st.session_state.selected_route == r)
                     btn_label = f"{r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
                     
-                    target_col = [col1, col2][idx]
+                    target_col = [col1, col2, col3, col4][idx]
                     with target_col:
                         if st.button(btn_label, key=f"btn_route_{r}", use_container_width=True, type="primary" if is_selected else "secondary"):
                             st.session_state.selected_route = r
