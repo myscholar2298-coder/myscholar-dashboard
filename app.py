@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for 3-column desktop and 2-column mobile grid without horizontal scrolling
+# Custom CSS for responsive grid (2x6 on mobile, 3x4 on desktop)
 st.markdown("""
     <style>
     .main .block-container {
@@ -56,35 +56,51 @@ st.markdown("""
         font-style: italic;
     }
 
-    /* Desktop layout: 3 columns */
-    [data-testid="stHorizontalBlock"] {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        gap: 6px !important;
+    /* Responsive Grid: 3 columns on desktop, 2 columns on mobile */
+    .route-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        margin-bottom: 15px;
     }
-    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
-        width: 31.5% !important;
-        flex: 1 1 31.5% !important;
-        min-width: 100px !important;
-    }
-
-    /* Mobile layout: Transform 3 columns into a clean 2x6 grid without horizontal scroll */
     @media (max-width: 768px) {
-        [data-testid="stHorizontalBlock"] {
-            display: grid !important;
+        .route-grid {
             grid-template-columns: repeat(2, 1fr) !important;
-            gap: 6px !important;
         }
-        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
-            width: 100% !important;
-            flex: unset !important;
-            min-width: 0 !important;
-        }
-        button[kind="secondary"], button[kind="primary"] {
-            font-size: 11px !important;
-            padding: 6px 2px !important;
-        }
+    }
+    .route-btn {
+        background-color: #f0f2f6;
+        border: 1px solid #d6d9dc;
+        border-radius: 6px;
+        padding: 8px 4px;
+        text-align: center;
+        text-decoration: none;
+        color: #262730;
+        display: block;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .route-btn:hover {
+        background-color: #e0e2e6;
+        color: #000;
+    }
+    .route-btn.active {
+        background-color: #ff4b4b;
+        color: white;
+        border-color: #ff4b4b;
+    }
+    .route-title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .route-sub {
+        font-size: 10px;
+        margin-top: 2px;
+        opacity: 0.9;
+        line-height: 1.2;
+    }
+    .route-btn.active .route-sub {
+        opacity: 0.95;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -249,7 +265,7 @@ try:
         st.divider()
 
         # ==========================================
-        # NATIVE 3x4 GRID (Desktop: 3x4 | Mobile CSS Grid: 2x6)
+        # RESPONSIVE ROUTE GRID (Star Removed, Clean Layout)
         # ==========================================
         st.subheader("🛣️ Route Breakdown & Task Inspector")
         
@@ -264,26 +280,25 @@ try:
 
         routes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-        # 3 columns for desktop
-        for i in range(0, len(routes), 3):
-            col1, col2, col3 = st.columns(3)
-            row_routes = [routes[i], routes[i+1] if i+1 < len(routes) else None, routes[i+2] if i+2 < len(routes) else None]
+        grid_html = "<div class='route-grid'>"
+        for r in routes:
+            active_class = "active" if st.session_state.selected_route == r else ""
             
-            for idx, r in enumerate(row_routes):
-                if r is not None:
-                    r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
-                    r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
-                    r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
-                    r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
-                    
-                    is_selected = (st.session_state.selected_route == r)
-                    btn_label = f"{'⭐ ' if is_selected else ''}{r} | 🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}"
-                    
-                    target_col = [col1, col2, col3][idx]
-                    with target_col:
-                        if st.button(btn_label, key=f"btn_route_{r}", use_container_width=True, type="primary" if is_selected else "secondary"):
-                            st.session_state.selected_route = r
-                            st.rerun()
+            r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
+            r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
+            r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
+            r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
+            
+            # Star removed as requested; red background styling handles the active selection indicator cleanly
+            grid_html += f"""
+                <a href='?route={r}' target='_self' class='route-btn {active_class}'>
+                    <div class='route-title'>{r}</div>
+                    <div class='route-sub'>🏫{r_sch_count} 👨‍🏫{r_tch_count} 💳{r_chq_count}</div>
+                </a>
+            """
+        grid_html += "</div>"
+
+        st.markdown(grid_html, unsafe_allow_html=True)
 
         selected_route = st.session_state.selected_route
         route_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(selected_route.upper())].reset_index(drop=True)
