@@ -264,7 +264,6 @@ try:
 
         routes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-        # 4 columns for desktop layout
         for i in range(0, len(routes), 4):
             col1, col2, col3, col4 = st.columns(4)
             row_routes = [
@@ -356,19 +355,20 @@ try:
             st.warning(f"No records found for Route {selected_route}.")
 
     # ==========================================
-    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated)
+    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated - Panitia instead of Route)
     # ==========================================
     elif page_mode == "💳 Cheque Details":
         st.subheader("💳 Cheque Collection Tasks Review")
         
         cheque_df = valid_df[cheque_mask].copy()
-        cheque_df = cheque_df.drop_duplicates(subset=["Date", "School Name", "Teacher", "Route", "Remark"])
+        cheque_df = cheque_df.drop_duplicates(subset=["Date", "School Name", "Teacher", "Title/Panitia", "Remark"])
         cheque_df = cheque_df.sort_values(by="Date", na_position="last").reset_index(drop=True)
         
         st.info(f"Total Cheque Collection Tasks: **{len(cheque_df)}** across **{cheque_df['School Name'].nunique()}** schools.")
 
         if not cheque_df.empty:
-            cheque_display = cheque_df[["Date", "School Name", "Teacher", "Route", "Remark"]]
+            cheque_display = cheque_df[["Date", "School Name", "Teacher", "Title/Panitia", "Remark"]]
+            cheque_display.columns = ["Date", "School Name", "Teacher", "Panitia", "Remark"]
             st.dataframe(cheque_display, use_container_width=True, hide_index=True)
         else:
             st.success("No cheque tasks found.")
