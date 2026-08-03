@@ -355,20 +355,25 @@ try:
             st.warning(f"No records found for Route {selected_route}.")
 
     # ==========================================
-    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated - Panitia instead of Route)
+    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated - Route Initial inserted after Date)
     # ==========================================
     elif page_mode == "💳 Cheque Details":
         st.subheader("💳 Cheque Collection Tasks Review")
         
         cheque_df = valid_df[cheque_mask].copy()
-        cheque_df = cheque_df.drop_duplicates(subset=["Date", "School Name", "Teacher", "Title/Panitia", "Remark"])
+        cheque_df = cheque_df.drop_duplicates(subset=["Date", "Route", "School Name", "Teacher", "Title/Panitia", "Remark"])
         cheque_df = cheque_df.sort_values(by="Date", na_position="last").reset_index(drop=True)
         
         st.info(f"Total Cheque Collection Tasks: **{len(cheque_df)}** across **{cheque_df['School Name'].nunique()}** schools.")
 
         if not cheque_df.empty:
-            cheque_display = cheque_df[["Date", "School Name", "Teacher", "Title/Panitia", "Remark"]]
-            cheque_display.columns = ["Date", "School Name", "Teacher", "Panitia", "Remark"]
+            # Extract the first letter/alphabet of the Route column
+            cheque_df["Route_Initial"] = cheque_df["Route"].astype(str).str.strip().str[0].str.upper()
+            
+            # Select and reorder columns: Date, Route, School Name, Teacher, Panitia, Remark
+            cheque_display = cheque_df[["Date", "Route_Initial", "School Name", "Teacher", "Title/Panitia", "Remark"]]
+            cheque_display.columns = ["Date", "Route", "School Name", "Teacher", "Panitia", "Remark"]
+            
             st.dataframe(cheque_display, use_container_width=True, hide_index=True)
         else:
             st.success("No cheque tasks found.")
