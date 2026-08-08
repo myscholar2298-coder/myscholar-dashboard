@@ -172,6 +172,7 @@ try:
 
     df["Sample"] = df["Sample"].apply(format_qty)
     df["Qty"] = df["Qty"].apply(format_qty)
+    df["#Delivery"] = df["#Delivery"].apply(format_qty)
 
     # ==========================================
     # NAVIGATION MENU (Pages)
@@ -355,7 +356,7 @@ try:
             st.warning(f"No records found for Route {selected_route}.")
 
     # ==========================================
-    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated - Route Initial inserted after Date)
+    # PAGE 2: CHEQUE DETAILS REVIEW
     # ==========================================
     elif page_mode == "💳 Cheque Details":
         st.subheader("💳 Cheque Collection Tasks Review")
@@ -367,19 +368,15 @@ try:
         st.info(f"Total Cheque Collection Tasks: **{len(cheque_df)}** across **{cheque_df['School Name'].nunique()}** schools.")
 
         if not cheque_df.empty:
-            # Extract the first letter/alphabet of the Route column
             cheque_df["Route_Initial"] = cheque_df["Route"].astype(str).str.strip().str[0].str.upper()
-            
-            # Select and reorder columns: Date, Route, School Name, Teacher, Panitia, Remark
             cheque_display = cheque_df[["Date", "Route_Initial", "School Name", "Teacher", "Title/Panitia", "Remark"]]
             cheque_display.columns = ["Date", "Route", "School Name", "Teacher", "Panitia", "Remark"]
-            
             st.dataframe(cheque_display, use_container_width=True, hide_index=True)
         else:
             st.success("No cheque tasks found.")
 
     # ==========================================
-    # PAGE 3: PANITIA DETAILS REVIEW (Deduplicated, School Name instead of Route Alphabet)
+    # PAGE 3: PANITIA DETAILS REVIEW (Shading rows light orange where #Delivery > 0)
     # ==========================================
     elif page_mode == "📋 Panitia Details":
         st.subheader("📋 Panitia Order Overview")
@@ -397,9 +394,21 @@ try:
         # Section A: Pending Tasks
         st.markdown("### ⏳ Order Pending Incoming Items")
         if not pending_df.empty:
-            pending_display = pending_df[["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"]]
+            pending_display = pending_df[["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"]].copy()
             pending_display.columns = ["Date", "School Name", "Teacher", "Panitia", "#Delivery", "Remark"]
-            st.dataframe(pending_display, use_container_width=True, hide_index=True)
+            
+            # Highlight rows where #Delivery > 0 with a light orange shade
+            def highlight_delivered(row):
+                try:
+                    val = float(row["#Delivery"])
+                    if val > 0:
+                        return ['background-color: #fff3cd; color: #664d03'] * len(row)
+                except:
+                    pass
+                return [''] * len(row)
+
+            styled_pending = pending_display.style.apply(highlight_delivered, axis=1)
+            st.dataframe(styled_pending, use_container_width=True, hide_index=True)
         else:
             st.success("No pending Panitia tasks.")
 
@@ -408,7 +417,7 @@ try:
         # Section B: Other Panitia Tasks
         st.markdown("### ✅ Outstanding Operation Assignment")
         if not other_df.empty:
-            other_display = other_df[["Date", "School Name", "Teacher", "Title/Panitia", "Task", "#Delivery", "Remark"]]
+            other_display = other_df[["Date", "School Name", "Teacher", "Title/Panitia", "Task", "#Delivery", "Remark"]].copy()
             other_display.columns = ["Date", "School Name", "Teacher", "Panitia", "Task", "#Delivery", "Remark"]
             
             p_event = st.dataframe(
