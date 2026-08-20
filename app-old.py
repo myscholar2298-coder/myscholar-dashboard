@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import base64
-import urllib.request
+import os
 import datetime
 
 # 1. Page Configuration optimized for mobile viewport
@@ -113,32 +113,28 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP (Malaysia Time AM/PM)
+# LOCAL CSV LOADER & DYNAMIC TIMESTAMP (Malaysia Time AM/PM)
 # ==========================================
 @st.cache_data(ttl=300)
-def load_data_from_sheet():
-    file_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
-    csv_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+def load_data_from_local():
+    csv_path = "Extract_Dispatch_Data.csv"
     
     pub_time_str = "Live Sync Active"
-    try:
-        req = urllib.request.Request(csv_url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req) as response:
-            last_mod = response.headers.get('Last-Modified')
-            if last_mod:
-                dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
-                dt_malaysia = dt_utc + datetime.timedelta(hours=8)
-                pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
-    except:
+    if os.path.exists(csv_path):
+        mod_time = os.path.getmtime(csv_path)
+        dt_utc = datetime.datetime.fromtimestamp(mod_time, datetime.timezone.utc)
+        dt_malaysia = dt_utc.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
+        pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
+    else:
         malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
         pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %I:%M:%S %p MYT')
 
-    df = pd.read_csv(csv_url)
+    df = pd.read_csv(csv_path)
     return df, pub_time_str
 
 try:
-    with st.spinner("Syncing live data from cloud..."):
-        df, published_time = load_data_from_sheet()
+    with st.spinner("Loading live data..."):
+        df, published_time = load_data_from_local()
 
     st.markdown(f"<div class='sync-timestamp'>🕒 Data Published / Updated: <b>{published_time}</b></div>", unsafe_allow_html=True)
     st.divider()
@@ -148,9 +144,6 @@ try:
     
     if "School Name" in df.columns:
         df = df[df["School Name"] != "School Name"]
-    
-    if len(df) > 136:
-        df = df.iloc[0:136]
 
     if '\\#Delivery' in df.columns:
         df = df.rename(columns={'\\#Delivery': '#Delivery'})
@@ -172,6 +165,7 @@ try:
 
     df["Sample"] = df["Sample"].apply(format_qty)
     df["Qty"] = df["Qty"].apply(format_qty)
+    df["#Delivery"] = df["#Delivery"].apply(format_qty)
 
     # ==========================================
     # NAVIGATION MENU (Pages)
@@ -275,7 +269,7 @@ try:
             
             for idx, r in enumerate(row_routes):
                 if r is not None:
-                    r_sub_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(r)]
+                    r_sub_df = filtered_df[filtered_df["Route"].astype(str).str.upper().str.startswith(r)]
                     r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
                     r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
                     r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
@@ -290,7 +284,7 @@ try:
                             st.rerun()
 
         selected_route = st.session_state.selected_route
-        route_df = filtered_df[filtered_df["Route"].str.upper().str.startswith(selected_route.upper())].reset_index(drop=True)
+        route_df = filtered_df[filtered_df["Route"].astype(str).str.upper().str.startswith(selected_route.upper())].reset_index(drop=True)
 
         r_schools = route_df[route_df["School Name"].str.strip() != ""]["School Name"].nunique()
         r_teachers = route_df[route_df["Teacher"].str.strip() != ""]["Teacher"].nunique()
@@ -355,7 +349,7 @@ try:
             st.warning(f"No records found for Route {selected_route}.")
 
     # ==========================================
-    # PAGE 2: CHEQUE DETAILS REVIEW (Sorted & Deduplicated - Route Initial inserted after Date)
+    # PAGE 2: CHEQUE DETAILS REVIEW
     # ==========================================
     elif page_mode == "💳 Cheque Details":
         st.subheader("💳 Cheque Collection Tasks Review")
@@ -367,19 +361,15 @@ try:
         st.info(f"Total Cheque Collection Tasks: **{len(cheque_df)}** across **{cheque_df['School Name'].nunique()}** schools.")
 
         if not cheque_df.empty:
-            # Extract the first letter/alphabet of the Route column
             cheque_df["Route_Initial"] = cheque_df["Route"].astype(str).str.strip().str[0].str.upper()
-            
-            # Select and reorder columns: Date, Route, School Name, Teacher, Panitia, Remark
             cheque_display = cheque_df[["Date", "Route_Initial", "School Name", "Teacher", "Title/Panitia", "Remark"]]
             cheque_display.columns = ["Date", "Route", "School Name", "Teacher", "Panitia", "Remark"]
-            
             st.dataframe(cheque_display, use_container_width=True, hide_index=True)
         else:
             st.success("No cheque tasks found.")
 
     # ==========================================
-    # PAGE 3: PANITIA DETAILS REVIEW (Deduplicated, School Name instead of Route Alphabet)
+    # PAGE 3: PANITIA DETAILS REVIEW
     # ==========================================
     elif page_mode == "📋 Panitia Details":
         st.subheader("📋 Panitia Order Overview")
@@ -397,9 +387,20 @@ try:
         # Section A: Pending Tasks
         st.markdown("### ⏳ Order Pending Incoming Items")
         if not pending_df.empty:
-            pending_display = pending_df[["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"]]
+            pending_display = pending_df[["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"]].copy()
             pending_display.columns = ["Date", "School Name", "Teacher", "Panitia", "#Delivery", "Remark"]
-            st.dataframe(pending_display, use_container_width=True, hide_index=True)
+            
+            def highlight_delivered(row):
+                try:
+                    val = float(row["#Delivery"])
+                    if val > 0:
+                        return ['background-color: #fff3cd; color: #664d03'] * len(row)
+                except:
+                    pass
+                return [''] * len(row)
+
+            styled_pending = pending_display.style.apply(highlight_delivered, axis=1)
+            st.dataframe(styled_pending, use_container_width=True, hide_index=True)
         else:
             st.success("No pending Panitia tasks.")
 
@@ -408,7 +409,7 @@ try:
         # Section B: Other Panitia Tasks
         st.markdown("### ✅ Outstanding Operation Assignment")
         if not other_df.empty:
-            other_display = other_df[["Date", "School Name", "Teacher", "Title/Panitia", "Task", "#Delivery", "Remark"]]
+            other_display = other_df[["Date", "School Name", "Teacher", "Title/Panitia", "Task", "#Delivery", "Remark"]].copy()
             other_display.columns = ["Date", "School Name", "Teacher", "Panitia", "Task", "#Delivery", "Remark"]
             
             p_event = st.dataframe(

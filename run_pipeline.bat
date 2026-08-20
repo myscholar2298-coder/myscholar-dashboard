@@ -1,4 +1,4 @@
 @echo off
-
-"python" "G:\My Drive\thlau\Macro\Android\AutoUpdate.py"
-exit
+H:
+cd "H:\My Drive\Coding Script\Streamlit"
+python AutoUpdate.py
