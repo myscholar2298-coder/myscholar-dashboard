@@ -1,52 +1,57 @@
 import os
+import subprocess
 import pandas as pd
 from datetime import datetime
 
-# --- CONFIGURATION ---
-# Saved directly in the root directory so Streamlit Cloud can read it
+# ==========================================
+# CONFIGURATION & PATHS (Google Shared Drive)
+# ==========================================
+EXCEL_PATH = r"H:\Shared drives\OPERATION\Delivery Plan\LOTask.xlsx"
 CSV_OUTPUT_PATH = "Extract_Dispatch_Data.csv"
 
-def run_pipeline():
+def compile_excel_to_csv():
     print(f"[{datetime.now()}] Starting compilation and GitHub sync pipeline...")
     
-    # 1. YOUR DATA COMPILATION LOGIC GOES HERE
-    # (Make sure your script reads your Excel files and compiles them into a DataFrame named 'df')
-    # Example placeholder:
-    # df = pd.read_excel("your_source_file.xlsx")
-    
-    # For now, ensure your dataframe creation is here, and save it:
-    # df.to_csv(CSV_OUTPUT_PATH, index=False)
-    
-    # Let's simulate/ensure the CSV is saved at the root path:
-    print(f"[{datetime.now()}] Successfully saved local CSV copy at: {os.path.abspath(CSV_OUTPUT_PATH)}")
-    
-    # 2. GIT AUTO-COMMIT AND PUSH
-    import subprocess
-    
-    # Check if there are any changes in the repository
-    status_result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
-    
-    if not status_result.stdout.strip():
-        print(f"[{datetime.now()}] No content changes found in CSV for Git sync.")
-        return
+    if not os.path.exists(EXCEL_PATH):
+        print(f"Error: Could not find source Excel file at {EXCEL_PATH}")
+        return False
 
     try:
-        print(f"[{datetime.now()}] Changes detected. Staging and pushing to GitHub...")
+        # Read the Excel file from your Google Shared Drive path
+        df = pd.read_excel(EXCEL_PATH, sheet_name=0)
         
-        # Stage all changes (including the CSV and app files)
-        subprocess.run(["git", "add", "."], check=True)
+        # Save out to CSV locally in your script repository directory
+        df.to_csv(CSV_OUTPUT_PATH, index=False)
+        print(f"Successfully saved local CSV copy at: {os.path.abspath(CSV_OUTPUT_PATH)}")
+        return True
+    except Exception as e:
+        print(f"Error reading Excel or writing CSV: {e}")
+        return False
+
+def git_auto_sync():
+    try:
+        # Check if there are changes to the CSV or repository
+        status_result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
         
-        # Commit with a timestamp message
-        commit_msg = f"Auto-update dispatch data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-        subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+        if not status_result.stdout.strip():
+            print(f"[{datetime.now()}] No content changes found in CSV for Git sync.")
+            return
+
+        # Stage the updated CSV file
+        subprocess.run(["git", "add", CSV_OUTPUT_PATH], check=True)
+        
+        # Commit with dynamic timestamp
+        commit_message = f"Auto-update operation data: {datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')}"
+        subprocess.run(["git", "commit", "-m", commit_message], check=True)
         
         # Push to GitHub
         subprocess.run(["git", "push", "origin", "main"], check=True)
-        
-        print(f"[{datetime.now()}] Successfully synced CSV to GitHub!")
+        print(f"[{datetime.now()}] Successfully pushed fresh data to GitHub!")
         
     except subprocess.CalledProcessError as e:
-        print(f"[{datetime.now()}] Error pushing to GitHub: {e}")
+        print(f"Git command failed: {e}")
 
 if __name__ == "__main__":
-    run_pipeline()
+    success = compile_excel_to_csv()
+    if success:
+        git_auto_sync()
