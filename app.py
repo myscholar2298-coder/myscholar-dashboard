@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import base64
-import urllib.request
+import os
 import datetime
 
 # 1. Page Configuration optimized for mobile viewport
@@ -113,32 +113,28 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# DIRECT GOOGLE DRIVE CSV CLOUD LOADER & TIMESTAMP (Malaysia Time AM/PM)
+# LOCAL CSV LOADER & DYNAMIC TIMESTAMP (Malaysia Time AM/PM)
 # ==========================================
 @st.cache_data(ttl=300)
-def load_data_from_sheet():
-    file_id = "1gbAnm1xYavKT53Rao3zXXUSQG4Fgy2yu"
-    csv_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+def load_data_from_local():
+    csv_path = "Extract_Dispatch_Data.csv"
     
     pub_time_str = "Live Sync Active"
-    try:
-        req = urllib.request.Request(csv_url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req) as response:
-            last_mod = response.headers.get('Last-Modified')
-            if last_mod:
-                dt_utc = datetime.datetime.strptime(last_mod, '%a, %d %b %Y %H:%M:%S %Z')
-                dt_malaysia = dt_utc + datetime.timedelta(hours=8)
-                pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
-    except:
+    if os.path.exists(csv_path):
+        mod_time = os.path.getmtime(csv_path)
+        dt_utc = datetime.datetime.fromtimestamp(mod_time, datetime.timezone.utc)
+        dt_malaysia = dt_utc.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
+        pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
+    else:
         malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
         pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %I:%M:%S %p MYT')
 
-    df = pd.read_csv(csv_url)
+    df = pd.read_csv(csv_path)
     return df, pub_time_str
 
 try:
-    with st.spinner("Syncing live data from cloud..."):
-        df, published_time = load_data_from_sheet()
+    with st.spinner("Loading live data..."):
+        df, published_time = load_data_from_local()
 
     st.markdown(f"<div class='sync-timestamp'>🕒 Data Published / Updated: <b>{published_time}</b></div>", unsafe_allow_html=True)
     st.divider()
@@ -373,7 +369,7 @@ try:
             st.success("No cheque tasks found.")
 
     # ==========================================
-    # PAGE 3: PANITIA DETAILS REVIEW (Shading rows light orange where #Delivery > 0)
+    # PAGE 3: PANITIA DETAILS REVIEW
     # ==========================================
     elif page_mode == "📋 Panitia Details":
         st.subheader("📋 Panitia Order Overview")
@@ -394,7 +390,6 @@ try:
             pending_display = pending_df[["Date", "School Name", "Teacher", "Title/Panitia", "#Delivery", "Remark"]].copy()
             pending_display.columns = ["Date", "School Name", "Teacher", "Panitia", "#Delivery", "Remark"]
             
-            # Highlight rows where #Delivery > 0 with a light orange shade
             def highlight_delivered(row):
                 try:
                     val = float(row["#Delivery"])
