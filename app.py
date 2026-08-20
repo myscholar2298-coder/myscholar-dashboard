@@ -145,7 +145,7 @@ try:
     if "School Name" in df.columns:
         df = df[df["School Name"] != "School Name"]
 
-    if '\\#Delivery' in df.columns:
+    if '#Delivery' not in df.columns and '\\#Delivery' in df.columns:
         df = df.rename(columns={'\\#Delivery': '#Delivery'})
 
     expected_cols = ["Group", "Date", "School Name", "Teacher", "Task", "Route", "Remark", "Title/Panitia", "Sample", "Qty", "#Delivery"]
