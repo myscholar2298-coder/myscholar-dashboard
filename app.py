@@ -7,7 +7,7 @@ import datetime
 # 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="📦",
+    page_icon="logo.png",  # Points to your image file
     layout="centered",
     initial_sidebar_state="collapsed"
 )
