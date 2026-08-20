@@ -4,10 +4,10 @@ import base64
 import os
 import datetime
 
-# 1. Page Configuration optimized for mobile viewport
+# 1. Page Configuration: Uses favicon.png for the browser tab icon
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="logo.png",  # Points to your image file
+    page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -90,7 +90,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER
+# HEADER: USES logo.png FOR THE IN-APP COMPANY LOGO
 # ==========================================
 def get_base64_image(image_path):
     try:
@@ -269,7 +269,7 @@ try:
             
             for idx, r in enumerate(row_routes):
                 if r is not None:
-                    r_sub_df = filtered_df[filtered_df["Route"].astype(str).str.upper().str.startswith(r)]
+                    r_sub_df = filtered_df[filtered_df["Group"].astype(str).str.upper() == r]
                     r_sch_count = r_sub_df[r_sub_df["School Name"].str.strip() != ""]["School Name"].nunique()
                     r_tch_count = r_sub_df[(r_sub_df["Teacher"].str.strip() != "") & (r_sub_df["Teacher"].str.strip() != "Pjbt")]["Teacher"].nunique()
                     r_chq_count = r_sub_df[r_sub_df["Task"].str.strip().str.lower() == "cheque"].shape[0]
@@ -284,7 +284,7 @@ try:
                             st.rerun()
 
         selected_route = st.session_state.selected_route
-        route_df = filtered_df[filtered_df["Route"].astype(str).str.upper().str.startswith(selected_route.upper())].reset_index(drop=True)
+        route_df = filtered_df[filtered_df["Group"].astype(str).str.upper() == selected_route.upper()].reset_index(drop=True)
 
         r_schools = route_df[route_df["School Name"].str.strip() != ""]["School Name"].nunique()
         r_teachers = route_df[route_df["Teacher"].str.strip() != ""]["Teacher"].nunique()
