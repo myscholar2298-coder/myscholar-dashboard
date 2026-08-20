@@ -17,6 +17,7 @@ B,,Munshi Abdullah,Cikgu Hanida,Payment,PA3_NOTA,,,,,B650
 C,2026-08-19,Paduka Tuan,Pjbt,Cheque,PSV,,,,,C520
 D,2026-08-18,Sains Muar,En Yuzri,Pending,FIZ,,,0,,D475
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
+D,2026-08-20,Sains Muar,Pjbt,Cheque,SAINS,,,,,D475
 E,,Semerah,Cikgu Mardziah,Payment,PA1_NOTA,,,,,E100
 E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_MTP,1,13,,LOW SAMPLE / LOW STOCK,E200
 E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_NOTA,1,13,,LOW SAMPLE / LOW STOCK,E200
@@ -40,6 +41,7 @@ E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_NOTA,1,23,,LOW SAMPLE / LOW STOCK,E400
 E,,Tun Perak,Cikgu Mohd Faizal,Delivery,BM3_MTP,2,47,,LOW SAMPLE / LOW STOCK,E550
 E,2026-08-12,STUDI,Surayah,Deliver,PSV,,1.0,2#,,E650
 E,2026-08-07,STUDI,Maszuria,Deliver,SRT,,4.0,1#,,E650
+E,2026-08-20,STUDI,Pjbt,Cheque,SRT,,,,,E650
 F,,TIGS,Cikgu Suria,Delivery,BM3_MTP,1,13,,LOW SAMPLE / LOW STOCK,F100
 F,,SDBL,Cikgu Aslina,Return,SV1_RUJ,,-1,,,F200
 F,,Dato Onn,Cikgu Ruzaini,Delivery,BM3_MTP,2,20,,LOW SAMPLE / LOW STOCK,F300
@@ -122,10 +124,12 @@ K,,JJ 1,Cikgu Shafikah,Return,AKAUN3_RUJ,,,,&,K300
 K,,JJ 1,Cikgu Syuhada,Return,KIMIA1_TOPKIAL,,-1,,,K300
 K,,JJ 1,Cikgu Khairul,Return,MUET_MTP,,-2,,,K300
 K,,JJ 1,Cikgu Khairul,Return,MUET_THEMA,,-2,,,K300
+K,2026-08-20,Bandar Seri Alam 2,Pjbt,Cheque,PSV,,,,,K380
 K,,Penggawa Timur,Cikgu Mardiah (KP),Return,PA1_NOTA,,-3,,,K400
 K,,Penggawa Timur,Cikgu Mardiah (KP),Return,PA3_NOTA,,-3,,,K400
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
 L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Return,EK3_RUJ,,-1,,,L100
+L,2026-08-20,Tan Sri Jaafar Albar,Pjbt,Cheque,MUET,,,,,L100
 L,,Bandar Easter,Cikgu Sairan,Return,PA3_NOTA,,-1,,,L150
 L,,Agama Bandar Penawar,Cikgu Wan Azizah,Delivery,BM3_MTP,1,12,,LOW SAMPLE / LOW STOCK,L250
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
