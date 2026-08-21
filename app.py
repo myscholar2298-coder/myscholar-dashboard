@@ -3,10 +3,10 @@ import pandas as pd
 import base64
 import datetime
 
-# 1. Page Configuration: Sets your browser tab favicon icon here
+# 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="favicon.png",  # <-- Your browser tab icon file
+    page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -89,7 +89,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: DISPLAYS YOUR ACTUAL LOGO ON THE WEBPAGE
+# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER WITH LOGO
 # ==========================================
 def get_base64_image(image_path):
     try:
@@ -98,7 +98,7 @@ def get_base64_image(image_path):
     except:
         return ""
 
-img_base64 = get_base64_image("logo.png")  # <-- Your webpage header logo file
+img_base64 = get_base64_image("logo.png")
 logo_html = f"<img src='data:image/png;base64,{img_base64}' style='width: 75px;'/>" if img_base64 else "📦"
 
 st.markdown(f"""
@@ -171,16 +171,20 @@ try:
 
     valid_df = df[df["School Name"].str.strip() != ""].copy()
     
-    def is_panitia_row(title, task):
+    def is_panitia_row(title, task, date_val):
         if str(task).strip().lower() == "cheque":
             return False
         t_str = str(title).strip()
-        if "_" in t_str or "." in t_str:
+        d_str = str(date_val).strip()
+        # Must have a valid title AND a valid date to be a real operational task from LOTask.xls
+        if not t_str or not d_str or d_str.lower() == "nan":
             return False
-        panitia_subjects = ['PSV', 'SJH', '3DP', 'SAINS', 'KIMIA', 'MUET', 'RBT', 'GKT', 'SRT']
-        return t_str.upper() in panitia_subjects
+        # Exclude book codes containing numbers, underscores, or periods
+        if "_" in t_str or "." in t_str or any(char.isdigit() for char in t_str):
+            return False
+        return True
 
-    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
     
     cheque_mask = valid_df["Task"].str.strip().str.lower() == "cheque"
     panitia_mask = valid_df["Is_Panitia"]
@@ -202,7 +206,7 @@ try:
             filtered_df = filtered_df[filtered_df["Task"].str.strip().str.lower() != "pending"]
 
         f_valid_df = filtered_df[filtered_df["School Name"].str.strip() != ""].copy()
-        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
 
         f_cheque_mask = f_valid_df["Task"].str.strip().str.lower() == "cheque"
         f_panitia_mask = f_valid_df["Is_Panitia"]
