@@ -1,10 +1,10 @@
 import os
 from datetime import datetime
 from pathlib import Path
+import subprocess
 import openpyxl
 import pandas as pd
-import gspread
-from google.oauth2.service_account import Credentials
+import sys
 
 # ==========================================
 # AUTO-DETECT DRIVE LETTER (G, H, I, L across your PCs/Laptops)
@@ -19,7 +19,6 @@ def find_shared_drive():
         alt_path = Path(f"{drive_letter}:\\OPERATION")
         if alt_path.exists():
             return alt_path
-    # Fallback default if not found
     return Path(r"H:\Shared drives\OPERATION")
 
 SHARED_DRIVE_ROOT = find_shared_drive()
@@ -27,7 +26,6 @@ LP_FOLDER = SHARED_DRIVE_ROOT / "LP"
 DELIVERY_PLAN_FOLDER = SHARED_DRIVE_ROOT / "Delivery Plan"
 LOTASK_FILE = DELIVERY_PLAN_FOLDER / "LOTask.xlsx"
 
-# Local CSV export path (stays in your repository folder)
 OUTPUT_DIR = BASE_DIR
 
 def clean_base_code(name_str):
@@ -35,7 +33,6 @@ def clean_base_code(name_str):
     return s.split("_")[0].strip()
 
 def run_daily_compilation():
-    """Step 1: Process and compile active sales status files from 'LP' folder."""
     if not LP_FOLDER.exists():
         print(f"[{datetime.now()}] Error: LP folder not found at {LP_FOLDER}")
         return None
@@ -49,13 +46,13 @@ def run_daily_compilation():
 
     for file_path in file_paths:
         try:
+            print(f"[{datetime.now()}] Reading file: {file_path.name}...")
             wb = openpyxl.load_workbook(file_path, data_only=True)
             target_sheets = [sheet for sheet in wb.sheetnames if "^" in sheet]
 
             for sheet_name in target_sheets:
                 ws = wb[sheet_name]
                 
-                # 1. ACQUIRE FLOATING METRICS PARAMETERS FROM TOP PANEL ROWS (2 to 6)
                 metrics = {}
                 for r in range(2, 7):
                     for c in range(1, ws.max_column + 1):
@@ -78,7 +75,6 @@ def run_daily_compilation():
                                 except ValueError:
                                     pass
 
-                # 2. FLAT SWEEP ROW 10 TO PAIR COLUMNS PERFECTLY BY POSITION
                 header_row = 10
                 book_pairs = []
                 columns_checked = set()
@@ -124,7 +120,6 @@ def run_daily_compilation():
                             "qty_col": q_col
                         })
 
-                # 3. EXTRACTION MATRIX ROTATION ROUTINE
                 for row in range(11, ws.max_row + 1):
                     route = ws.cell(row=row, column=1).value
                     school = ws.cell(row=row, column=2).value
@@ -252,7 +247,7 @@ def run_daily_compilation():
     return None
 
 def run_pipeline():
-    print(f"\n[{datetime.now()}] Starting automated outstanding task compilation...")
+    print(f"\n[{datetime.now()}] Starting automated task compilation...")
     print(f"[{datetime.now()}] Using Shared Drive location: {SHARED_DRIVE_ROOT}")
     
     daily_df = run_daily_compilation()
@@ -375,21 +370,18 @@ def run_pipeline():
     final_df = final_df.sort_values(by=["Route_Internal", "School Name", "Title/Panitia"])
 
     final_df["Group"] = final_df["Route_Internal"].str.extract(r'^([A-Za-z])')[0].str.upper().fillna("")
-    
-    # Retain full route code (e.g. A450, B260) in the Route column
     final_df["Route"] = final_df["Route_Internal"]
 
     base_cols = ["Group", "Date", "School Name", "Teacher", "Task", "Title/Panitia", "Sample", "Qty", "#Delivery", "Remark"]
     final_cols = [c for c in base_cols if c in final_df.columns] + ["Route"]
     
-   # Clean up remarks: remove standalone '&' symbols
     final_df["Remark"] = final_df["Remark"].apply(lambda x: "" if str(x).strip() in ["&", "& "] else x)
     output_df = final_df[final_cols].copy()
     output_df = output_df.replace(["nan", "NaN", "NAN", "None", None, float("nan")], "")
     output_df = output_df.fillna("")
 
     # ==========================================
-    # 1. EXPORT LOCAL CSV COPY
+    # EXPORT LOCAL CSV COPY
     # ==========================================
     try:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -398,34 +390,31 @@ def run_pipeline():
         print(f"[{datetime.now()}] Successfully saved local CSV copy at: {local_csv_path}")
     except PermissionError:
         print(f"[{datetime.now()}] Warning: 'Extract_Dispatch_Data.csv' is open in Excel. Skipping local save.")
+        return
     except Exception as e:
         print(f"[{datetime.now()}] Error saving local CSV copy: {e}")
+        return
 
     # ==========================================
-    # 2. SYNC TO GOOGLE SHEETS
+    # AUTOMATED GITHUB SYNC
     # ==========================================
+    print(f"[{datetime.now()}] Pushing updates to GitHub...")
     try:
-        SCOPES = [
-            "https://www.googleapis.com/auth/spreadsheets",
-            "https://www.googleapis.com/auth/drive"
-        ]
-        
-        creds_path = BASE_DIR / "credentials.json"
-        if creds_path.exists():
-            creds = Credentials.from_service_account_file(str(creds_path), scopes=SCOPES)
-            client = gspread.authorize(creds)
-
-            spreadsheet_name = "MyScholar_Operations_Live" 
-            sheet = client.open(spreadsheet_name).sheet1
-
-            sheet.clear()
-            
-            data_to_sync = [output_df.columns.values.tolist()] + output_df.values.tolist()
-            sheet.append_rows(data_to_sync, value_input_option='USER_ENTERED')
-            print(f"[{datetime.now()}] Successfully updated Google Sheet: {spreadsheet_name}")
-    except Exception as e:
-        print(f"[{datetime.now()}] Note on Google Sheets sync: {e}")
+        os.chdir(BASE_DIR)
+        subprocess.run(["git", "add", "Extract_Dispatch_Data.csv"], check=True, capture_output=True)
+        # Check if there are actual changes to commit
+        status_res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+        if status_res.stdout.strip():
+            subprocess.run(["git", "commit", "-m", "Automated CSV update via Task Scheduler"], check=True, capture_output=True)
+            subprocess.run(["git", "push", "origin", "main"], check=True, capture_output=True)
+            print(f"[{datetime.now()}] Successfully pushed updates to GitHub!")
+        else:
+            print(f"[{datetime.now()}] No changes detected in CSV data. Skipping git push.")
+    except subprocess.CalledProcessError as e:
+        print(f"[{datetime.now()}] Git automation error: {e.stderr}")
 
 if __name__ == "__main__":
-    print("🤖 Running Google Sheets Compilation Job...")
+    print("🤖 Running Compilation & Sync Job...")
     run_pipeline()
+    print("✅ Job completed successfully.")
+    sys.exit(0)
