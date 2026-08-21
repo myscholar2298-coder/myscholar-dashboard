@@ -171,18 +171,20 @@ try:
 
     valid_df = df[df["School Name"].str.strip() != ""].copy()
     
-    def is_panitia_row(title, task):
+    def is_panitia_row(title, task, date_val):
         if str(task).strip().lower() == "cheque":
             return False
         t_str = str(title).strip()
-        if not t_str:
+        d_str = str(date_val).strip()
+        # Must have a valid title AND a valid date to be a real operational task from LOTask.xls
+        if not t_str or not d_str or d_str.lower() == "nan":
             return False
-        # Exclude book codes containing numbers, underscores, or periods (e.g., PA1_MTP, USUL1_NOT)
+        # Exclude book codes containing numbers, underscores, or periods
         if "_" in t_str or "." in t_str or any(char.isdigit() for char in t_str):
             return False
         return True
 
-    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
     
     cheque_mask = valid_df["Task"].str.strip().str.lower() == "cheque"
     panitia_mask = valid_df["Is_Panitia"]
@@ -204,7 +206,7 @@ try:
             filtered_df = filtered_df[filtered_df["Task"].str.strip().str.lower() != "pending"]
 
         f_valid_df = filtered_df[filtered_df["School Name"].str.strip() != ""].copy()
-        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
 
         f_cheque_mask = f_valid_df["Task"].str.strip().str.lower() == "cheque"
         f_panitia_mask = f_valid_df["Is_Panitia"]
