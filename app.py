@@ -175,8 +175,12 @@ try:
         if str(task).strip().lower() == "cheque":
             return False
         t_str = str(title).strip()
-        # Automatically accept any non-empty title/panitia keyed in
-        return t_str != ""
+        if not t_str:
+            return False
+        # Exclude book codes containing numbers, underscores, or periods (e.g., PA1_MTP, USUL1_NOT)
+        if "_" in t_str or "." in t_str or any(char.isdigit() for char in t_str):
+            return False
+        return True
 
     valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
     
