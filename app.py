@@ -3,10 +3,10 @@ import pandas as pd
 import base64
 import datetime
 
-# 1. Page Configuration optimized for mobile viewport
+# 1. Page Configuration: Sets your browser tab favicon icon here
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="📦",
+    page_icon="favicon.png",  # <-- Your browser tab icon file
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -89,7 +89,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER WITH LOGO
+# HEADER: DISPLAYS YOUR ACTUAL LOGO ON THE WEBPAGE
 # ==========================================
 def get_base64_image(image_path):
     try:
@@ -98,7 +98,7 @@ def get_base64_image(image_path):
     except:
         return ""
 
-img_base64 = get_base64_image("logo.png")
+img_base64 = get_base64_image("logo.png")  # <-- Your webpage header logo file
 logo_html = f"<img src='data:image/png;base64,{img_base64}' style='width: 75px;'/>" if img_base64 else "📦"
 
 st.markdown(f"""
