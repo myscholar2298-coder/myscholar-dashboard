@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import base64
 import datetime
 
 # 1. Page Configuration optimized for mobile viewport
@@ -88,11 +89,21 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER
+# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER WITH LOGO
 # ==========================================
-st.markdown("""
+def get_base64_image(image_path):
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode()
+    except:
+        return ""
+
+img_base64 = get_base64_image("logo.png")
+logo_html = f"<img src='data:image/png;base64,{img_base64}' style='width: 75px;'/>" if img_base64 else "📦"
+
+st.markdown(f"""
     <div class='header-flex'>
-        <div class='header-logo'>📦</div>
+        <div class='header-logo'>{logo_html}</div>
         <div class='header-text'>
             <h2>MYSCHOLAR</h2>
             <p>OPERATION MATRIX DASHBOARD</p>
