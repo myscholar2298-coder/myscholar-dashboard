@@ -1,6 +1,8 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
 A,,Dol Said,Cikgu Asmadi,Delivery,PA1_MTP,1,3,,,A200
 A,,Dol Said,Cikgu  Asmadi,Delivery,PA3_MTP,1,8,,,A200
+B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA1_MTP,1,16,,,B100
+B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA3_MTP,1,11,,,B100
 B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_NOTA,,17,,NO STOCK,B260
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,KEMAHIRAN,1,30,,LOW SAMPLE / LOW STOCK,B480
 B,,IPGKPM JABATAN BAHASA,PN ROSLINA RASDI,Delivery,ENGLISH,5,180,,LOW SAMPLE / LOW STOCK,B480
@@ -41,6 +43,7 @@ F,,Dato Onn,Cikgu Ruzaini,Delivery,BM3_MTP,2,20,,LOW SAMPLE,F300
 F,,Dato Onn,Cikgu Nur Hazne,Payment,EK1_RUJ,,,,,F300
 F,,Dato Onn,Cikgu Nur Hazne,Return,EK1_RUJ,,,,,F300
 F,,Dato Sulaiman,Cikgu Tuan Mazura (KP),Delivery,BM3_MTP,3,34,,LOW SAMPLE,F350
+F,2026-08-21,Tunku Putra,Pjbt,Cheque,PSV,,,,,F400
 G,,Munshi Sulaiman,Cikgu Zaliha,Delivery,BM3_MTP,1,24,,LOW SAMPLE,G100
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,TN HJ MOHD ARAFAT,Delivery,FIQH SIRAH,,5,,LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Delivery,KEMAHIRAN,2,75,,LOW SAMPLE / LOW STOCK,G113
@@ -55,11 +58,9 @@ G,,Tinggi Kluang,Cikgu Rasyidah,Delivery,BM3_MTP,1,25,,LOW SAMPLE,G400
 G,,SSAJ,Cikgu Roslinda,Delivery,BM3_MTP,2,22,,LOW SAMPLE,G450
 G,,SSAJ,Cikgu Syahira,Delivery,BM3_MTP,1,17,,LOW SAMPLE,G450
 G,2026-08-10,SSAJ,Asmawati,Pending,PSV,,,0,Canvas 9090,G450
-G,2026-08-11,SSAJ,Asmawati,Deliver,PSV,,2.0,0,,G450
-G,2026-08-11,SSAJ,Asmawati,Deliver,PSV,,1.0,1#,,G450
+G,2026-08-11,SSAJ,Asmawati,Deliver,PSV,,1.0,2#,To Post,G450
 G,,SSAJ,Cikgu Bukhari,Payment,SJH1_MTP,,,,,G450
 G,,SSAJ,Cikgu Asmawati,Return,SV1_RUJ,,-8,,,G450
-G,2026-08-20,Sains Sembrong,Pjbt,Cheque,,,,,,G475
 G,2026-08-18,Sains Sembrong,Pn Piza,Pending,BIO,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Razilah,Delivery,BM3_MTP,1,18,,LOW SAMPLE,G550
 H,,Tun Sardon,Cikgu Nurul Hamidah,Delivery,BM3_MTP,1,9,,LOW SAMPLE,H150
@@ -67,9 +68,7 @@ H,,Tun Sardon,Cikgu Nurul Hamidah,Delivery,BM3_NOTA,1,9,,LOW SAMPLE / LOW STOCK,
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
 H,,Benut,Cikgu Yong Rafedah,Delivery,BM3_MTP,4,59,,LOW SAMPLE,H200
 H,,Benut,Cikgu Roiza,Return,PA1_NOTA,,-1,,,H200
-H,2026-08-07,Tanjung Adang,Izhar,Deliver,PSV,,1.0,2#,,H360
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Delivery,BM3_NOTA,2,35,,LOW SAMPLE / LOW STOCK,H400
-H,2026-08-18,Pulai Jaya,Shahril,Deliver,PSV,,1.0,2#,,H500
 I,,STAR Putra,Cikgu Siti Zora,Payment,EK3_RUJ,,,,,I100
 I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
 I,,Tun Habab,Cikgu Azrina,Return,PA1_ESEI,,,,,I350
