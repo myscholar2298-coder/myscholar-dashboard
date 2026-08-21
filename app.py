@@ -3,10 +3,10 @@ import pandas as pd
 import base64
 import datetime
 
-# 1. Page Configuration: Sets your browser tab favicon icon here
+# 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="favicon.png",  # <-- Your browser tab icon file
+    page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -89,7 +89,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: DISPLAYS YOUR ACTUAL LOGO ON THE WEBPAGE
+# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER WITH LOGO
 # ==========================================
 def get_base64_image(image_path):
     try:
@@ -98,7 +98,7 @@ def get_base64_image(image_path):
     except:
         return ""
 
-img_base64 = get_base64_image("logo.png")  # <-- Your webpage header logo file
+img_base64 = get_base64_image("logo.png")
 logo_html = f"<img src='data:image/png;base64,{img_base64}' style='width: 75px;'/>" if img_base64 else "📦"
 
 st.markdown(f"""
@@ -175,10 +175,8 @@ try:
         if str(task).strip().lower() == "cheque":
             return False
         t_str = str(title).strip()
-        if "_" in t_str or "." in t_str:
-            return False
-        panitia_subjects = ['PSV', 'SJH', '3DP', 'SAINS', 'KIMIA', 'MUET', 'RBT', 'GKT', 'SRT']
-        return t_str.upper() in panitia_subjects
+        # Automatically accept any non-empty title/panitia keyed in
+        return t_str != ""
 
     valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
     
