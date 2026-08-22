@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
 import base64
-import os
 import datetime
 
 # 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
     page_title="MyScholar Operation Dashboard",
-    page_icon="📦",
+    page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -90,7 +89,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER
+# HEADER: SIDE-BY-SIDE MOBILE FLEX CONTAINER WITH LOGO
 # ==========================================
 def get_base64_image(image_path):
     try:
@@ -113,28 +112,20 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# LOCAL CSV LOADER & DYNAMIC TIMESTAMP (Malaysia Time AM/PM)
+# LOAD DATA DIRECTLY FROM GITHUB RAW URL WITH CACHING
 # ==========================================
-@st.cache_data(ttl=300)
-def load_data_from_local():
-    csv_path = "Extract_Dispatch_Data.csv"
-    
-    pub_time_str = "Live Sync Active"
-    if os.path.exists(csv_path):
-        mod_time = os.path.getmtime(csv_path)
-        dt_utc = datetime.datetime.fromtimestamp(mod_time, datetime.timezone.utc)
-        dt_malaysia = dt_utc.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
-        pub_time_str = dt_malaysia.strftime('%Y-%m-%d %I:%M:%S %p MYT')
-    else:
-        malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
-        pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %I:%M:%S %p MYT')
+CSV_URL = "https://raw.githubusercontent.com/myscholar2298-coder/myscholar-dashboard/main/Extract_Dispatch_Data.csv"
 
-    df = pd.read_csv(csv_path)
+@st.cache_data(ttl=60)
+def load_data_from_github():
+    df = pd.read_csv(CSV_URL)
+    malaysia_tz = datetime.timezone(datetime.timedelta(hours=8))
+    pub_time_str = datetime.datetime.now(malaysia_tz).strftime('%Y-%m-%d %I:%M:%S %p MYT')
     return df, pub_time_str
 
 try:
-    with st.spinner("Loading live data..."):
-        df, published_time = load_data_from_local()
+    with st.spinner("Loading live data from GitHub..."):
+        df, published_time = load_data_from_github()
 
     st.markdown(f"<div class='sync-timestamp'>🕒 Data Published / Updated: <b>{published_time}</b></div>", unsafe_allow_html=True)
     st.divider()
@@ -180,16 +171,20 @@ try:
 
     valid_df = df[df["School Name"].str.strip() != ""].copy()
     
-    def is_panitia_row(title, task):
+    def is_panitia_row(title, task, date_val):
         if str(task).strip().lower() == "cheque":
             return False
         t_str = str(title).strip()
-        if "_" in t_str or "." in t_str:
+        d_str = str(date_val).strip()
+        # Must have a valid title AND a valid date to be a real operational task from LOTask.xls
+        if not t_str or not d_str or d_str.lower() == "nan":
             return False
-        panitia_subjects = ['PSV', 'SJH', '3DP', 'SAINS', 'KIMIA', 'MUET', 'RBT', 'GKT', 'SRT']
-        return t_str.upper() in panitia_subjects
+        # Exclude book codes containing numbers, underscores, or periods
+        if "_" in t_str or "." in t_str or any(char.isdigit() for char in t_str):
+            return False
+        return True
 
-    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+    valid_df["Is_Panitia"] = valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
     
     cheque_mask = valid_df["Task"].str.strip().str.lower() == "cheque"
     panitia_mask = valid_df["Is_Panitia"]
@@ -211,7 +206,7 @@ try:
             filtered_df = filtered_df[filtered_df["Task"].str.strip().str.lower() != "pending"]
 
         f_valid_df = filtered_df[filtered_df["School Name"].str.strip() != ""].copy()
-        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"]), axis=1)
+        f_valid_df["Is_Panitia"] = f_valid_df.apply(lambda row: is_panitia_row(row["Title/Panitia"], row["Task"], row["Date"]), axis=1)
 
         f_cheque_mask = f_valid_df["Task"].str.strip().str.lower() == "cheque"
         f_panitia_mask = f_valid_df["Is_Panitia"]
