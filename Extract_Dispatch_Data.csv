@@ -1,6 +1,4 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-A,,Dol Said,Cikgu Asmadi,Delivery,PA1_MTP,1,3,,,A200
-A,,Dol Said,Cikgu  Asmadi,Delivery,PA3_MTP,1,8,,,A200
 B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA1_MTP,1,16,,,B100
 B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA3_MTP,1,11,,,B100
 B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_NOTA,,17,,NO STOCK,B260
@@ -92,7 +90,5 @@ L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_NOTA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
-L,,Pengerang Utama @ Tanjung Datuk,Cikgu Adania,Delivery,BM3_MTP,1,13,,LOW SAMPLE,L300
-L,,Adela,Cikgu Ruzaimah,Delivery,BM3_MTP,1,7,,LOW SAMPLE,L350
 
-# Last Sync Check: 2026-08-22 10:01:08
+# Last Sync Check: 2026-08-22 10:31:09
