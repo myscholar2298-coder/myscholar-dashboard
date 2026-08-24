@@ -9,6 +9,9 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN EZLYN EMILY,Delivery,BELAJAR,5,270,,LOW S
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,LOW SAMPLE / LOW STOCK,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_NOTA,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_NOTA,,6,,NO STOCK,B600
+C,,Dato Seth,Cikgu Zarima,Payment,MUET_MTP,,,,,C100
+C,,Dato Seth,Cikgu Zarima,Payment,MUET_THEMA,,,,,C100
+C,,Dato Seth,Cikgu Ismawani,Payment,PA3_NOTA,,,,,C100
 C,2026-08-19,Paduka Tuan,Pjbt,Cheque,PSV,,,,,C520
 D,,Bukit Gambir,Cikgu Hafizah,Return,BM3_MTP,-1,-11,,LOW SAMPLE,D200
 D,,Bukit Gambir,Cikgu Hafizah,Delivery,BM3_NOTA,1,11,,LOW SAMPLE / LOW STOCK,D200
@@ -93,4 +96,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-24 11:00:56
+# Last Sync Check: 2026-08-24 11:31:07
