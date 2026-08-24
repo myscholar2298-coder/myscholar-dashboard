@@ -71,6 +71,7 @@ I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_NOTA,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_NOTA,,,,,I550
 J,,Skudai,Cikgu Jamaliah,Delivery,BM3_MTP,4,77,,LOW SAMPLE,J325
 J,,Maktab SAB,Cikgu Daisy Rani,Return,SJH1_MTP,,,,,J450
+J,2026-08-24,SIGS,Pjbt,Cheque,PSV,,,,Bawa cek returned,J460
 J,,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ASRI,Delivery,AKIDAH,1,23,,LOW SAMPLE / LOW STOCK,J530
 J,,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,USTAZAH HAJAR,Delivery,KEMAHIRAN,1,40,,LOW SAMPLE / LOW STOCK,J530
 K,,Taman Daya,Cikgu Intan,Payment,PA1_MTP,,,,,K150
@@ -91,4 +92,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-24 10:00:36
+# Last Sync Check: 2026-08-24 10:30:22
