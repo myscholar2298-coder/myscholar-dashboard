@@ -46,9 +46,7 @@ G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Delivery,KEMAHIRAN,2,75,,LO
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,LOW STOCK,G113
 G,,IPGKTHO JABATAN PENGAJIAN MELAYU,TN HJ AHMAD AZMI,Delivery,FONETIK,,4,,LOW STOCK,G113
 G,2026-08-24,STABK,Pjbt,Cheque,PSV,,,,,G445
-G,,SSAJ,Cikgu Roslinda,Delivery,BM3_MTP,2,22,,LOW SAMPLE,G450
 G,2026-08-10,SSAJ,Asmawati,Pending,PSV,,,0,Canvas 9090,G450
-G,,SSAJ,Cikgu Asmawati,Return,SV1_RUJ,,-8,,,G450
 G,2026-08-18,Sains Sembrong,Pn Piza,Deliver,BIO,,1.0,0,,G475
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
 H,2026-08-25,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,,,H330
@@ -70,7 +68,6 @@ I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_MTP,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_NOTA,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_NOTA,,,,,I550
 J,2026-08-24,Desa Tebrau,Salleha,Pending,PSV,,,0,,J
-J,,Skudai,Cikgu Jamaliah,Delivery,BM3_MTP,4,77,,LOW SAMPLE,J325
 J,,Maktab SAB,Cikgu Daisy Rani,Return,SJH1_MTP,,,,,J450
 J,2026-08-24,SIGS,Pjbt,Cheque,PSV,,,,Bawa cek returned,J460
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Delivery,PENULISAN,5,220,,LOW SAMPLE / LOW STOCK,J530
@@ -100,4 +97,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-26 16:00:40
+# Last Sync Check: 2026-08-26 16:30:28
