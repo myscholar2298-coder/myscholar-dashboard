@@ -12,8 +12,7 @@ B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_NOTA,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_NOTA,,6,,NO STOCK,B600
 C,,Dato Seth,Cikgu Zarima,Payment,MUET_MTP,,,,,C100
 C,,Dato Seth,Cikgu Zarima,Payment,MUET_THEMA,,,,,C100
-D,,Bukit Gambir,Cikgu Hafizah,Return,BM3_MTP,-1,-11,,LOW SAMPLE,D200
-D,,Bukit Gambir,Cikgu Hafizah,Delivery,BM3_NOTA,1,11,,LOW SAMPLE / LOW STOCK,D200
+C,,Dato Seth,Cikgu Ismawani,Payment,PA3_NOTA,,,,,C100
 D,2026-08-18,Sains Muar,En Yuzri,Pending,FIZ,,1.0,0.0,,D475
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1.0,,D475
 D,2026-08-20,Parit Bunga,Tan,Pending,PSV,,3.0,0.0,,D500
@@ -38,8 +37,6 @@ E,,SAB Muar,Cikgu Firdaus,Payment,BM1_NOTA,,,,,E400
 E,,SAB Muar,Cikgu Firdaus,Return,BM1_NOTA,,,,,E400
 E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_MTP,1,23,,LOW SAMPLE,E400
 E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_NOTA,1,23,,LOW SAMPLE / LOW STOCK,E400
-F,,TIGS,Cikgu Suria,Delivery,BM3_MTP,1,13,,LOW SAMPLE,F100
-F,,Dato Onn,Cikgu Ruzaini,Delivery,BM3_MTP,2,20,,LOW SAMPLE,F300
 F,,Dato Onn,Cikgu Nur Hazne,Payment,EK1_RUJ,,,,,F300
 F,,Dato Onn,Cikgu Nur Hazne,Return,EK1_RUJ,,,,,F300
 F,,Dato Sulaiman,Cikgu Tuan Mazura (KP),Delivery,BM3_MTP,3,34,,LOW SAMPLE,F350
@@ -100,4 +97,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-26 10:30:21
+# Last Sync Check: 2026-08-26 11:00:34
