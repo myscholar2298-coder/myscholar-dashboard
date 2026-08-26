@@ -39,7 +39,6 @@ E,,SAB Muar,Cikgu Firdaus,Return,BM1_NOTA,,,,,E400
 E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_MTP,1,23,,LOW SAMPLE,E400
 E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_NOTA,1,23,,LOW SAMPLE / LOW STOCK,E400
 F,,TIGS,Cikgu Suria,Delivery,BM3_MTP,1,13,,LOW SAMPLE,F100
-F,,SDBL,Cikgu Aslina,Return,SV1_RUJ,,-1,,,F200
 F,,Dato Onn,Cikgu Ruzaini,Delivery,BM3_MTP,2,20,,LOW SAMPLE,F300
 F,,Dato Onn,Cikgu Nur Hazne,Payment,EK1_RUJ,,,,,F300
 F,,Dato Onn,Cikgu Nur Hazne,Return,EK1_RUJ,,,,,F300
@@ -87,6 +86,7 @@ K,,Taman Daya,Cikgu Intan,Payment,PA3_NOTA,,,,,K150
 K,2026-08-20,Seri Alam 2,Pjbt,Cheque,PSV,,,,,K380
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA1_MTP,4,62,,,K400
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA3_MTP,3,41,,,K400
+K,,Pasir Gudang 2,Cikgu Norhashimah,Delivery,PA1_MTP,1,24,,,K425
 K,,Pasir Gudang 2,Cikgu Rosrina,Delivery,PA3_MTP,1,12,,,K425
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0.0,Canvas 9090,K425
 L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Return,EK3_RUJ,,-1,,,L100
@@ -100,4 +100,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-26 10:00:59
+# Last Sync Check: 2026-08-26 10:30:21
