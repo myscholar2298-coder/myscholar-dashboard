@@ -18,7 +18,7 @@ D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
 E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_MTP,1,13,,LOW SAMPLE,E200
 E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_NOTA,1,13,,LOW SAMPLE / LOW STOCK,E200
-E,2026-08-25,Raja Muda,Halimah,Pending,Hadiah,,,,,E200
+E,2026-08-25,Raja Muda,Halimah,Deliver,Hadiah,,1.0,,1 PKG + 16 Hamper Makanan,E200
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
 E,,Tengku Mahkota,Cikgu Normalawati,Payment,BM1_MTP,,,,,E250
 E,,Tengku Mahkota,Cikgu Normalawati,Payment,BM1_NOTA,,,,,E250
@@ -97,4 +97,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-26 16:30:28
+# Last Sync Check: 2026-08-26 17:00:21
