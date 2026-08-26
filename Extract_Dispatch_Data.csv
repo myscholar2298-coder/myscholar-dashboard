@@ -45,11 +45,8 @@ G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Delivery,ISLAM,4,100
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Delivery,KEMAHIRAN,2,75,,LOW SAMPLE / LOW STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,LOW STOCK,G113
 G,,IPGKTHO JABATAN PENGAJIAN MELAYU,TN HJ AHMAD AZMI,Delivery,FONETIK,,4,,LOW STOCK,G113
-G,2026-08-24,STABK,Pjbt,Cheque,PSV,,,,,G445
 G,2026-08-10,SSAJ,Asmawati,Pending,PSV,,,0,Canvas 9090,G450
-G,2026-08-18,Sains Sembrong,Pn Piza,Deliver,BIO,,1.0,0,,G475
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
-H,2026-08-25,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,,,H330
 I,,STAR Putra,Cikgu Siti Zora,Payment,EK3_RUJ,,,,,I100
 I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
 I,,Tun Habab,Cikgu Azrina,Return,PA1_ESEI,,,,,I350
@@ -67,7 +64,7 @@ I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_MTP,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_MTP,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_NOTA,,,,,I550
 I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_NOTA,,,,,I550
-J,2026-08-24,Desa Tebrau,Salleha,Pending,PSV,,,0,,J
+J,2026-08-24,Desa Tebrau,Salleha,Deliver,PSV,,4.0,0,,J
 J,,Maktab SAB,Cikgu Daisy Rani,Return,SJH1_MTP,,,,,J450
 J,2026-08-24,SIGS,Pjbt,Cheque,PSV,,,,Bawa cek returned,J460
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Delivery,PENULISAN,5,220,,LOW SAMPLE / LOW STOCK,J530
@@ -77,7 +74,7 @@ K,,Taman Daya,Cikgu Intan,Payment,PA1_MTP,,,,,K150
 K,,Taman Daya,Cikgu Intan,Payment,PA1_NOTA,,,,,K150
 K,,Taman Daya,Cikgu Intan,Payment,PA3_MTP,,,,,K150
 K,,Taman Daya,Cikgu Intan,Payment,PA3_NOTA,,,,,K150
-K,2026-08-25,JJ 1,Syafiq,Deliver,PSV,,,,,K300
+K,2026-08-25,JJ 1,Syafiq,Deliver,PSV,,4.0,1,,K300
 K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,1,18,,,K300
 K,2026-08-20,Seri Alam 2,Pjbt,Cheque,PSV,,,,,K380
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA1_MTP,4,62,,,K400
@@ -88,7 +85,6 @@ K,,Pasir Gudang 2,Cikgu Norhashimah,Delivery,PA1_MTP,1,24,,,K425
 K,,Pasir Gudang 2,Cikgu Rosrina,Delivery,PA3_MTP,1,12,,,K425
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
 L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Return,EK3_RUJ,,-1,,,L100
-L,2026-08-20,Tan Sri Jaafar Albar,Pjbt,Cheque,MUET,,,,,L100
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
@@ -97,4 +93,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-26 18:30:20
+# Last Sync Check: 2026-08-26 19:00:24
