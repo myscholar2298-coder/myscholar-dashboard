@@ -1,4 +1,5 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
+A,2026-08-25,Rahmat,Pejabat,Cheque,PSV,,,,,A280
 B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA1_MTP,1,16,,,B100
 B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA3_MTP,1,11,,,B100
 B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_NOTA,,17,,NO STOCK,B260
@@ -13,6 +14,7 @@ B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_NOTA,,6,,NO STOCK,B600
 C,,Dato Seth,Cikgu Zarima,Payment,MUET_MTP,,,,,C100
 C,,Dato Seth,Cikgu Zarima,Payment,MUET_THEMA,,,,,C100
 C,,Dato Seth,Cikgu Ismawani,Payment,PA3_NOTA,,,,,C100
+C,2026-08-27,Seri Bali,Pejabat,Cheque,PSV,,,,,C200
 D,2026-08-18,Sains Muar,En Yuzri,Deliver,FIZ,,1.0,1#,,D475
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
@@ -93,4 +95,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-27 08:30:35
+# Last Sync Check: 2026-08-27 09:00:24
