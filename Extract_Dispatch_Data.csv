@@ -53,21 +53,6 @@ G,2026-08-10,SSAJ,Asmawati,Pending,PSV,,,0,Canvas 9090,G450
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
 I,,STAR Putra,Cikgu Siti Zora,Payment,EK3_RUJ,,,,,I100
 I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
-I,,Tun Habab,Cikgu Azrina,Return,PA1_ESEI,,,,,I350
-I,,Tun Habab,Cikgu Azrina,Return,PA1_MTP,,,,,I350
-I,,Tun Habab,Cikgu Azrina,Return,PA1_NOTA,,,,,I350
-I,,Tun Habab,Cikgu Shahril,Payment,SJH1_MTP,,,,,I350
-I,,Laksamana,Cikgu Haslinda,Payment,MUET_MTP,,,,,I400
-I,,Laksamana,Cikgu Haslinda,Return,MUET_MTP,,,,,I400
-I,,Laksamana,Cikgu Siti Hajar,Payment,PA1_MTP,,,,,I400
-I,,Laksamana,Cikgu Siti Hajar,Return,PA1_MTP,,,,,I400
-I,,Laksamana,Cikgu Siti Hajar,Payment,PA1_NOTA,,,,,I400
-I,,Laksamana,Cikgu Siti Hajar,Return,PA1_NOTA,,,,,I400
-I,,Laksamana,Cikgu Zamani,Return,SV1_RUJ,,-3,,,I400
-I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_MTP,,,,,I550
-I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_MTP,,,,,I550
-I,,Ulu Tiram,Cikgu Rosnani,Payment,PA1_NOTA,,,,,I550
-I,,Ulu Tiram,Cikgu Rosnani,Return,PA1_NOTA,,,,,I550
 J,2026-08-24,Desa Tebrau,Salleha,Deliver,PSV,,4.0,0,,J
 J,,Maktab SAB,Cikgu Daisy Rani,Return,SJH1_MTP,,,,,J450
 J,2026-08-24,SIGS,Pjbt,Cheque,PSV,,,,Bawa cek returned,J460
@@ -88,7 +73,6 @@ K,,Pasir Gudang 2,Cikgu Nadia,Payment,BM1_NOTA,,,,,K425
 K,,Pasir Gudang 2,Cikgu Norhashimah,Delivery,PA1_MTP,1,24,,,K425
 K,,Pasir Gudang 2,Cikgu Rosrina,Delivery,PA3_MTP,1,12,,,K425
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
-L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Return,EK3_RUJ,,-1,,,L100
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
@@ -97,4 +81,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-27 12:00:53
+# Last Sync Check: 2026-08-27 12:31:14
