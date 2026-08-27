@@ -15,6 +15,7 @@ C,,Dato Seth,Cikgu Zarima,Payment,MUET_MTP,,,,,C100
 C,,Dato Seth,Cikgu Zarima,Payment,MUET_THEMA,,,,,C100
 C,,Dato Seth,Cikgu Ismawani,Payment,PA3_NOTA,,,,,C100
 C,2026-08-27,Seri Bali,Pejabat,Cheque,PSV,,,,,C200
+C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
 D,2026-08-18,Sains Muar,En Yuzri,Deliver,FIZ,,1.0,1#,,D475
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
@@ -65,7 +66,7 @@ K,,Taman Daya,Cikgu Intan,Payment,PA1_NOTA,,,,,K150
 K,,Taman Daya,Cikgu Intan,Payment,PA3_MTP,,,,,K150
 K,,Taman Daya,Cikgu Intan,Payment,PA3_NOTA,,,,,K150
 K,2026-08-25,JJ 1,Syafiq,Deliver,PSV,,4.0,1,,K300
-K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,1,18,,,K300
+K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,1,20,,,K300
 K,2026-08-20,Seri Alam 2,Pjbt,Cheque,PSV,,,,,K380
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA1_MTP,4,62,,,K400
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA3_MTP,3,41,,,K400
@@ -82,4 +83,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-27 13:00:49
+# Last Sync Check: 2026-08-27 13:30:23
