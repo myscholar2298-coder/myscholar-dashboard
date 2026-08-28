@@ -1,11 +1,9 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
 A,2026-08-27,Rahmat,Pejabat,Cheque,PSV,,,,,A280
-B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA1_MTP,1,16,,LOW STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,15,,LOW STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,LOW STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA1_MTP,1,17,,LOW STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA1_MTP,1,18,,LOW STOCK,B100
-B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA3_MTP,1,11,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA3_MTP,1,7,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Md Zamri,Delivery,PA3_MTP,1,13,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA3_MTP,1,10,,LOW SAMPLE,B100
@@ -13,9 +11,6 @@ B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA3_MTP,1,6,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA3_MTP,1,5,,LOW SAMPLE,B100
 B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_NOTA,,17,,NO STOCK,B260
 B,,IPGKPM ANJUNG CENDIKIA,ENCIK FIKRI,Delivery,PENULISAN,4,200,,LOW SAMPLE / LOW STOCK,B480
-B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,KEMAHIRAN,1,30,,LOW SAMPLE / LOW STOCK,B480
-B,,IPGKPM JABATAN BAHASA,PN ROSLINA RASDI,Delivery,ENGLISH,5,180,,LOW SAMPLE / LOW STOCK,B480
-B,,IPGKPM JABATAN ILMU PENDIDIKAN,ENCIK KHAIRI,Delivery,BELAJAR,5,270,,LOW SAMPLE / LOW STOCK,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,LOW SAMPLE / LOW STOCK,B480
 B,2026-08-27,Gajah Berang,Pejabat,Cheque,MUET,,,,,B550
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_NOTA,,3,,NO STOCK,B600
@@ -27,29 +22,16 @@ C,2026-08-27,Seri Bali,Pejabat,Cheque,PSV,,,,,C200
 C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
-E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_MTP,1,13,,LOW SAMPLE,E200
-E,,Raja Muda,Cikgu Salmiah,Delivery,BM3_NOTA,1,13,,LOW SAMPLE / LOW STOCK,E200
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
-E,,Tengku Mahkota,Cikgu Normalawati,Payment,BM1_MTP,,,,,E250
-E,,Tengku Mahkota,Cikgu Normalawati,Payment,BM1_NOTA,,,,,E250
-E,,Tengku Mahkota,Cikgu Normalawati,Delivery,BM3_MTP,1,30,,LOW SAMPLE,E250
-E,,Tengku Mahkota,Cikgu Normalawati,Delivery,BM3_NOTA,1,30,,LOW SAMPLE / LOW STOCK,E250
-E,,Amar Diraja,Cikgu Abu,Delivery,GEO1_MTP,,2,,,E300
+E,,Amar Diraja,Cikgu Liew,Return,PA1_MTP,,-40,,,E300
 E,,Amar Diraja,Cikgu Liew,Return,PA1_NOTA,,-5,,,E300
 E,,Amar Diraja,Cikgu Liew,Return,PA3_MTP,,-5,,,E300
 E,,Amar Diraja,Cikgu Liew,Return,PA3_NOTA,,-5,,,E300
-E,,Tinggi Muar,Cikgu Habsah,Delivery,BM3_MTP,1,10,,LOW SAMPLE,E350
-E,,Tinggi Muar,Cikgu Habsah,Delivery,BM3_NOTA,1,10,,LOW SAMPLE / LOW STOCK,E350
-E,,SAB Muar,Cikgu Firdaus,Payment,BM1_MTP,,,,,E400
-E,,SAB Muar,Cikgu Firdaus,Return,BM1_MTP,,,,,E400
-E,,SAB Muar,Cikgu Firdaus,Payment,BM1_NOTA,,,,,E400
-E,,SAB Muar,Cikgu Firdaus,Return,BM1_NOTA,,,,,E400
-E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_MTP,1,23,,LOW SAMPLE,E400
-E,,SAB Muar,Cikgu Firdaus,Delivery,BM3_NOTA,1,23,,LOW SAMPLE / LOW STOCK,E400
 F,,Dato Sulaiman,Cikgu Tuan Mazura (KP),Delivery,BM3_MTP,3,34,,LOW SAMPLE,F350
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,3,200,,LOW SAMPLE / LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ASRI,Delivery,AKIDAH,1,23,,LOW SAMPLE / LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,TN HJ MOHD ARAFAT,Delivery,FIQH SIRAH,,5,,LOW STOCK,G113
+G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,PUAN BIDAYANA,Delivery,ILMU FIQH,,13,,LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Delivery,ISLAM,4,100,,LOW SAMPLE / LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Delivery,KEMAHIRAN,2,75,,LOW SAMPLE / LOW STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,LOW STOCK,G113
@@ -58,22 +40,12 @@ G,2026-08-10,SSAJ,Asmawati,Pending,PSV,,,0,Canvas 9090,G450
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
 I,,STAR Putra,Cikgu Siti Zora,Payment,EK3_RUJ,,,,,I100
 I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
-J,,Maktab SAB,Cikgu Daisy Rani,Return,SJH1_MTP,,,,,J450
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Delivery,PENULISAN,5,220,,LOW SAMPLE / LOW STOCK,J530
-J,,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,USTAZAH HAJAR,Delivery,KEMAHIRAN,1,40,,LOW SAMPLE / LOW STOCK,J530
 J,,Tasek Utara,Cikgu Amalina,Return,SJH1_MTP,,-2,,,J575
-K,,Taman Daya,Cikgu Intan,Payment,PA1_MTP,,,,,K150
-K,,Taman Daya,Cikgu Intan,Payment,PA1_NOTA,,,,,K150
-K,,Taman Daya,Cikgu Intan,Payment,PA3_MTP,,,,,K150
-K,,Taman Daya,Cikgu Intan,Payment,PA3_NOTA,,,,,K150
 K,2026-08-25,JJ 1,Syafiq,Pending,PSV,,4.0,1,,K300
-K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,1,20,,,K300
-K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA1_MTP,4,62,,LOW STOCK,K400
-K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA3_MTP,3,41,,LOW SAMPLE,K400
-K,,Pasir Gudang 2,Cikgu Nadia,Payment,BM1_MTP,,,,,K425
-K,,Pasir Gudang 2,Cikgu Nadia,Payment,BM1_NOTA,,,,,K425
-K,,Pasir Gudang 2,Cikgu Norhashimah,Delivery,PA1_MTP,1,24,,LOW STOCK,K425
-K,,Pasir Gudang 2,Cikgu Rosrina,Delivery,PA3_MTP,1,12,,LOW SAMPLE,K425
+K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,,2,,,K300
+K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,1,33,,LOW STOCK,K425
+K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA3_MTP,1,21,,LOW SAMPLE,K425
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
@@ -83,4 +55,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-28 11:00:45
+# Last Sync Check: 2026-08-28 11:30:33
