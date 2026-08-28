@@ -15,9 +15,6 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,LOW SAM
 B,2026-08-27,Gajah Berang,Pejabat,Cheque,MUET,,,,,B550
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_NOTA,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_NOTA,,6,,NO STOCK,B600
-C,,Dato Seth,Cikgu Zarima,Payment,MUET_MTP,,,,,C100
-C,,Dato Seth,Cikgu Zarima,Payment,MUET_THEMA,,,,,C100
-C,,Dato Seth,Cikgu Ismawani,Payment,PA3_NOTA,,,,,C100
 C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
 D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
@@ -39,7 +36,7 @@ J,2026-08-28,Skudai,Fatimah,Pending,PSV,,,0,,J325
 J,2026-08-28,Dato Usman Awang,Pejabat,Cheque,GKT,,,,,J375
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Delivery,PENULISAN,5,220,,LOW SAMPLE / LOW STOCK,J530
 J,,Tasek Utara,Cikgu Amalina,Return,SJH1_MTP,,-2,,,J575
-K,2026-08-25,JJ 1,Syafiq,Pending,PSV,,,1,,K300
+K,2026-08-25,JJ 1,Syafiq,Deliver,PSV,,2.0,2#,,K300
 K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,,2,,,K300
 K,,Pasir Gudang 2,Cikgu Jasmah,Return,BM1_MTP,,-2,,,K425
 K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,1,33,,LOW STOCK,K425
@@ -53,4 +50,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-08-28 17:31:07
+# Last Sync Check: 2026-08-28 18:00:48
