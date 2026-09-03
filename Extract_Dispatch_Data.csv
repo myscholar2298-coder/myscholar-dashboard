@@ -1,17 +1,15 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,15,,LOW STOCK,B100
-B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,LOW STOCK,B100
-B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA1_MTP,1,17,,LOW STOCK,B100
-B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA1_MTP,1,18,,LOW STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,15,,NO STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,NO STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA1_MTP,1,17,,NO STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA1_MTP,1,18,,NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA3_MTP,1,7,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Md Zamri,Delivery,PA3_MTP,1,13,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA3_MTP,1,10,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA3_MTP,1,6,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA3_MTP,1,5,,LOW SAMPLE,B100
 B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_NOTA,,17,,NO STOCK,B260
-B,,IPGKPM ANJUNG CENDIKIA,ENCIK FIKRI,Delivery,PENULISAN,4,200,,LOW SAMPLE / LOW STOCK,B480
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,LOW SAMPLE / LOW STOCK,B480
-B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZAH NOR SAADAH,Return,IBADAH,,-16,,,B480
 B,,IPGKPM JABATAN BAHASA,PN ROSLINA RASDI,Delivery,ENGLISH,8,145,,LOW SAMPLE / LOW STOCK,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,LOW SAMPLE / LOW STOCK,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,LOW SAMPLE / LOW STOCK,B480
@@ -42,10 +40,8 @@ J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,LOW ST
 J,,IPGKTI JABATAN PENGAJIAN MELAYU,PUAN MASTINA,Return,PENGANTAR BM,,-50,,,J530
 J,,Tasek Utara,Cikgu Amalina,Return,SJH1_MTP,,-2,,,J575
 K,2026-08-25,JJ 1,Syafiq,Deliver,PSV,,2.0,2#,,K300
-K,,JJ 1,Cikgu Marini,Delivery,SJH3_MTP,,2,,,K300
 K,,Pasir Gudang 2,Cikgu Jasmah,Return,BM1_MTP,,-2,,,K425
-K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,1,33,,LOW STOCK,K425
-K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA3_MTP,1,21,,LOW SAMPLE,K425
+K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
 K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
@@ -55,4 +51,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-03 16:01:06
+# Last Sync Check: 2026-09-03 16:30:53
