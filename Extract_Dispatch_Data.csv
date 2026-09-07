@@ -8,16 +8,15 @@ B,,Tun Syed Zahiruddin,Cikgu Md Zamri,Delivery,PA3_MTP,1,13,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA3_MTP,1,10,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA3_MTP,1,6,,LOW SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Fauziah,Delivery,PA3_MTP,1,5,,LOW SAMPLE,B100
-B,,Agama Sharifah Rodziah,Ustazah Narjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
+B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN BAHASA,PN ROSLINA RASDI,Delivery,ENGLISH,8,145,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
-B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
+B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
 D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
-D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
 E,,Amar Diraja,Cikgu Liew,Return,PA1_MTP,,-40,,,E300
 E,,Amar Diraja,Cikgu Liew,Return,PA1_NOTA,,-5,,,E300
@@ -49,4 +48,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-07 17:00:06
+# Last Sync Check: 2026-09-07 17:31:05
