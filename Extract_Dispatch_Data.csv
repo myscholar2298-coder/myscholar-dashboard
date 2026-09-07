@@ -16,7 +16,7 @@ B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK 
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Cikgu Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
-D,2026-08-06,Sains Muar,En Yuzri,Pending,KIMIA,,,1,,D475
+D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
 D,2026-08-20,Parit Bunga,Tan,Deliver,PSV,,2.0,1#,,D500
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
 E,,Amar Diraja,Cikgu Liew,Return,PA1_MTP,,-40,,,E300
@@ -41,7 +41,7 @@ J,,IPGKTI JABATAN PENGAJIAN MELAYU,PUAN MASTINA,Return,PENGANTAR BM,,-50,,,J530
 J,,Tasek Utara,Cikgu Amalina,Return,SJH1_MTP,,-2,,,J575
 K,,Pasir Gudang 2,Cikgu Jasmah,Return,BM1_MTP,,-2,,,K425
 K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
-K,2026-07-29,Pasir Gudang 2,Imran,Pending,PSV,,,0,Canvas 9090,K425
+K,2026-07-29,Pasir Gudang 2,Imran,Deliver,PSV,,1.0,1#,2pcs Canvas 9090,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
@@ -50,4 +50,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-07 12:31:07
+# Last Sync Check: 2026-09-07 13:00:08
