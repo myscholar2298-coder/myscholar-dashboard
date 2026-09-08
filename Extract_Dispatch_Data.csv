@@ -1,5 +1,5 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Delivery,SJH1_MTP,,10,,,A450
+A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH1_MTP,,10,,,A150
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,15,,NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA1_MTP,1,17,,NO STOCK,B100
@@ -59,4 +59,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-08 16:00:42
+# Last Sync Check: 2026-09-08 16:30:56
