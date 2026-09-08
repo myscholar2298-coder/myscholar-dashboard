@@ -16,6 +16,10 @@ B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK 
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
+D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_MTP,,,,,D550
+D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_NOTA,,,,,D550
+D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_MTP,,,,,D550
+D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_NOTA,,,,,D550
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PERKEMBANGAN,,11,,NO STOCK,G113
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PSIKOLOGI,1,40,,NO STOCK / LOW SAMPLE,G113
@@ -45,4 +49,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-08 09:30:32
+# Last Sync Check: 2026-09-08 10:00:56
