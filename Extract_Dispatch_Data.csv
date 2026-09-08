@@ -1,4 +1,5 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
+A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Delivery,SJH1_MTP,,10,,,A450
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,15,,NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Hasanah,Delivery,PA1_MTP,1,17,,NO STOCK,B100
@@ -37,6 +38,7 @@ G,2026-08-10,SSAJ,Asmawati,Deliver,PSV,,2.0,1#,22pcs Canvas 9090,G450
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-03,SDARA,Suhaila,Pending,PSV,,,0,,G640
 H,2026-08-04,Tun Sardon,Hafiz,Pending,PSV,,,0,Canvas 9090,H150
+H,,Matriks Pontian,Madam  Selvakumari,Delivery,MUET_MTP,,25,,,H335
 I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
 J,,Skudai,Cikgu Jamaliah,Payment,BM1_MTP,,,,,J325
 J,,Skudai,Cikgu Norlaila,Delivery,EK1_LEMB,2,35,,LOW SAMPLE / LOW STOCK,J325
@@ -57,4 +59,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-08 13:00:37
+# Last Sync Check: 2026-09-08 13:30:16
