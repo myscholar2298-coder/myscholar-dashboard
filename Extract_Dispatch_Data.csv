@@ -15,13 +15,10 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOC
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
-C,,Tinggi Segamat,Cikgu Farah,Return,PA3_NOTA,,-5,,,C600
 D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
-E,,Amar Diraja,Cikgu Liew,Return,PA1_MTP,,-40,,,E300
-E,,Amar Diraja,Cikgu Liew,Return,PA1_NOTA,,-5,,,E300
-E,,Amar Diraja,Cikgu Liew,Return,PA3_MTP,,-5,,,E300
-E,,Amar Diraja,Cikgu Liew,Return,PA3_NOTA,,-5,,,E300
+G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PERKEMBANGAN,,11,,NO STOCK,G113
+G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PSIKOLOGI,1,40,,NO STOCK / LOW SAMPLE,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
 G,2026-09-01,Seri Gading,Nasriq,Deliver,RBT,,1.0,1#,,G115
 G,2026-08-10,SSAJ,Asmawati,Deliver,PSV,,2.0,1#,22pcs Canvas 9090,G450
@@ -48,4 +45,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-08 09:00:55
+# Last Sync Check: 2026-09-08 09:30:32
