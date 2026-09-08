@@ -15,16 +15,24 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOC
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
+D,,Ledang,Cikgu Khursiah,Return,BM1_NOTA,,-3,,,D400
 D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_MTP,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_NOTA,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_MTP,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_NOTA,,,,,D550
 E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
+E,,Tun Perak,Cikgu Hazalina,Payment,PA1_MTP,,,,,E550
+E,,Tun Perak,Cikgu Hazalina,Payment,PA1_NOTA,,,,,E550
+E,,Tun Perak,Cikgu Hazalina,Payment,PA3_MTP,,,,,E550
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PERKEMBANGAN,,11,,NO STOCK,G113
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PSIKOLOGI,1,40,,NO STOCK / LOW SAMPLE,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
 G,2026-09-01,Seri Gading,Nasriq,Deliver,RBT,,1.0,1#,,G115
+G,,Tun Hussein Onn,Cikgu Siti Zarifa,Payment,SJH1_MTP,,,,,G340
+G,,Tun Hussein Onn,Cikgu Siti Zarifa,Return,SJH1_MTP,,,,,G340
+G,,Tun Hussein Onn,Cikgu Siti Zarifah,Payment,SJH3_MTP,,,,,G340
+G,,Tun Hussein Onn,Cikgu Siti Zarifah,Return,SJH3_MTP,,,,,G340
 G,2026-08-10,SSAJ,Asmawati,Deliver,PSV,,2.0,1#,22pcs Canvas 9090,G450
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-03,SDARA,Suhaila,Pending,PSV,,,0,,G640
@@ -49,4 +57,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-08 11:30:48
+# Last Sync Check: 2026-09-08 12:00:59
