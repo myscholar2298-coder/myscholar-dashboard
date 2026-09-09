@@ -22,10 +22,7 @@ D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_MTP,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_NOTA,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_MTP,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_NOTA,,,,,D550
-E,2026-08-06,Raja Muda,Hamin,Pending,PSV,,,0,Canvas 9090,E200
-E,,Tun Perak,Cikgu Hazalina,Payment,PA1_MTP,,,,,E550
-E,,Tun Perak,Cikgu Hazalina,Payment,PA1_NOTA,,,,,E550
-E,,Tun Perak,Cikgu Hazalina,Payment,PA3_MTP,,,,,E550
+E,2026-08-06,Raja Muda,Hamin,Deliver,PSV,,1.0,1#,7pcs Canvas 9090,E200
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PERKEMBANGAN,,11,,NO STOCK,G113
 G,,IPGKTHO JAB ILMU PENDIDIKAN,DR FARIDAH,Delivery,PSIKOLOGI,1,40,,NO STOCK / LOW SAMPLE,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
@@ -58,4 +55,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-09 09:00:26
+# Last Sync Check: 2026-09-09 09:30:19
