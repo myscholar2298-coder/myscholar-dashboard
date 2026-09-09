@@ -31,7 +31,6 @@ G,,Tun Hussein Onn,Cikgu Siti Zarifa,Payment,SJH1_MTP,,,,,G340
 G,,Tun Hussein Onn,Cikgu Siti Zarifa,Return,SJH1_MTP,,,,,G340
 G,,Tun Hussein Onn,Cikgu Siti Zarifah,Payment,SJH3_MTP,,,,,G340
 G,,Tun Hussein Onn,Cikgu Siti Zarifah,Return,SJH3_MTP,,,,,G340
-G,2026-08-10,SSAJ,Asmawati,Deliver,PSV,,2.0,1#,22pcs Canvas 9090,G450
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-09,SDARA,Suhaila,Pending,PSV,,,0,,G640
 H,2026-08-04,Tun Sardon,Hafiz,Deliver,PSV,,2.0,1#,20pcs Canvas 9090,H150
@@ -40,14 +39,12 @@ I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
 J,,Skudai,Cikgu Jamaliah,Payment,BM1_MTP,,,,,J325
 J,,Skudai,Cikgu Norlaila,Delivery,EK1_LEMB,2,35,,LOW SAMPLE / LOW STOCK,J325
 J,,Skudai,Cikgu Norlaila,Delivery,EK3_RUJ,,1,,,J325
-J,2026-08-28,Skudai,Fatimah,Deliver,PSV,,1.0,1#,,J325
 J,,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,USTAZ MAHAZAD,Delivery,IBADAH,,4,,,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,NO STOCK,J530
 J,,IPGKTI JABATAN PENGAJIAN MELAYU,PUAN MASTINA,Return,PENGANTAR BM,,-41,,,J530
 J,,Tasek Utara,Cikgu Amalina,Return,SJH1_MTP,,-2,,,J575
 K,,Pasir Gudang 2,Cikgu Jasmah,Return,BM1_MTP,,-2,,,K425
 K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
-K,2026-07-29,Pasir Gudang 2,Imran,Deliver,PSV,,1.0,1#,2pcs Canvas 9090,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
@@ -56,4 +53,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-09 17:00:09
+# Last Sync Check: 2026-09-09 17:30:29
