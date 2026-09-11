@@ -38,21 +38,20 @@ D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA1_NOTA,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_MTP,,,,,D550
 D,,Iskandar Shah,Cikgu Rozilah Rahmat,Payment,PA3_NOTA,,,,,D550
 D,,Datuk Bendahara,Cikgu Safwanah,Return,MUET_MTP,-1,-10,,,D600
-E,2026-08-06,Raja Muda,Hamin,Deliver,PSV,,1.0,1#,7pcs Canvas 9090,E200
 E,2026-09-09,Sri Muar,Pejabat,Cheque,PSV,,,0,,E330
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
 G,2026-09-11,Sains Johor,Pn Farhana,Pending,FIZ,,,0,,G325
 G,2026-09-10,Taman Seri Kluang,Pejabat,Cheque,GKT,,,0,,G350
+G,2026-09-11,Sains Sembrong,Pn Rohaiza,Pending,FIZ,,,0,,G475
 G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-09,SDARA,Suhaila,Pending,PSV,,,0,,G640
 H,,Senggarang,Cikgu Mariani,Payment,SV1_RUJ,,,,,H100
-H,2026-08-04,Tun Sardon,Hafiz,Deliver,PSV,,2.0,1#,20pcs Canvas 9090,H150
 H,,Kolej T6 Pontian,Cikgu Kamarul Ashiqin,Payment,KMK1_MTP,,,,,H300
 H,,Kolej T6 Pontian,Cikgu Kamarul Ashiqin,Payment,KMK1_RUJ,,,,,H300
 H,,Kolej T6 Pontian,Cikgu Kamarul Ashiqin,Payment,KMK3_MTP,,,,,H300
 H,,Kolej T6 Pontian,Cikgu Kamarul Ashiqin,Payment,KMK3_RUJ,,,,,H300
-H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,1.0,1#,,H330
+H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,1,,H330
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_ESEI,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_MTP,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_NOTA,,,,,I100
@@ -79,4 +78,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-11 17:30:52
+# Last Sync Check: 2026-09-11 18:00:34
