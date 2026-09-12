@@ -6,7 +6,7 @@ import streamlit as st
 
 # 1. Page Configuration optimized for mobile viewport
 st.set_page_config(
-    page_title="MyScholar Operation Dashboard",
+    page_title="MyScholar Logistic Matrix",
     page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -118,7 +118,7 @@ st.markdown(
         <div class='header-logo'>{logo_html}</div>
         <div class='header-text'>
             <h2>MYSCHOLAR</h2>
-            <p>OPERATION MATRIX DASHBOARD</p>
+            <p>LOGISTIC MATRIX DASHBOARD</p>
         </div>
     </div>
 """,
