@@ -37,6 +37,7 @@ D,,STMI,Cikgu Zainuddin,Payment,KMK3_MTP,,,,,D450
 D,,STMI,Cikgu Zainuddin,Return,KMK3_MTP,,,,,D450
 D,,STMI,Cikgu Zainuddin,Payment,KMK3_RUJ,,,,,D450
 D,,STMI,Cikgu Zainuddin,Return,KMK3_RUJ,,,,,D450
+D,2026-09-17,Sains Muar,En Yuzri,Deliver,Makmal,,1.0,1#,,D475
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK1_LEMB,,,,,D500
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK3_RUJ,,,,,D500
 D,2026-09-17,Parit Bunga,Pejabat,Cheque,PSV,,,0,,D500
@@ -73,4 +74,4 @@ L,2026-09-15,Agama Bandar Penawar,Sharifah,Pending,RBT,,,0,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-18 16:00:09
+# Last Sync Check: 2026-09-18 16:30:19
