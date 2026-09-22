@@ -1,5 +1,4 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-,2026-09-17,Kiang,,Collect,,,,0,,
 A,,KV Datuk Seri Mohd Zin,Puan Aishah,Delivery,KV_ARAB2'26,1,80,,LOW SAMPLE / LOW STOCK,A125
 A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH1_MTP,,10,,,A150
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,NO STOCK,B100
@@ -52,18 +51,14 @@ E,,KV Muar,Ustazah Irdina,Delivery,KV_ARAB2'26,1,103,,LOW SAMPLE / LOW STOCK,E52
 F,2026-09-17,Dato Onn,Pejabat,Cheque,PSV,,,0,,F300
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,84,,NO STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,11,,LOW STOCK,G113
-G,2026-09-15,Sains Sembrong,Pejabat,Cheque,,,,0,,G475
-G,2026-09-14,Sains Sembrong,Sabarina,Deliver,BIO,,3.0,1#,,G475
-G,2026-09-17,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,1.0,1,,G475
-G,2026-09-11,Sains Sembrong,Taufik,Deliver,PSV,,5.0,1#,,G475
 G,,KV Kluang,Ustazah Nor Mastura,Delivery,KV_ARAB2'26,2,136,,LOW SAMPLE / LOW STOCK,G510
+H,2026-09-22,Tun Sardon,Pn Seha,Pending,Pjbt,,,0,,H150
 H,2026-09-21,SDAHA,Pn Chin,Pending,RBT,,,0,,H325
 H,,KV Tanjung Piai,Encik Zulhilmi,Delivery,KV_ARAB2'26,1,33,,LOW SAMPLE / LOW STOCK,H345
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
 I,,KV Kota Tinggi,Puan Asyadah,Delivery,KV_ARAB2'26,3,94,,LOW SAMPLE / LOW STOCK,I460
-J,2026-09-17,Dato Usman Awang,Fazlynda,Deliver,PSV,,4.0,1#,,J375
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,LOW STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,1,43,,LOW SAMPLE / LOW STOCK,J560
@@ -72,8 +67,8 @@ L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_NOTA,,-1,,,L250
-L,2026-09-15,Agama Bandar Penawar,Sharifah,Deliver,RBT,,6.0,1#,K,L250
+L,2026-09-15,Agama Bandar Penawar,Sharifah,Deliver,RBT,,6.0,1#,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-22 09:30:42
+# Last Sync Check: 2026-09-22 10:00:37
