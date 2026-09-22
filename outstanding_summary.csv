@@ -110,9 +110,9 @@ KV S2 2026,KV_ARAB2'25,300-K058,Encik Hilmi,KV ERT Azizah,24,432.0,1,KV ERT Aziz
 KV S2 2026,KV_ARAB2'26,300-H061,Encik Huzaifi,KV Jasin,37,666.0,1,KV Jasin,KV_ARAB2'26,Encik Huzaifi
 KV S2 2026,KV_ARAB2'26,,Encik Kamarul,KV Tanjung Puteri,150,2700.0,2,KV Tanjung Puteri,KV_ARAB2'26,Encik Kamarul
 KV S2 2026,KV_ARAB2'26,300-K077,Encik Syafiq,KV Perdagangan,43,774.0,1,KV Perdagangan,KV_ARAB2'26,Encik Syafiq
-KV S2 2026,KV_ARAB2'26,300-K051,Encik Zulhilmi,KV Tanjung Piai,44,792.0,2,KV Tanjung Piai,KV_ARAB2'26,Encik Zulhilmi
+KV S2 2026,KV_ARAB2'26,300-K051,Encik Zulhilmi,KV Tanjung Piai,77,1386.0,3,KV Tanjung Piai,KV_ARAB2'26,Encik Zulhilmi
 KV S2 2026,KV_ARAB2'26,300-A073,Puan Aishah,KV Datuk Seri Mohd Zin,120,2160.0,2,KV Datuk Seri Mohd Zin,KV_ARAB2'26,Puan Aishah
-KV S2 2026,KV_ARAB2'26,300-K052,Puan Asyadah,KV Kota Tinggi,142,2556.0,2,KV Kota Tinggi,KV_ARAB2'26,Puan Asyadah
+KV S2 2026,KV_ARAB2'26,300-K052,Puan Asyadah,KV Kota Tinggi,236,4248.0,3,KV Kota Tinggi,KV_ARAB2'26,Puan Asyadah
 KV S2 2026,KV_ARAB2'26,300-K075,Puan Izzati,KV Pagoh,40,720.0,1,KV Pagoh,KV_ARAB2'26,Puan Izzati
 KV S2 2026,KV_ARAB2'26,300-K048,Puan Norfarahin (KOP),KV Segamat,98,1764.0,2,KV Segamat,KV_ARAB2'26,Puan Norfarahin (KOP)
 KV S2 2026,KV_ARAB2'26,300-K050,Ustazah Irdina,KV Muar,160,2880.0,2,KV Muar,KV_ARAB2'26,Ustazah Irdina
@@ -189,7 +189,7 @@ STPM P1 2027,MUET,300-E016,Cikgu Ervina,Maktab SAB,10,250.0,1,Maktab SAB,MUET,Ci
 STPM P1 2027,MUET,300-M088,Cikgu Ezhanna,Seri Medan,70,1750.0,1,Seri Medan,MUET,Cikgu Ezhanna
 STPM P1 2027,PA1,300-F039,Cikgu Faiz,SAB JB,48,1128.0,4,SAB JB,PA1,Cikgu Faiz
 STPM P1 2027,SV1,300-F019,Cikgu Faiza,Pulau Sebang,15,480.0,1,Pulau Sebang,SV1,Cikgu Faiza
-STPM P1 2027,SJH1,300-F008,Cikgu Faizah,Agama Bandar Penawar,32,320.0,1,Agama Bandar Penawar,SJH1,Cikgu Faizah
+STPM P1 2027,SJH1,300-F008,Cikgu Faizah,Agama Bandar Penawar,25,250.0,2,Agama Bandar Penawar,SJH1,Cikgu Faizah
 STPM P1 2027,PA1,300-P013,Cikgu Faizal,Senggarang,0,0.0,4,Senggarang,PA1,Cikgu Faizal
 STPM P1 2027,KIMIA1,300-C300,Cikgu Farah Jaafar,Labis,4,80.0,2,Labis,KIMIA1,Cikgu Farah Jaafar
 STPM P1 2027,BM1,300-F027,Cikgu Faridah,Bandar Tenggara,47,564.0,2,Bandar Tenggara,BM1,Cikgu Faridah
@@ -216,7 +216,7 @@ STPM P1 2027,BM1,300-H102,Cikgu Hafizah,Bukit Gambir,70,1050.0,2,Bukit Gambir,BM
 STPM P1 2027,PA1,300-H021,Cikgu Hafizhuddin,Dato Bentara Dalam,11,385.0,2,Dato Bentara Dalam,PA1,Cikgu Hafizhuddin
 STPM P1 2027,EK1,300-H034,Cikgu Hairiyah,Mutiara Rini,27,405.0,1,Mutiara Rini,EK1,Cikgu Hairiyah
 STPM P1 2027,BM1,,Cikgu Haliza,Sri Kukup,0,0.0,4,Sri Kukup,BM1,Cikgu Haliza
-STPM P1 2027,MUET,300-H099,Cikgu Haliza,Agama Bandar Penawar,40,1520.0,1,Agama Bandar Penawar,MUET,Cikgu Haliza
+STPM P1 2027,MUET,300-H099,Cikgu Haliza,Agama Bandar Penawar,26,988.0,2,Agama Bandar Penawar,MUET,Cikgu Haliza
 STPM P1 2027,SV1,300-H041,Cikgu Hamin,Raja Muda,0,0.0,2,Raja Muda,SV1,Cikgu Hamin
 STPM P1 2027,PA1,300-H012,Cikgu Hamizon,Kolej T6 Pontian,303,7063.0,6,Kolej T6 Pontian,PA1,Cikgu Hamizon
 STPM P1 2027,PA1,300-H029,Cikgu Hanida,Munshi Abdullah,74,1739.0,6,Munshi Abdullah,PA1,Cikgu Hanida
@@ -234,7 +234,7 @@ STPM P1 2027,BM1,300-H036,Cikgu Hasrik,STUDI,25,450.0,3,STUDI,BM1,Cikgu Hasrik
 STPM P1 2027,PP1,300-H042,Cikgu Hatta,Raja Muda,18,180.0,2,Raja Muda,PP1,Cikgu Hatta
 STPM P1 2027,PA1,300-H016,Cikgu Hazalina,Tun Perak,46,943.0,4,Tun Perak,PA1,Cikgu Hazalina
 STPM P1 2027,SV1,300-H045,Cikgu Hazira,Munshi Sulaiman,25,800.0,1,Munshi Sulaiman,SV1,Cikgu Hazira
-STPM P1 2027,PA1,300-H004,Cikgu Hazura,Bandar Kota Tinggi,66,1620.0,5,Bandar Kota Tinggi,PA1,Cikgu Hazura
+STPM P1 2027,PA1,300-H004,Cikgu Hazura,Bandar Kota Tinggi,63,1545.0,8,Bandar Kota Tinggi,PA1,Cikgu Hazura
 STPM P1 2027,BM1,300-B008,Cikgu Hidayah,Dato Bentara Dalam,56,840.0,4,Dato Bentara Dalam,BM1,Cikgu Hidayah
 STPM P1 2027,BM1,300-H064,Cikgu Hidayah,STMI,76,1140.0,4,STMI,BM1,Cikgu Hidayah
 STPM P1 2027,EK1,,Cikgu Hilawati,Maktab SAB,0,0.0,2,Maktab SAB,EK1,Cikgu Hilawati
@@ -426,7 +426,7 @@ STPM P1 2027,SJH1,300-R064,Cikgu Rosmawati,SSI Kulai,19,190.0,2,SSI Kulai,SJH1,C
 STPM P1 2027,SJH1,300-R080,Cikgu Rosnah,Bandar Kota Tinggi,24,240.0,2,Bandar Kota Tinggi,SJH1,Cikgu Rosnah
 STPM P1 2027,PA1,300-R004,Cikgu Rosnani,Ulu Tiram,235,5511.0,6,Ulu Tiram,PA1,Cikgu Rosnani
 STPM P1 2027,PA1,300-R006,Cikgu Rosrina,Pasir Gudang 2,0,0.0,2,Pasir Gudang 2,PA1,Cikgu Rosrina
-STPM P1 2027,PA1,300-A009,Cikgu Rozainah @ Cikgu Ann,Agama Bandar Penawar,90,2250.0,3,Agama Bandar Penawar,PA1,Cikgu Rozainah @ Cikgu Ann
+STPM P1 2027,PA1,300-A009,Cikgu Rozainah @ Cikgu Ann,Agama Bandar Penawar,72,1807.0,6,Agama Bandar Penawar,PA1,Cikgu Rozainah @ Cikgu Ann
 STPM P1 2027,PA1,300-R058,Cikgu Rozi,STAR Putra,90,2250.0,3,STAR Putra,PA1,Cikgu Rozi
 STPM P1 2027,EK1,300-R025,Cikgu Rozihan,Sultan Alauddin,14,210.0,3,Sultan Alauddin,EK1,Cikgu Rozihan
 STPM P1 2027,PA1,300-R070,Cikgu Rozilah Rahmat,Iskandar Shah,130,3055.0,6,Iskandar Shah,PA1,Cikgu Rozilah Rahmat
@@ -589,7 +589,7 @@ STPM P3 2026,BM3,300-E014,Cikgu Emizaira,Taman Daya,55,660.0,1,Taman Daya,BM3,Ci
 STPM P3 2026,PA3,300-A057,Cikgu Erma Amzari,Bandar Mas,62,1271.0,2,Bandar Mas,PA3,Cikgu Erma Amzari
 STPM P3 2026,SJH3,300-E011,Cikgu Erna,Bukit Gambir,38,608.0,2,Bukit Gambir,SJH3,Cikgu Erna
 STPM P3 2026,PA3,300-F039,Cikgu Faiz,SAB JB,22,451.0,2,SAB JB,PA3,Cikgu Faiz
-STPM P3 2026,SJH3,300-F008,Cikgu Faizah,Agama Bandar Penawar,20,240.0,3,Agama Bandar Penawar,SJH3,Cikgu Faizah
+STPM P3 2026,SJH3,300-F008,Cikgu Faizah,Agama Bandar Penawar,19,228.0,4,Agama Bandar Penawar,SJH3,Cikgu Faizah
 STPM P3 2026,PA3,300-P013,Cikgu Faizal,Senggarang,0,0.0,4,Senggarang,PA3,Cikgu Faizal
 STPM P3 2026,EK3,300-F033,Cikgu Fakhrul,Iskandar Shah,0,0.0,2,Iskandar Shah,EK3,Cikgu Fakhrul
 STPM P3 2026,PA3,300-F009,Cikgu Farah,Tinggi Segamat,97,2813.0,4,Tinggi Segamat,PA3,Cikgu Farah
