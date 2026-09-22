@@ -47,6 +47,7 @@ G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,84,,NO STOC
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Return,ALQURAN,,-8,,,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,11,,LOW STOCK,G113
 G,,IPGKTHO JABATAN PENGAJIAN MELAYU,DR SITI DAHLIA,Delivery,SINTAKSIS,,1,,LOW STOCK,G113
+G,2026-09-22,Seri Gading,Pejabat,Cheque,PSV,,,0,,G115
 H,2026-09-22,Tun Sardon,Pn Seha,Pending,Pjbt,,,0,,H150
 H,2026-09-21,SDAHA,Pn Chin,Pending,RBT,,,0,,H325
 H,,KV Tanjung Piai,Encik Zulhilmi,Delivery,KV_ARAB2'26,1,33,,LOW SAMPLE,H345
@@ -54,6 +55,8 @@ I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
 I,,KV Kota Tinggi,Puan Asyadah,Delivery,KV_ARAB2'26,3,94,,LOW SAMPLE,I460
+J,,Mutiara Rini,Cikgu Najwa,Payment,PA3_MTP,,,,,J275
+J,,Mutiara Rini,Cikgu Najwa,Payment,PA3_NOTA,,,,,J275
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,NO SAMPLE AND NO STOCK,J475
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-9,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
@@ -66,4 +69,4 @@ L,2026-09-15,Agama Bandar Penawar,Sharifah,Deliver,RBT,,6.0,1#,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-22 10:30:55
+# Last Sync Check: 2026-09-22 11:00:54
