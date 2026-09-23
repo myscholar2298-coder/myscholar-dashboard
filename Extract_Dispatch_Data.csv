@@ -1,8 +1,8 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
 A,,KV Datuk Seri Mohd Zin,Puan Aishah,Delivery,KV_ARAB2'26,1,80,,LOW SAMPLE,A125
 A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH1_MTP,,10,,NO STOCK,A150
-B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,NO STOCK,B100
-B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,NO STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,LOW STOCK,B100
+B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,LOW STOCK,B100
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,2026-09-15,Air Molek,Nadia,Deliver,RBT,,,1#,,B300
 B,,KV Melaka Tengah,Encik Farhan,Delivery,KV_ARAB2'26,3,98,,LOW SAMPLE,B375
@@ -44,6 +44,9 @@ G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Return,ALQURAN,,-8,,,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,11,,LOW STOCK,G113
 G,,IPGKTHO JABATAN PENGAJIAN MELAYU,DR SITI DAHLIA,Delivery,SINTAKSIS,,1,,LOW STOCK,G113
 G,2026-09-22,Seri Gading,Pejabat,Cheque,PSV,,,0,,G115
+G,,Tinggi Kluang,Cikgu Fauzan,Return,PA1_MTP,,-22,,,G400
+G,,Tinggi Kluang,Cikgu Fauzan,Return,PA3_MTP,,-4,,,G400
+G,,Tinggi Kluang,Cikgu Fauzan,Return,PA3_NOTA,,-4,,,G400
 G,2026-09-17,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,1.0,2#,,G475
 H,2026-09-22,Tun Sardon,Pn Seha,Deliver,Pjbt,,,1,,H150
 H,2026-09-21,SDAHA,Pn Chin,Deliver,RBT,,,1,,H325
@@ -58,4 +61,4 @@ J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,,4,,,J560
 J,2026-09-22,Bandar Baru Uda,Pejabat,Cheque,PSV,,,0,,J605
 
-# Last Sync Check: 2026-09-23 12:30:40
+# Last Sync Check: 2026-09-23 13:01:06
