@@ -25,13 +25,9 @@ C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
-D,2026-09-17,Sains Muar,En Yuzri,Deliver,Makmal,,1.0,1#,,D475
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK1_LEMB,,,,,D500
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK3_RUJ,,,,,D500
-D,2026-09-17,Parit Bunga,Pejabat,Cheque,PSV,,,0,,D500
 E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
-E,2026-09-14,Raja Muda,Pejabat,Cheque,,,,0,,E200
-E,2026-09-17,Raja Muda,Halimah (Cash),Deliver,PSV,,1.0,1#,,E200
 E,,Tengku Mahkota,Cikgu Norazlina,Payment,PA1_NOTA,,,,,E250
 E,,KV Muar,Ustazah Irdina,Delivery,KV_ARAB2'26,1,103,,LOW SAMPLE,E525
 F,,TIGS,Cikgu Riena,Return,PA1_MTP,,,,,F100
@@ -61,4 +57,4 @@ J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,,4,,,J560
 J,2026-09-22,Bandar Baru Uda,Pejabat,Cheque,PSV,,,0,,J605
 
-# Last Sync Check: 2026-09-23 16:01:23
+# Last Sync Check: 2026-09-23 16:31:00
