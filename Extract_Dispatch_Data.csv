@@ -16,7 +16,7 @@ B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,2026-09-24,Tenang Stesen,Hisham,Pending,PSV,,,0,,C425
+C,2026-09-24,Tenang Stesen,Hisham,Pending,PSV,,,0,K   +Sumbangan,C425
 C,,KV Segamat,Puan Norfarahin (KOP),Delivery,KV_ARAB2'26,2,75,,LOW SAMPLE,C510
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
@@ -60,5 +60,7 @@ J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-9,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,,4,,,J560
 J,2026-09-22,Bandar Baru Uda,Pejabat,Cheque,PSV,,,0,,J605
+K,2026-09-24,Desa Cemerlang,Baizura,Pending,PSV,,,0,,K225
+K,2026-09-24,Pasir Putih,,Pending,PSV,,,0,,K525
 
-# Last Sync Check: 2026-09-24 12:30:38
+# Last Sync Check: 2026-09-24 13:00:17
