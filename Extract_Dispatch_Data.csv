@@ -34,7 +34,7 @@ F,,TIGS,Cikgu Riena,Return,PA1_MTP,,,,,F100
 F,,TIGS,Cikgu Riena,Return,PA1_NOTA,,,,,F100
 F,2026-09-17,Dato Onn,Pejabat,Cheque,PSV,,,0,,F300
 G,2026-09-22,Munshi Sulaiman,Pejabat,Cheque,Moral,,,0,,G100
-G,2026-09-22,Munshi Sulaiman,Rohaiza,Pending,Moral,,,0,,G100
+G,2026-09-22,Munshi Sulaiman,Rohaiza,Deliver,Moral,,1.0,1#,,G100
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,84,,NO STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,USTAZ HAZLI,Return,ALQURAN,,-8,,,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,11,,LOW STOCK,G113
@@ -62,8 +62,8 @@ J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-9,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,,4,,,J560
 J,2026-09-22,Bandar Baru Uda,Pejabat,Cheque,PSV,,,0,,J605
-K,2026-09-24,Desa Cemerlang,Baizura,Pending,PSV,,,0,,K225
+K,2026-09-24,Desa Cemerlang,Baizura,Deliver,PSV,,1.0,1#,,K225
 K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
 K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,0,,K525
 
-# Last Sync Check: 2026-09-24 17:00:19
+# Last Sync Check: 2026-09-24 17:30:17
