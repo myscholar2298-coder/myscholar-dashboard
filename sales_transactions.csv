@@ -1,6 +1,6 @@
 File_Source,Subject,Book_Title,School_Name,Teacher,Phase,Quantity,Unit_Price,Total_Value,Explicit_Debtor
-GKT LK 2026,GKT4,GKT4_LEMB,Dato Hj Talib Karim,Cikgu Norazura,1ST,25,34.0,850.0,300-N092
-GKT LK 2026,GKT4,GKT4_LEMB,Dato Hj Talib Karim,Cikgu Norazura,5TH,1,34.0,34.0,300-N092
+GKT LK 2026,GKT4,GKT4_LEMB,Dato Hj Talib Karim,Cikgu Nor Azura,1ST,25,34.0,850.0,300-K073
+GKT LK 2026,GKT4,GKT4_LEMB,Dato Hj Talib Karim,Cikgu Nor Azura,5TH,1,34.0,34.0,300-K073
 GKT LK 2026,GKT4,GKT4_LEMB,Sultan Alauddin,Cikgu Nurul Sima'a,1ST,10,34.0,340.0,300-N056
 GKT LK 2026,GKT4,GKT4_LEMB,Sultan Alauddin,Cikgu Nurul Sima'a,2ND,-1,34.0,-34.0,300-N056
 GKT LK 2026,GKT4,GKT4_LEMB,Sultan Alauddin,Cikgu Nurul Sima'a,5TH,1,34.0,34.0,300-N056
@@ -106,9 +106,10 @@ GKT LK 2026,GKT4,GKT4_LEMB,Taman Kota Jaya,Cikgu Yusuf,1ST,30,34.0,1020.0,300-Y0
 GKT LK 2026,GKT4,GKT4_LEMB,Taman Kota Jaya,Cikgu Yusuf,5TH,1,34.0,34.0,300-Y001
 GKT LK 2026,GKT4,GKT4_LEMB,Impian Emas,Cikgu Nurazreen,1ST,18,34.0,612.0,
 GKT LK 2026,GKT4,GKT4_LEMB,Impian Emas,Cikgu Nurazreen,5TH,1,34.0,34.0,
-GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,1ST,20,34.0,680.0,300-Z052
-GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,2ND,4,34.0,136.0,300-Z052
-GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,3RD,2,34.0,68.0,300-Z052
+GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,1ST,20,34.0,680.0,300-S114
+GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,5TH,2,34.0,68.0,300-S114
+GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,1ST,4,34.0,136.0,300-Z052
+GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,2ND,2,34.0,68.0,300-Z052
 GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti,Cikgu Zunnurain,5TH,2,34.0,68.0,300-Z052
 GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti 2,Cikgu Fara Adhwa,1ST,10,34.0,340.0,300-F048
 GKT LK 2026,GKT4,GKT4_LEMB,Taman Universiti 2,Cikgu Fara Adhwa,2ND,-1,34.0,-34.0,300-F048
@@ -174,10 +175,10 @@ GKT LK 2026,GKT4,GKT4_LEMB,Pasir Putih,Cikgu Suhaili,1ST,40,34.0,1360.0,300-S227
 GKT LK 2026,GKT4,GKT4_LEMB,Pasir Putih,Cikgu Suhaili,5TH,1,34.0,34.0,300-S227
 GKT LK 2026,GKT4,GKT4_LEMB,Anjung Batu,Cikgu Azmir,1ST,10,34.0,340.0,300-A051
 GKT LK 2026,GKT4,GKT4_LEMB,Anjung Batu,Cikgu Azmir,5TH,1,34.0,34.0,300-A051
-GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Dato Hj Talib Karim,Cikgu Norazura,1ST,25,30.0,750.0,300-N092
-GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Norazura,1ST,15,25.0,375.0,300-N092
-GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Norazura,2ND,3,25.0,75.0,300-N092
-GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Norazura,5TH,1,25.0,25.0,300-N092
+GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Dato Hj Talib Karim,Cikgu Nor Azura,1ST,25,30.0,750.0,300-K073
+GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Nor Azura,1ST,15,25.0,375.0,300-K073
+GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Nor Azura,2ND,3,25.0,75.0,300-K073
+GKT LK 2026,GKT5 & SPM,GKT_SPM,Dato Hj Talib Karim,Cikgu Nor Azura,5TH,1,25.0,25.0,300-K073
 GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Sultan Alauddin,Cikgu Nurul Sima'a,1ST,8,30.0,240.0,300-N056
 GKT LK 2026,GKT5 & SPM,GKT_SPM,Sultan Alauddin,Cikgu Nurul Sima'a,5TH,1,25.0,25.0,300-N056
 GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Tun Hj Abdul Malek,Cikgu Hassuriyawati,1ST,17,30.0,510.0,300-H068
@@ -303,9 +304,9 @@ GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Kota Jaya,Cikgu Yusuf,5TH,1,25.0,25.0,300-Y
 GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Impian Emas,Cikgu Nurazreen,1ST,16,30.0,480.0,
 GKT LK 2026,GKT5 & SPM,GKT_SPM,Impian Emas,Cikgu Nurazreen,1ST,16,25.0,400.0,
 GKT LK 2026,GKT5 & SPM,GKT_SPM,Impian Emas,Cikgu Nurazreen,5TH,1,25.0,25.0,
-GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Taman Universiti,Cikgu Zunnurain,1ST,20,30.0,600.0,300-Z052
-GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti,Cikgu Zunnurain,1ST,19,25.0,475.0,300-Z052
-GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti,Cikgu Zunnurain,5TH,2,25.0,50.0,300-Z052
+GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Taman Universiti,Cikgu Zunnurain,1ST,20,30.0,600.0,300-S114
+GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti,Cikgu Zunnurain,1ST,19,25.0,475.0,300-S114
+GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti,Cikgu Zunnurain,5TH,2,25.0,50.0,300-S114
 GKT LK 2026,GKT5 & SPM,GKT5_LEMB,Taman Universiti 2,Cikgu Fara Adhwa,1ST,10,30.0,300.0,300-F048
 GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti 2,Cikgu Fara Adhwa,1ST,10,25.0,250.0,300-F048
 GKT LK 2026,GKT5 & SPM,GKT_SPM,Taman Universiti 2,Cikgu Fara Adhwa,5TH,1,25.0,25.0,300-F048
