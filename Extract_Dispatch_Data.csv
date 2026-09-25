@@ -45,8 +45,6 @@ H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 J,2026-09-22,Taman Tun Aminah,Sazri,Deliver,PSV,,5.0,1#,,J
 J,2026-09-24,Kiang,,Pending,,,,0,,J120
-J,,Mutiara Rini,Cikgu Najwa,Payment,PA3_MTP,,,,,J275
-J,,Mutiara Rini,Cikgu Najwa,Payment,PA3_NOTA,,,,,J275
 J,2026-09-22,SIGS,Madiha,Deliver,PSV,,1.0,1#,,J460
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,NO SAMPLE AND NO STOCK,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
@@ -55,4 +53,4 @@ K,2026-09-24,Desa Cemerlang,Baizura,Deliver,PSV,,1.0,1#,,K225
 K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
 K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,0,,K525
 
-# Last Sync Check: 2026-09-25 09:30:54
+# Last Sync Check: 2026-09-25 10:00:34
