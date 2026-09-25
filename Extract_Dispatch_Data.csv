@@ -37,7 +37,7 @@ G,,Tinggi Kluang,Cikgu Fauzan,Return,PA1_MTP,,-22,,,G400
 G,,Tinggi Kluang,Cikgu Fauzan,Return,PA3_MTP,,-4,,,G400
 G,,Tinggi Kluang,Cikgu Fauzan,Return,PA3_NOTA,,-4,,,G400
 G,2026-09-25,SSAJ,Pejabat,Cheque,PSV,,,0,,G450
-G,2026-09-24,SSAJ,Farizan,Pending,RBT,,,0,,G450
+G,2026-09-24,SSAJ,Farizan,Deliver,RBT,,2.0,1#,,G450
 G,2026-09-17,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,1.0,2#,,G475
 H,2026-09-22,Tun Sardon,Pn Seha,Deliver,Pjbt,,1.0,2#,,H150
 H,2026-09-21,SDAHA,Pn Chin,Pending,RBT,,,1,,H325
@@ -52,4 +52,4 @@ K,2026-09-25,Taman Molek,Emmy,Pending,PSV,,,0,K,K325
 K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
 K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,0,,K525
 
-# Last Sync Check: 2026-09-25 16:00:40
+# Last Sync Check: 2026-09-25 16:31:05
