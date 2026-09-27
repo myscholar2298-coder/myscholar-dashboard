@@ -1391,7 +1391,14 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
 # ==========================================
 elif main_menu == '💰 3. Top Outstanding Tracking':
   st.title('📈 Outstanding Tracking Dashboard')
-  st.markdown('⚡ *Top 15 Outstanding Debtors Across All Files (Instant Load)*')
+  top_n = st.selectbox(
+      'Show top:',
+      [15, 30, 50, 100, 'All'],
+      index=1,
+  )
+  st.markdown(
+      f'⚡ *Top {top_n} Outstanding Debtors Across All Files (Instant Load)*'
+  )
 
   df_summary = load_outstanding_summary()
 
@@ -1400,7 +1407,7 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
     st.warning('No outstanding summary found. Please run backend sync script.')
   else:
     st.markdown('---')
-    st.subheader('📑 Top 15 Outstanding Debtors Per File Source')
+    st.subheader(f'📑 Top {top_n} Outstanding Debtors Per File Source')
 
     file_sources = sorted(df_summary['File Source'].unique().tolist())
 
@@ -1409,13 +1416,13 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
       df_file_sub = df_summary[df_summary['File Source'] == f_src].copy()
       df_file_sub = (
           df_file_sub.sort_values(by='Outstanding (RM)', ascending=False)
-          .head(15)
+          .head(None if top_n == 'All' else top_n)
           .reset_index(drop=True)
       )
 
       total_file_top15_outstanding = df_file_sub['Outstanding (RM)'].sum()
       st.metric(
-          f'Total Outstanding (Top 15 - {f_src})',
+          f'Total Outstanding (Top {top_n} - {f_src})',
           f'RM {total_file_top15_outstanding:,.2f}',
       )
 
