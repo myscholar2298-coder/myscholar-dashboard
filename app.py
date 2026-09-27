@@ -1427,6 +1427,7 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
           'Net Qty',
           'Outstanding (RM)',
           'Payments Received (RM)',
+          'Credit Notes (RM)',
           'Transactions',
       ]
       df_file_display = df_file_sub[
@@ -1434,7 +1435,11 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
       ]
 
       styled_file_df = (
-          df_file_display.style.format({'Outstanding (RM)': '{:,.2f}'})
+          df_file_display.style.format({
+              'Outstanding (RM)': '{:,.2f}',
+              'Payments Received (RM)': '{:,.2f}',
+              'Credit Notes (RM)': '{:,.2f}',
+          })
           .set_properties(
               subset=['Net Qty', 'Outstanding (RM)', 'Transactions'],
               **{'text-align': 'center'},
