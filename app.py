@@ -1019,7 +1019,11 @@ if main_menu == '🚚 1. Logistic Matrix':
 # FUNCTION 1: CUSTOMER TRANSACTION ANALYSIS
 # ==========================================
 elif main_menu == '👤 2. Customer Transaction Analysis':
-  selected_year = st.selectbox('⚙️ Operational Year', ['2026','2027','2025','2024','2023'], index=0)
+  selected_year = st.selectbox(
+      '⚙️ Operational Year',
+      ['2026', 'All Years', '2027', '2025', '2024', '2023'],
+      index=0,
+  )
   st.title('👤 Customer Transaction Analysis')
 
   default_school_idx = 0
@@ -1190,8 +1194,10 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
         clean_date = raw_date.split(' ')[0] if ' ' in raw_date else raw_date
 
         yr_match = re.search(r'(20\d{2})', raw_date)
-        if selected_year and (
-            not yr_match or yr_match.group(1) != selected_year
+        if (
+            selected_year
+            and selected_year != 'All Years'
+            and (not yr_match or yr_match.group(1) != selected_year)
         ):
           continue
 
@@ -1302,6 +1308,7 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
         yr_match_adj = re.search(r'(20\d{2})', raw_date)
         if (
             selected_year
+            and selected_year != 'All Years'
             and yr_match_adj
             and yr_match_adj.group(1) != selected_year
         ):
@@ -1419,6 +1426,7 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
           'Associated School(s)',
           'Net Qty',
           'Outstanding (RM)',
+          'Payments Received (RM)',
           'Transactions',
       ]
       df_file_display = df_file_sub[
