@@ -1424,7 +1424,7 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
           'Debtor Code',
           'Teacher',
           'Associated School(s)',
-          'Net Qty',
+          'Total Delivered (RM)',
           'Outstanding (RM)',
           'Payments Received (RM)',
           'Credit Notes (RM)',
@@ -1436,6 +1436,7 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
 
       styled_file_df = (
           df_file_display.style.format({
+              'Total Delivered (RM)': '{:,.2f}',
               'Outstanding (RM)': '{:,.2f}',
               'Payments Received (RM)': '{:,.2f}',
               'Credit Notes (RM)': '{:,.2f}',
