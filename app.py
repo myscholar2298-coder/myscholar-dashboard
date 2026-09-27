@@ -1434,13 +1434,19 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
           [c for c in file_cols if c in df_file_sub.columns]
       ]
 
+      _money_cols = [
+          c for c in [
+              'Total Delivered (RM)',
+              'Outstanding (RM)',
+              'Payments Received (RM)',
+              'Credit Notes (RM)',
+          ]
+          if c in df_file_display.columns
+      ]
       styled_file_df = (
-          df_file_display.style.format({
-              'Total Delivered (RM)': '{:,.2f}',
-              'Outstanding (RM)': '{:,.2f}',
-              'Payments Received (RM)': '{:,.2f}',
-              'Credit Notes (RM)': '{:,.2f}',
-          })
+          df_file_display.style.format(
+              {c: '{:,.2f}' for c in _money_cols}
+          )
           .set_properties(
               subset=['Net Qty', 'Outstanding (RM)', 'Transactions'],
               **{'text-align': 'center'},
