@@ -10,15 +10,10 @@ import pandas as pd
 import requests
 import streamlit as st
 
-
-
 # 1. Page Configuration optimized for mobile viewport
-import streamlit as st
-from pathlib import Path
-
 st.set_page_config(
     page_title="MyScholar Operation Center",
-    page_icon=str(Path(__file__).parent / "myscholar_oc_favicon_32.png"),
+    page_icon="favicon.png",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -326,6 +321,50 @@ def get_unit_price_for_book(book_title):
     if not match.empty:
       return float(match['Unit_Price'].iloc[0])
   return 38.0
+
+
+
+def _book_code_parts(name):
+  """Extract (family, form, item) from any book code/title format.
+
+  e.g. 'GKT4_LEMB' -> ('GKT', '4', 'LEMB');  "GKT T4'26" -> ('GKT', '4', None)
+  """
+  words = str(name).upper().strip().replace("'", ' ')
+  t = words.replace(' ', '_')
+  fam = None
+  m = re.search(r'\b(GKT|LK)\b', words) or re.search(r'(GKT|LK)(\d)', t)
+  if m:
+    fam = m.group(1)
+  form = None
+  m = re.search(r'\b(GKT|LK)\s*T\s?(\d)', words) or re.search(
+      r'(GKT|LK)(\d)', t
+  )
+  if m:
+    form = m.group(2)
+  item = None
+  for kw in ('LEMB', 'SPM', 'MTP', 'NOTA', 'RUJ', 'ESEI', 'THEMA', 'MODUL', 'TOP'):
+    if re.search(rf'\b{kw}\b', words) or t.endswith(f'_{kw}'):
+      item = kw
+      break
+  return fam, form, item
+
+
+def _match_book_code(code_clean, valid_books):
+  """Match a payment-description code (GKT4_LEMB) to a sales book title
+  (GKT T4'26) via family/form/item compatibility."""
+  df_, dm, di = _book_code_parts(code_clean)
+  for b in valid_books:
+    bf, bm, bi = _book_code_parts(b)
+
+    def _c(x, y):
+      return x is None or y is None or x == y
+
+    if (
+        _c(df_, bf) and _c(dm, bm) and _c(di, bi)
+        and ((df_ and df_ == bf) or (di and di == bi))
+    ):
+      return b
+  return None
 
 
 master_sales_df, master_ledger_df, master_stock_summary_df, df_payment, df_adjustments = load_all_preprocessed_data()
@@ -1150,7 +1189,10 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
 
         clean_date = raw_date.split(' ')[0] if ' ' in raw_date else raw_date
 
-        if selected_year and not clean_date.startswith(selected_year):
+        yr_match = re.search(r'(20\d{2})', raw_date)
+        if selected_year and (
+            not yr_match or yr_match.group(1) != selected_year
+        ):
           continue
 
         desc = str(
@@ -1178,9 +1220,15 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
               ):
                 matched_book = b
                 break
+            if not matched_book:
+              matched_book = _match_book_code(code_clean, valid_books)
 
             if matched_book:
-              u_price = get_unit_price_for_book(matched_book)
+              mp_desc = get_master_price(code_clean)
+              u_price = (
+                  mp_desc if mp_desc is not None
+                  else get_unit_price_for_book(matched_book)
+              )
               sub_val = qty * u_price
               parsed_payment_val += sub_val
               parsed_details.append(
@@ -1251,11 +1299,11 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
         raw_date = str(row.iloc[0] if len(row) > 0 else '')
         clean_date = raw_date.split(' ')[0] if ' ' in raw_date else raw_date
 
+        yr_match_adj = re.search(r'(20\d{2})', raw_date)
         if (
             selected_year
-            and clean_date
-            and not clean_date.startswith(selected_year)
-            and '202' in clean_date
+            and yr_match_adj
+            and yr_match_adj.group(1) != selected_year
         ):
           continue
 
@@ -1751,5 +1799,4 @@ elif main_menu == '📦 6. Purchase and Return Analysis':
       )
 
       st.dataframe(styled_ledger, use_container_width=True)
-
 
