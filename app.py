@@ -1448,7 +1448,16 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
               {c: '{:,.2f}' for c in _money_cols}
           )
           .set_properties(
-              subset=['Net Qty', 'Outstanding (RM)', 'Transactions'],
+              subset=[
+                  c for c in [
+                      'Total Delivered (RM)',
+                      'Outstanding (RM)',
+                      'Payments Received (RM)',
+                      'Credit Notes (RM)',
+                      'Transactions',
+                  ]
+                  if c in df_file_display.columns
+              ],
               **{'text-align': 'center'},
           )
           .set_table_styles([{'selector': 'th', 'props': [('text-align', 'center')]}])
