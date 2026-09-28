@@ -22,6 +22,8 @@ C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
 C,2026-09-28,Gemereh,Fatin (Cash),Deliver,PSV,,1.0,1#,,C700
 E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
+E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
+E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 G,2026-09-22,Munshi Sulaiman,Pejabat,Cheque,Moral,,,0,,G100
 G,2026-09-25,Munshi Sulaiman,Azwan,Pending,PSV,,,0,,G100
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,47,,NO STOCK,G113
@@ -39,6 +41,8 @@ H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Bandar Putra 2,Pejabat,Cheque,RBT,,,0,,I210
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
 J,2026-09-24,Kiang,,Pending,,,,0,,J120
+J,,Mutiara Rini,Cikgu Hairiyah,Payment,EK1_LEMB,,,,,J275
+J,,Mutiara Rini,Cikgu Hairiyah,Return,EK1_LEMB,,,,,J275
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 K,2026-09-24,Desa Cemerlang,Baizura,Deliver,PSV,,1.0,1#,,K225
@@ -47,4 +51,4 @@ K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
 K,2026-09-24,Pasir Putih,Rodiah,Deliver,PSV,,,1#,,K525
 K,2026-09-28,Pasir Putih,Rodiah,Pending,PSV,,,0,K,K525
 
-# Last Sync Check: 2026-09-28 15:00:46
+# Last Sync Check: 2026-09-28 15:30:41
