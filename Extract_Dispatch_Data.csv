@@ -36,6 +36,7 @@ H,2026-09-21,SDAHA,Pn Chin,Pending,RBT,,,1,,H325
 H,2026-09-23,Tan Sri Osman Saat,Zatil,Deliver,RBT,,1.0,1#,,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
+I,2026-09-28,Bandar Putra 2,Pejabat,Cheque,RBT,,,0,,I210
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
 J,2026-09-24,Kiang,,Pending,,,,0,,J120
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
@@ -46,4 +47,4 @@ K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
 K,2026-09-24,Pasir Putih,Rodiah,Deliver,PSV,,,1#,,K525
 K,2026-09-28,Pasir Putih,Rodiah,Pending,PSV,,,0,K,K525
 
-# Last Sync Check: 2026-09-28 12:30:34
+# Last Sync Check: 2026-09-28 13:00:57
