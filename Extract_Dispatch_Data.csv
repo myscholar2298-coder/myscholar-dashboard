@@ -37,6 +37,7 @@ H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Bandar Putra 2,Pejabat,Cheque,RBT,,,0,,I210
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
+J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,0,K,J
 J,2026-09-24,Kiang,,Pending,,,,0,,J120
 J,,Mutiara Rini,Cikgu Hairiyah,Payment,EK1_LEMB,,,,,J275
 J,,Mutiara Rini,Cikgu Hairiyah,Return,EK1_LEMB,,,,,J275
@@ -46,7 +47,7 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Delivery,,,,0,Chop Document,J605
 K,2026-09-24,Desa Cemerlang,Baizura,Deliver,PSV,,1.0,1#,,K225
 K,2026-09-25,Taman Molek,Emmy,Deliver,PSV,,,1,K,K325
 K,,Pasir Gudang 2,Cikgu Sumar,Return,PA3_MTP,,-2,,,K425
-K,2026-09-24,Pasir Putih,Rodiah,Deliver,PSV,,,1#,,K525
 K,2026-09-28,Pasir Putih,Rodiah,Pending,PSV,,,0,K,K525
+N,NaT,NaT,NaT,NaT,NaT,,,NaT,NaT,NaT
 
-# Last Sync Check: 2026-09-29 11:30:49
+# Last Sync Check: 2026-09-29 12:00:56
