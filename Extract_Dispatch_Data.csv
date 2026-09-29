@@ -7,10 +7,12 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOC
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
+C,2026-09-29,Labis,Pejabat,Cheque,,,,0,,C300
+C,2026-09-29,Munshi Ibrahim,Pejabat,Cheque,RBT,,,0,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,2026-09-24,Tenang Stesen,Hisham,Deliver,PSV,,,0,+Sumbangan,C425
+C,2026-09-24,Tenang Stesen,Hisham,Deliver,PSV,,2.0,1#,+Sumbangan,C425
 C,,KV Segamat,Puan Norfarahin (KOP),Delivery,KV_ARAB2'26,2,75,,LOW SAMPLE,C510
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
@@ -24,11 +26,8 @@ C,2026-09-28,Gemereh,Fatin (Cash),Deliver,PSV,,1.0,1#,,C700
 E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
-G,2026-09-22,Munshi Sulaiman,Pejabat,Cheque,Moral,,,0,,G100
 G,2026-09-25,Munshi Sulaiman,Azwan,Pending,PSV,,,0,,G100
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOCK,G113
-H,2026-09-21,SDAHA,Pn Chin,Deliver,RBT,,1.0,2#,,H325
-H,2026-09-23,Tan Sri Osman Saat,Zatil,Deliver,RBT,,1.0,1#,,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Bandar Putra 2,Pejabat,Cheque,RBT,,,0,,I210
@@ -44,4 +43,4 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Delivery,,,,0,Chop Document,J605
 K,2026-09-25,Taman Molek,Emmy,Pending,PSV,,,1,,K325
 K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,1,,K525
 
-# Last Sync Check: 2026-09-29 17:00:47
+# Last Sync Check: 2026-09-29 17:30:49
