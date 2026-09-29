@@ -34,7 +34,8 @@ H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Bandar Putra 2,Pejabat,Cheque,RBT,,,0,,I210
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,0,K,J
-J,2026-09-24,Kiang,,Pending,,,,0,,J120
+J,NaT,Kiang,,Pending,,,,0,,J120
+J,2026-09-29,Damai Jaya,Pejabat,Delivery,,,,0,Hantar doc & Chop Document,J200
 J,,Mutiara Rini,Cikgu Hairiyah,Payment,EK1_LEMB,,,,,J275
 J,,Mutiara Rini,Cikgu Hairiyah,Return,EK1_LEMB,,,,,J275
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
@@ -43,4 +44,4 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Delivery,,,,0,Chop Document,J605
 K,2026-09-25,Taman Molek,Emmy,Pending,PSV,,,1,,K325
 K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,1,,K525
 
-# Last Sync Check: 2026-09-29 15:30:11
+# Last Sync Check: 2026-09-29 16:00:14
