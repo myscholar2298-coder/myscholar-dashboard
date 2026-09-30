@@ -27,6 +27,7 @@ E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 G,2026-09-25,Munshi Sulaiman,Azwan,Pending,PSV,,,0,,G100
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOCK,G113
+H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
@@ -35,9 +36,10 @@ J,NaT,Kiang,,Pending,,,,0,,J120
 J,2026-09-29,Damai Jaya,Pejabat,Deliver,,,1.0,0,Hantar doc & Chop Document,J200
 J,,Mutiara Rini,Cikgu Hairiyah,Payment,EK1_LEMB,,,,,J275
 J,,Mutiara Rini,Cikgu Hairiyah,Return,EK1_LEMB,,,,,J275
+J,2026-09-30,Dato Usman Awang,Pejabat,Cheque,PSV,,,0,,J375
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,2026-09-28,Bandar Baru Uda,Pejabat,Deliver,,,,0,Chop Document,J605
 K,2026-09-25,Taman Molek,Emmy,Pending,PSV,,,1,,K325
 
-# Last Sync Check: 2026-09-30 11:00:27
+# Last Sync Check: 2026-09-30 11:30:12
