@@ -1,5 +1,4 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,,B100
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,,B100
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
@@ -40,6 +39,5 @@ J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,2026-09-28,Bandar Baru Uda,Pejabat,Delivery,,,,0,Chop Document,J605
 K,2026-09-25,Taman Molek,Emmy,Pending,PSV,,,1,,K325
-K,2026-09-24,Pasir Putih,Rodiah,Pending,PSV,,,1,,K525
 
-# Last Sync Check: 2026-09-30 08:30:34
+# Last Sync Check: 2026-09-30 09:01:02
