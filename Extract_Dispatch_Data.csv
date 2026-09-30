@@ -6,12 +6,9 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOC
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
-C,2026-09-29,Labis,Pejabat,Cheque,,,,0,,C300
-C,2026-09-29,Munshi Ibrahim,Pejabat,Cheque,RBT,,,0,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,2026-09-24,Tenang Stesen,Hisham,Deliver,PSV,,2.0,1#,+Sumbangan,C425
 C,,KV Segamat,Puan Norfarahin (KOP),Delivery,KV_ARAB2'26,2,75,,LOW SAMPLE,C510
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
@@ -21,7 +18,6 @@ C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
-C,2026-09-28,Gemereh,Fatin (Cash),Deliver,PSV,,1.0,1#,,C700
 E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
@@ -45,4 +41,4 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Deliver,,,,0,Chop Document,J605
 K,2026-09-30,JJ 1,Syafie,Deliver,PSV,,1.0,0,Doc.: INV 2609-047 & 48,K300
 K,2026-09-25,Taman Molek,Emmy,Deliver,PSV,,4.0,2#,,K325
 
-# Last Sync Check: 2026-09-30 16:00:54
+# Last Sync Check: 2026-09-30 16:30:11
