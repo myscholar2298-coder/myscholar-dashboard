@@ -13,6 +13,8 @@ C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,2026-09-30,Tenang Stesen,Hisham,Pending,PSV,,,0,Sumbangan,C425
 E,,Semerah,Cikgu Zalia,Payment,KMK1_RUJ,,,,,E100
 E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
+E,,Tengku Mahkota,Cikgu Norma,Payment,GEO1_LEMB,,,,,E250
+E,,Tengku Mahkota,Cikgu Norma,Payment,GEO1_MTP,,,,,E250
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
@@ -39,4 +41,4 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Deliver,,,,0,Chop Document,J605
 K,2026-09-30,JJ 1,Syafie,Deliver,PSV,,1.0,0,Doc.: INV 2609-047 & 48,K300
 K,2026-09-25,Taman Molek,Emmy,Deliver,PSV,,4.0,2#,,K325
 
-# Last Sync Check: 2026-10-01 15:30:11
+# Last Sync Check: 2026-10-01 16:00:14
