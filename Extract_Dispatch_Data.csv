@@ -1,4 +1,5 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
+A,2026-10-01,Tun Haji Abd Malek,Pejabat,Cheque,PSV,,,0,,A450
 B,,Tun Syed Zahiruddin,Cikgu Zaini,Delivery,PA1_MTP,1,17,,,B100
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
@@ -9,6 +10,7 @@ B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
+C,2026-09-30,Tenang Stesen,Hisham,Pending,PSV,,,0,Sumbangan,C425
 C,,KV Segamat,Puan Norfarahin (KOP),Delivery,KV_ARAB2'26,2,75,,LOW SAMPLE,C510
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
@@ -23,12 +25,14 @@ E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 G,2026-09-25,Munshi Sulaiman,Azwan,Pending,PSV,,,0,,G100
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOCK,G113
+G,2026-10-01,Kluang Barat,Pejabat,Cheque,SAINS,,,0,,G300
 H,2026-09-30,Seri Perhentian,Almy,Pending,PSV,,,0,K,H275
 H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
 I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
+I,2026-09-30,Ulu Tiram,Diana,Pending,PSV,,,0,,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,0,K,J
 J,NaT,Kiang,,Pending,,,,0,,J120
 J,2026-09-29,Damai Jaya,Pejabat,Deliver,,,1.0,0,Hantar doc & Chop Document,J200
@@ -41,4 +45,4 @@ J,2026-09-28,Bandar Baru Uda,Pejabat,Deliver,,,,0,Chop Document,J605
 K,2026-09-30,JJ 1,Syafie,Deliver,PSV,,1.0,0,Doc.: INV 2609-047 & 48,K300
 K,2026-09-25,Taman Molek,Emmy,Deliver,PSV,,4.0,2#,,K325
 
-# Last Sync Check: 2026-10-01 12:00:30
+# Last Sync Check: 2026-10-01 12:30:18
