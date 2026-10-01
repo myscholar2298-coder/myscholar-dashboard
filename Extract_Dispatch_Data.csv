@@ -27,7 +27,7 @@ H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
-I,2026-09-30,Ulu Tiram,Diana,Pending,PSV,,,0,,I550
+I,2026-09-30,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,0,K,J
 J,NaT,Kiang,,Pending,,,,0,,J120
 J,,Skudai,Cikgu Norlaila,Payment,EK1_LEMB,,,,,J325
@@ -35,4 +35,4 @@ J,,Skudai,Cikgu Norlaila,Return,EK1_LEMB,,,,,J325
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 
-# Last Sync Check: 2026-10-01 18:00:13
+# Last Sync Check: 2026-10-01 18:30:23
