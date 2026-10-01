@@ -72,7 +72,7 @@ GKT LK 2026,GKT4,300-S115,Cikgu Salahuddin,Permas Jaya 2,38,1110.0,350.0,760.0,0
 GKT LK 2026,GKT4,300-S235,Cikgu Shaiful,Desa Cemerlang,34,1013.0,0.0,1013.0,0.0,3,Desa Cemerlang,GKT4,Cikgu Shaiful
 GKT LK 2026,GKT4,300-K032,Cikgu Shakira,Bandar T6,87,2503.0,0.0,2503.0,0.0,3,Bandar T6,GKT4,Cikgu Shakira
 GKT LK 2026,GKT4,300-S068,Cikgu Shamsul,Bandar Maharani,42,1207.0,0.0,1207.0,0.0,4,Bandar Maharani,GKT4,Cikgu Shamsul
-GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,0.0,1220.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
+GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,-28.0,1248.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
 GKT LK 2026,GKT4,300-S227,Cikgu Suhaili,Pasir Putih,124,3670.0,0.0,3670.0,0.0,3,Pasir Putih,GKT4,Cikgu Suhaili
 GKT LK 2026,GKT4,300-S130,Cikgu Suraya,Kota Masai,40,1204.0,0.0,1204.0,0.0,6,Kota Masai,GKT4,Cikgu Suraya
 GKT LK 2026,GKT4,300-T003,Cikgu Taufiq,Tun Syed Zahiruddin,22,670.0,670.0,0.0,0.0,3,Tun Syed Zahiruddin,GKT4,Cikgu Taufiq
@@ -116,6 +116,7 @@ KV S2 2026,KV_ARAB2'26,300-K051,Encik Zulhilmi,KV Tanjung Piai,33,594.0,594.0,0.
 KV S2 2026,KV_ARAB2'26,300-A073,Puan Aishah,KV Datuk Seri Mohd Zin,80,1440.0,1440.0,0.0,0.0,1,KV Datuk Seri Mohd Zin,KV_ARAB2'26,Puan Aishah
 KV S2 2026,KV_ARAB2'26,300-K052,Puan Asyadah,KV Kota Tinggi,94,1692.0,1692.0,0.0,0.0,1,KV Kota Tinggi,KV_ARAB2'26,Puan Asyadah
 KV S2 2026,KV_ARAB2'26,300-K075,Puan Izzati,KV Pagoh,40,720.0,720.0,0.0,0.0,1,KV Pagoh,KV_ARAB2'26,Puan Izzati
+KV S2 2026,KV_ARAB2'26,300-K048,Puan Norfarahin (KOP),KV Segamat,75,1350.0,1350.0,0.0,0.0,1,KV Segamat,KV_ARAB2'26,Puan Norfarahin (KOP)
 KV S2 2026,KV_ARAB2'26,300-K050,Ustazah Irdina,KV Muar,103,1854.0,1854.0,0.0,0.0,1,KV Muar,KV_ARAB2'26,Ustazah Irdina
 KV S2 2026,KV_ARAB2'26,300-K033,Ustazah Nor Mastura,KV Kluang,136,2448.0,2448.0,0.0,0.0,1,KV Kluang,KV_ARAB2'26,Ustazah Nor Mastura
 STPM P1 2027,SJH1,300-A082,Abd Rashid,Pulau Sebang,11,110.0,-120.0,230.0,0.0,1,Pulau Sebang,SJH1,Abd Rashid
@@ -586,7 +587,7 @@ STPM P3 2026,SJH3,300-D004,Cikgu Daisy Rani,Maktab SAB,38,456.0,102.0,354.0,0.0,
 STPM P3 2026,SJH3,300-D005,Cikgu Dayang,Tun Syed Zahiruddin,0,0.0,0.0,0.0,0.0,2,Tun Syed Zahiruddin,SJH3,Cikgu Dayang
 STPM P3 2026,PA3,300-D007,Cikgu Dhana,Dato Jaafar,172,3526.0,3526.0,0.0,0.0,4,Dato Jaafar,PA3,Cikgu Dhana
 STPM P3 2026,EK3,,Cikgu Dini,Dato Bentara Dalam,0,0.0,0.0,0.0,0.0,2,Dato Bentara Dalam,EK3,Cikgu Dini
-STPM P3 2026,SJH3,300-E005,Cikgu Effa,Tinggi Segamat,55,1100.0,980.0,120.0,0.0,1,Tinggi Segamat,SJH3,Cikgu Effa
+STPM P3 2026,SJH3,300-E005,Cikgu Effa,Tinggi Segamat,52,1040.0,920.0,120.0,0.0,2,Tinggi Segamat,SJH3,Cikgu Effa
 STPM P3 2026,BM3,300-E014,Cikgu Emizaira,Taman Daya,55,660.0,660.0,0.0,0.0,1,Taman Daya,BM3,Cikgu Emizaira
 STPM P3 2026,PA3,300-A057,Cikgu Erma Amzari,Bandar Mas,62,1271.0,1271.0,0.0,0.0,2,Bandar Mas,PA3,Cikgu Erma Amzari
 STPM P3 2026,SJH3,300-E011,Cikgu Erna,Bukit Gambir,38,608.0,194.0,414.0,0.0,2,Bukit Gambir,SJH3,Cikgu Erna
