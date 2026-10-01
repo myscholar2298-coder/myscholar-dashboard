@@ -27,18 +27,12 @@ H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,,Dato Mohd Yunos Sulaiman,Cikgu Noor Zaihan,Return,BM1_NOTA,,-3,,,H400
-I,2026-09-28,Ulu Tiram,Diana,Deliver,PSV,,1.0,1#,Doc.: INV 2609-034,I550
 I,2026-09-30,Ulu Tiram,Diana,Pending,PSV,,,0,,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,0,K,J
 J,NaT,Kiang,,Pending,,,,0,,J120
-J,2026-09-29,Damai Jaya,Pejabat,Deliver,,,1.0,0,Hantar doc & Chop Document,J200
 J,,Skudai,Cikgu Norlaila,Payment,EK1_LEMB,,,,,J325
 J,,Skudai,Cikgu Norlaila,Return,EK1_LEMB,,,,,J325
-J,2026-09-30,Dato Usman Awang,Pejabat,Cheque,PSV,,,0,,J375
 J,,SAB JB,Cikgu Zubaidah,Delivery,SJH1_MTP,3,50,,LOW SAMPLE,J475
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
-J,2026-09-28,Bandar Baru Uda,Pejabat,Deliver,,,,0,Chop Document,J605
-K,2026-09-30,JJ 1,Syafie,Deliver,PSV,,1.0,0,Doc.: INV 2609-047 & 48,K300
-K,2026-09-25,Taman Molek,Emmy,Deliver,PSV,,4.0,2#,,K325
 
-# Last Sync Check: 2026-10-01 17:30:27
+# Last Sync Check: 2026-10-01 18:00:13
