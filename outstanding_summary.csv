@@ -1,13 +1,13 @@
 File Source,Subject,Debtor Code,Teacher,Associated School(s),Net Qty,Total Delivered (RM),Outstanding (RM),Payments Received (RM),Credit Notes (RM),Transactions,_school,_subject,_teacher
 GKT LK 2026,GKT4,300-A096,Cikgu Adilah,Linggiu,8,252.0,252.0,0.0,0.0,6,Linggiu,GKT4,Cikgu Adilah
 GKT LK 2026,GKT4,300-A129,Cikgu Afiq,Gemereh,30,890.0,890.0,0.0,0.0,3,Gemereh,GKT4,Cikgu Afiq
-GKT LK 2026,GKT4,300-A010,Cikgu Aida,Seri Kenangan,33,979.0,0.0,979.0,0.0,6,Seri Kenangan,GKT4,Cikgu Aida
+GKT LK 2026,GKT4,300-A010,Cikgu Aida,Seri Kenangan,33,979.0,150.0,829.0,0.0,6,Seri Kenangan,GKT4,Cikgu Aida
 GKT LK 2026,GKT4,300-G009,Cikgu Aidah,Seri Bemban,16,480.0,480.0,0.0,0.0,4,Seri Bemban,GKT4,Cikgu Aidah
 GKT LK 2026,GKT4,300-N004,Cikgu Alin,Dato Onn,20,680.0,0.0,680.0,0.0,1,Dato Onn,GKT4,Cikgu Alin
 GKT LK 2026,GKT4,300-A101,Cikgu Anis,Taman Seri Saujana,33,979.0,0.0,979.0,0.0,6,Taman Seri Saujana,GKT4,Cikgu Anis
 GKT LK 2026,GKT5 & SPM,,Cikgu Arif,Tun Sardon,17,425.0,425.0,0.0,0.0,1,Tun Sardon,GKT5 & SPM,Cikgu Arif
 GKT LK 2026,GKT4,300-A007,Cikgu Arifah,SSAJ,37,1115.0,0.0,1115.0,0.0,3,SSAJ,GKT4,Cikgu Arifah
-GKT LK 2026,GKT4,300-A054,Cikgu Arni,Taman Selesa Jaya,11,275.0,275.0,0.0,0.0,5,Taman Selesa Jaya,GKT4,Cikgu Arni
+GKT LK 2026,GKT4,300-A054,Cikgu Arni,Taman Selesa Jaya,11,275.0,0.0,275.0,0.0,5,Taman Selesa Jaya,GKT4,Cikgu Arni
 GKT LK 2026,GKT4,300-A128,Cikgu Atikah,St. Joseph,33,979.0,0.0,979.0,0.0,3,St. Joseph,GKT4,Cikgu Atikah
 GKT LK 2026,GKT4,300-A030,Cikgu Azah,Kota Masai 2,37,1190.0,0.0,1190.0,0.0,2,Kota Masai 2,GKT4,Cikgu Azah
 GKT LK 2026,GKT4,300-A093,Cikgu Azila,Sungai Rambai,25,746.0,0.0,746.0,0.0,4,Sungai Rambai,GKT4,Cikgu Azila
@@ -29,7 +29,7 @@ GKT LK 2026,GKT4,300-E001,Cikgu Erna,Desa Skudai,39,1170.0,0.0,1170.0,0.0,3,Desa
 GKT LK 2026,GKT4,300-F002,Cikgu Fadzil,Seri Kota Puteri,32,1010.0,28.0,982.0,0.0,4,Seri Kota Puteri,GKT4,Cikgu Fadzil
 GKT LK 2026,GKT4,300-F004,Cikgu Faiz,Sagil,48,1540.0,0.0,1540.0,0.0,2,Sagil,GKT4,Cikgu Faiz
 GKT LK 2026,GKT4,300-F048,Cikgu Fara Adhwa,Taman Universiti 2,29,856.0,0.0,856.0,0.0,4,Taman Universiti 2,GKT4,Cikgu Fara Adhwa
-GKT LK 2026,GKT4,300-H001,Cikgu Farhana (KP),Telok Mas,38,1145.0,0.0,1145.0,0.0,4,Telok Mas,GKT4,Cikgu Farhana (KP)
+GKT LK 2026,GKT4,300-H001,Cikgu Farhana (KP),Telok Mas,38,1145.0,30.0,1115.0,0.0,4,Telok Mas,GKT4,Cikgu Farhana (KP)
 GKT LK 2026,GKT4,300-F053,Cikgu Fauzi,Taman Sri Kluang,20,680.0,680.0,0.0,0.0,1,Taman Sri Kluang,GKT4,Cikgu Fauzi
 GKT LK 2026,GKT4,300-H067,Cikgu Hafizul,Tinggi Melaka,31,1002.0,0.0,1002.0,0.0,4,Tinggi Melaka,GKT4,Cikgu Hafizul
 GKT LK 2026,GKT4,300-H003,Cikgu Halimah,Taman Desa Jaya,27,827.0,0.0,827.0,0.0,3,Taman Desa Jaya,GKT4,Cikgu Halimah
@@ -61,8 +61,8 @@ GKT LK 2026,GKT4,300-N005,Cikgu Nurhayati,Bandar Putra,14,476.0,0.0,476.0,0.0,2,
 GKT LK 2026,GKT4,300-N061,Cikgu Nurul Ain,Datuk Bendahara,22,700.0,0.0,700.0,0.0,2,Datuk Bendahara,GKT4,Cikgu Nurul Ain
 GKT LK 2026,GKT4,300-N014,Cikgu Nurul Aini,TIGS,69,2151.0,0.0,2151.0,0.0,4,TIGS,GKT4,Cikgu Nurul Aini
 GKT LK 2026,GKT4,300-A094,Cikgu Nurul Ainshah,Bandar Putra,41,1264.0,0.0,1264.0,0.0,4,Bandar Putra,GKT4,Cikgu Nurul Ainshah
-GKT LK 2026,GKT4,300-N056,Cikgu Nurul Sima'a,Sultan Alauddin,17,546.0,0.0,546.0,0.0,3,Sultan Alauddin,GKT4,Cikgu Nurul Sima'a
-GKT LK 2026,GKT4,300-N003,Cikgu Nurzailah,Taman Molek,102,3013.0,478.0,2535.0,0.0,6,Taman Molek,GKT4,Cikgu Nurzailah
+GKT LK 2026,GKT4,300-N056,Cikgu Nurul Sima'a,Sultan Alauddin,17,546.0,28.0,518.0,0.0,3,Sultan Alauddin,GKT4,Cikgu Nurul Sima'a
+GKT LK 2026,GKT4,300-N003,Cikgu Nurzailah,Taman Molek,102,3013.0,30.0,2983.0,0.0,6,Taman Molek,GKT4,Cikgu Nurzailah
 GKT LK 2026,GKT4,300-G007,Cikgu Qabil,Pasir Gudang 3,70,2185.0,0.0,2185.0,0.0,6,Pasir Gudang 3,GKT4,Cikgu Qabil
 GKT LK 2026,GKT4,300-R002,Cikgu Rafeah,Tinggi BP,25,814.0,814.0,0.0,0.0,3,Tinggi BP,GKT4,Cikgu Rafeah
 GKT LK 2026,GKT4,300-G010,Cikgu Rafidah,Indahpura 1,55,1610.0,0.0,1610.0,0.0,4,Indahpura 1,GKT4,Cikgu Rafidah
@@ -72,8 +72,8 @@ GKT LK 2026,GKT4,300-S115,Cikgu Salahuddin,Permas Jaya 2,38,1110.0,350.0,760.0,0
 GKT LK 2026,GKT4,300-S235,Cikgu Shaiful,Desa Cemerlang,34,1013.0,0.0,1013.0,0.0,3,Desa Cemerlang,GKT4,Cikgu Shaiful
 GKT LK 2026,GKT4,300-K032,Cikgu Shakira,Bandar T6,87,2503.0,0.0,2503.0,0.0,3,Bandar T6,GKT4,Cikgu Shakira
 GKT LK 2026,GKT4,300-S068,Cikgu Shamsul,Bandar Maharani,42,1207.0,0.0,1207.0,0.0,4,Bandar Maharani,GKT4,Cikgu Shamsul
-GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,-28.0,1248.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
-GKT LK 2026,GKT4,300-S227,Cikgu Suhaili,Pasir Putih,124,3670.0,0.0,3670.0,0.0,3,Pasir Putih,GKT4,Cikgu Suhaili
+GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,0.0,1220.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
+GKT LK 2026,GKT4,300-S227,Cikgu Suhaili,Pasir Putih,124,3670.0,34.0,3636.0,0.0,3,Pasir Putih,GKT4,Cikgu Suhaili
 GKT LK 2026,GKT4,300-S130,Cikgu Suraya,Kota Masai,40,1204.0,0.0,1204.0,0.0,6,Kota Masai,GKT4,Cikgu Suraya
 GKT LK 2026,GKT4,300-T003,Cikgu Taufiq,Tun Syed Zahiruddin,22,670.0,670.0,0.0,0.0,3,Tun Syed Zahiruddin,GKT4,Cikgu Taufiq
 GKT LK 2026,GKT4,300-S156,Cikgu Yusuf,Taman Kota Jaya,60,1920.0,0.0,1920.0,0.0,2,Taman Kota Jaya,GKT4,Cikgu Yusuf
@@ -93,12 +93,12 @@ IPG Aug 2026,PENULISAN,300-N108,DR. NORLIA HANUN,IPGKTHO JAB. ILMU PENDIDIKAN,26
 IPG Aug 2026,PEDAGOGI,300-R065,DR. RASIDAYANTI,IPGKTHO JABATAN ILMU PENDIDIKAN,121,2783.0,0.0,2783.0,0.0,2,IPGKTHO JABATAN ILMU PENDIDIKAN,PEDAGOGI,DR. RASIDAYANTI
 IPG Aug 2026,ENGLISH,300-S359,ENCIK AHMAD SAFWAN,IPGKTHO JABATAN BAHASA,130,2600.0,2600.0,0.0,0.0,1,IPGKTHO JABATAN BAHASA,ENGLISH,ENCIK AHMAD SAFWAN
 IPG Aug 2026,PEDAGOGI,300-K054,ENCIK KHAIRI,IPGKPM JABATAN ILMU PENDIDIKAN,71,1633.0,0.0,1633.0,0.0,4,IPGKPM JABATAN ILMU PENDIDIKAN,PEDAGOGI,ENCIK KHAIRI
-IPG Aug 2026,PENULISAN,300-D008,ENCIK MOHAMAD DAUD,IPGKTI JAB. ILMU PENDIDIKAN,195,4485.0,4485.0,0.0,0.0,3,IPGKTI JAB. ILMU PENDIDIKAN,PENULISAN,ENCIK MOHAMAD DAUD
+IPG Aug 2026,PENULISAN,300-D008,ENCIK MOHAMAD DAUD,IPGKTI JAB. ILMU PENDIDIKAN,195,4485.0,828.0,3657.0,0.0,3,IPGKTI JAB. ILMU PENDIDIKAN,PENULISAN,ENCIK MOHAMAD DAUD
 IPG Aug 2026,FONETIK,300-R087,ENCIK ROSLAN,IPGKPM JABATAN PENGAJIAN MELAYU,30,750.0,750.0,0.0,0.0,1,IPGKPM JABATAN PENGAJIAN MELAYU,FONETIK,ENCIK ROSLAN
 IPG Aug 2026,ENGLISH,300-R063,PN ROSLINA RASDI,IPGKPM JABATAN BAHASA,270,5400.0,0.0,5400.0,0.0,2,IPGKPM JABATAN BAHASA,ENGLISH,PN ROSLINA RASDI
 IPG Aug 2026,ILMU FIQH,300-B010,PUAN BIDAYANA,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,29,870.0,-60.0,930.0,0.0,2,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,ILMU FIQH,PUAN BIDAYANA
 IPG Aug 2026,PENGANTAR BM,300-M068,PUAN MASTINA,IPGKTI JABATAN PENGAJIAN MELAYU,340,7820.0,23.0,7797.0,0.0,2,IPGKTI JABATAN PENGAJIAN MELAYU,PENGANTAR BM,PUAN MASTINA
-IPG Aug 2026,PEDAGOGI,300-M051,PUAN NOR MALISSA,IPGKTI JABATAN ILMU PENDIDIKAN,192,4416.0,4416.0,0.0,0.0,2,IPGKTI JABATAN ILMU PENDIDIKAN,PEDAGOGI,PUAN NOR MALISSA
+IPG Aug 2026,PEDAGOGI,300-M051,PUAN NOR MALISSA,IPGKTI JABATAN ILMU PENDIDIKAN,192,4416.0,1035.0,3381.0,0.0,2,IPGKTI JABATAN ILMU PENDIDIKAN,PEDAGOGI,PUAN NOR MALISSA
 IPG Aug 2026,SINTAKSIS,300-R077,PUAN RIZALINA,IPGKPM JABATAN PENGAJIAN MELAYU,76,1900.0,1900.0,0.0,0.0,1,IPGKPM JABATAN PENGAJIAN MELAYU,SINTAKSIS,PUAN RIZALINA
 IPG Aug 2026,FONETIK,300-A121,TN HJ AHMAD AZMI,IPGKTHO JABATAN PENGAJIAN MELAYU,74,1850.0,0.0,1850.0,0.0,2,IPGKTHO JABATAN PENGAJIAN MELAYU,FONETIK,TN HJ AHMAD AZMI
 IPG Aug 2026,FIQH SIRAH,300-A127,TN HJ MOHD ARAFAT,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,19,304.0,0.0,304.0,0.0,2,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,FIQH SIRAH,TN HJ MOHD ARAFAT
@@ -203,7 +203,7 @@ STPM P1 2027,KMK1,300-F014,Cikgu Fatihah,Ulu Tiram,60,1680.0,-901.0,2581.0,0.0,2
 STPM P1 2027,PA1,300-F015,Cikgu Fatimah,Raja Muda,38,1064.0,-902.0,1966.0,0.0,1,Raja Muda,PA1,Cikgu Fatimah
 STPM P1 2027,SYARIAH1,,Cikgu Fatin,Pasir Gudang 2,0,0.0,0.0,0.0,0.0,2,Pasir Gudang 2,SYARIAH1,Cikgu Fatin
 STPM P1 2027,PA1,300-F012,Cikgu Fauzan,Tinggi Kluang,156,3666.0,-5996.0,9662.0,0.0,4,Tinggi Kluang,PA1,Cikgu Fauzan
-STPM P1 2027,PA1,300-F057,Cikgu Fauziah,Tun Syed Zahiruddin,18,216.0,216.0,0.0,0.0,1,Tun Syed Zahiruddin,PA1,Cikgu Fauziah
+STPM P1 2027,PA1,300-F057,Cikgu Fauziah,Tun Syed Zahiruddin,18,216.0,-60.0,276.0,0.0,1,Tun Syed Zahiruddin,PA1,Cikgu Fauziah
 STPM P1 2027,BM1,300-F049,Cikgu Firdaus,SAB Muar,48,720.0,-1128.0,1848.0,0.0,4,SAB Muar,BM1,Cikgu Firdaus
 STPM P1 2027,PA1,300-F005,Cikgu Fuza,Gelang Patah,180,4500.0,-2354.0,6854.0,0.0,6,Gelang Patah,PA1,Cikgu Fuza
 STPM P1 2027,SJH1,300-G012,Cikgu Gunavathy,KUNTUM,30,300.0,-300.0,600.0,0.0,2,KUNTUM,SJH1,Cikgu Gunavathy
@@ -235,7 +235,7 @@ STPM P1 2027,BM1,300-H036,Cikgu Hasrik,STUDI,25,450.0,-1410.0,1860.0,0.0,3,STUDI
 STPM P1 2027,PP1,300-H042,Cikgu Hatta,Raja Muda,18,180.0,0.0,180.0,0.0,2,Raja Muda,PP1,Cikgu Hatta
 STPM P1 2027,PA1,300-H016,Cikgu Hazalina,Tun Perak,46,943.0,-1456.0,2399.0,0.0,4,Tun Perak,PA1,Cikgu Hazalina
 STPM P1 2027,SV1,300-H045,Cikgu Hazira,Munshi Sulaiman,25,800.0,-1166.0,1966.0,0.0,1,Munshi Sulaiman,SV1,Cikgu Hazira
-STPM P1 2027,PA1,300-H004,Cikgu Hazura,Bandar Kota Tinggi,63,1545.0,-1191.0,2736.0,0.0,8,Bandar Kota Tinggi,PA1,Cikgu Hazura
+STPM P1 2027,PA1,300-H004,Cikgu Hazura,Bandar Kota Tinggi,63,1545.0,-1854.0,3399.0,0.0,8,Bandar Kota Tinggi,PA1,Cikgu Hazura
 STPM P1 2027,BM1,300-B008,Cikgu Hidayah,Dato Bentara Dalam,56,840.0,840.0,0.0,0.0,4,Dato Bentara Dalam,BM1,Cikgu Hidayah
 STPM P1 2027,BM1,300-H064,Cikgu Hidayah,STMI,76,1140.0,0.0,1140.0,0.0,4,STMI,BM1,Cikgu Hidayah
 STPM P1 2027,EK1,,Cikgu Hilawati,Maktab SAB,0,0.0,0.0,0.0,0.0,2,Maktab SAB,EK1,Cikgu Hilawati
@@ -480,7 +480,7 @@ STPM P1 2027,SJH1,300-S258,Cikgu Siti Zarifa,Tun Hussein Onn,19,190.0,190.0,0.0,
 STPM P1 2027,GEO1,300-S302,Cikgu Sri Haryani,Tun Syed Zahiruddin,5,55.0,0.0,55.0,0.0,1,Tun Syed Zahiruddin,GEO1,Cikgu Sri Haryani
 STPM P1 2027,KIMIA1,300-S344,Cikgu Subadhra A.R.V,Penggawa Timur,9,180.0,0.0,180.0,0.0,1,Penggawa Timur,KIMIA1,Cikgu Subadhra A.R.V
 STPM P1 2027,EK1,300-S104,Cikgu Subathirah,SSAJ,58,870.0,870.0,0.0,0.0,3,SSAJ,EK1,Cikgu Subathirah
-STPM P1 2027,PA1,300-S237,Cikgu Suhaily,Lubok China,60,1500.0,-1837.0,3337.0,0.0,3,Lubok China,PA1,Cikgu Suhaily
+STPM P1 2027,PA1,300-S237,Cikgu Suhaily,Lubok China,60,1500.0,-2206.0,3706.0,0.0,3,Lubok China,PA1,Cikgu Suhaily
 STPM P1 2027,SYARIAH1,300-S151,Cikgu Suhaina,Agama Bandar Penawar,10,280.0,130.0,150.0,0.0,1,Agama Bandar Penawar,SYARIAH1,Cikgu Suhaina
 STPM P1 2027,SJH1,300-S155,Cikgu Suhainis,Dato Mohd Yunos Sulaiman,30,300.0,300.0,0.0,0.0,1,Dato Mohd Yunos Sulaiman,SJH1,Cikgu Suhainis
 STPM P1 2027,PA1,300-S341,Cikgu Suhanah,Tinggi BP,15,525.0,0.0,525.0,0.0,1,Tinggi BP,PA1,Cikgu Suhanah
@@ -523,7 +523,7 @@ STPM P1 2027,PA1,300-N114,Cikgu Zaidiah,Sultan Muhammad,25,875.0,-1123.0,1998.0,
 STPM P1 2027,KMK1,300-Z019,Cikgu Zailan,Iskandar Shah,25,780.0,-526.0,1306.0,0.0,3,Iskandar Shah,KMK1,Cikgu Zailan
 STPM P1 2027,KIMIA1,300-Z058,Cikgu Zaimah,Tun Syed Zahiruddin,5,100.0,0.0,100.0,0.0,1,Tun Syed Zahiruddin,KIMIA1,Cikgu Zaimah
 STPM P1 2027,KMK1,300-Z057,Cikgu Zainuddin,STMI,11,260.0,-62.0,322.0,0.0,4,STMI,KMK1,Cikgu Zainuddin
-STPM P1 2027,PA1,300-Z004,Cikgu Zainudin,SAB JB,46,1081.0,47.0,1034.0,0.0,6,SAB JB,PA1,Cikgu Zainudin
+STPM P1 2027,PA1,300-Z004,Cikgu Zainudin,SAB JB,46,1081.0,-1813.0,2894.0,0.0,6,SAB JB,PA1,Cikgu Zainudin
 STPM P1 2027,SJH1,300-Z013,Cikgu Zakiah,Datin Onn Jaafar,20,200.0,-192.0,392.0,0.0,3,Datin Onn Jaafar,SJH1,Cikgu Zakiah
 STPM P1 2027,KMK1,300-Z012,Cikgu Zalia,Semerah,7,308.0,-82.0,390.0,0.0,3,Semerah,KMK1,Cikgu Zalia
 STPM P1 2027,BM1,300-Z027,Cikgu Zaliha,Munshi Sulaiman,12,144.0,144.0,0.0,0.0,3,Munshi Sulaiman,BM1,Cikgu Zaliha
@@ -588,7 +588,7 @@ STPM P3 2026,SJH3,300-D004,Cikgu Daisy Rani,Maktab SAB,38,456.0,102.0,354.0,0.0,
 STPM P3 2026,SJH3,300-D005,Cikgu Dayang,Tun Syed Zahiruddin,0,0.0,0.0,0.0,0.0,2,Tun Syed Zahiruddin,SJH3,Cikgu Dayang
 STPM P3 2026,PA3,300-D007,Cikgu Dhana,Dato Jaafar,172,3526.0,3526.0,0.0,0.0,4,Dato Jaafar,PA3,Cikgu Dhana
 STPM P3 2026,EK3,,Cikgu Dini,Dato Bentara Dalam,0,0.0,0.0,0.0,0.0,2,Dato Bentara Dalam,EK3,Cikgu Dini
-STPM P3 2026,SJH3,300-E005,Cikgu Effa,Tinggi Segamat,52,1040.0,920.0,120.0,0.0,2,Tinggi Segamat,SJH3,Cikgu Effa
+STPM P3 2026,SJH3,300-E005,Cikgu Effa,Tinggi Segamat,52,1040.0,320.0,720.0,0.0,2,Tinggi Segamat,SJH3,Cikgu Effa
 STPM P3 2026,BM3,300-E014,Cikgu Emizaira,Taman Daya,55,660.0,660.0,0.0,0.0,1,Taman Daya,BM3,Cikgu Emizaira
 STPM P3 2026,PA3,300-A057,Cikgu Erma Amzari,Bandar Mas,62,1271.0,1271.0,0.0,0.0,2,Bandar Mas,PA3,Cikgu Erma Amzari
 STPM P3 2026,SJH3,300-E011,Cikgu Erna,Bukit Gambir,38,608.0,194.0,414.0,0.0,2,Bukit Gambir,SJH3,Cikgu Erna
@@ -627,7 +627,7 @@ STPM P3 2026,SJH3,300-H047,Cikgu Hashim,Semerah,16,192.0,-314.0,506.0,0.0,1,Seme
 STPM P3 2026,PA3,300-H006,Cikgu Hasnah,SAB JB,34,697.0,697.0,0.0,0.0,2,SAB JB,PA3,Cikgu Hasnah
 STPM P3 2026,PA3,300-H016,Cikgu Hazalina,Tun Perak,43,516.0,516.0,0.0,0.0,2,Tun Perak,PA3,Cikgu Hazalina
 STPM P3 2026,PA3,300-H004,Cikgu Hazura,Bandar Kota Tinggi,40,820.0,820.0,0.0,0.0,2,Bandar Kota Tinggi,PA3,Cikgu Hazura
-STPM P3 2026,BM3,300-B008,Cikgu Hidayah,Dato Bentara Dalam,58,870.0,-728.0,1598.0,0.0,2,Dato Bentara Dalam,BM3,Cikgu Hidayah
+STPM P3 2026,BM3,300-B008,Cikgu Hidayah,Dato Bentara Dalam,58,870.0,-1568.0,2438.0,0.0,2,Dato Bentara Dalam,BM3,Cikgu Hidayah
 STPM P3 2026,BM3,300-H064,Cikgu Hidayah,STMI,44,660.0,660.0,0.0,0.0,2,STMI,BM3,Cikgu Hidayah
 STPM P3 2026,EK3,,Cikgu Hilawati,Maktab SAB,0,0.0,0.0,0.0,0.0,2,Maktab SAB,EK3,Cikgu Hilawati
 STPM P3 2026,PA3,300-J033,Cikgu Hj Jalil,Tinggi Muar,30,615.0,615.0,0.0,0.0,4,Tinggi Muar,PA3,Cikgu Hj Jalil
@@ -664,7 +664,7 @@ STPM P3 2026,PA3,300-K016,Cikgu Khaira,Sultan Alauddin,26,533.0,533.0,0.0,0.0,2,
 STPM P3 2026,PA3,300-K062,Cikgu Khairuddin,Dato Seth,46,943.0,943.0,0.0,0.0,2,Dato Seth,PA3,Cikgu Khairuddin
 STPM P3 2026,BIO3,300-K059,Cikgu Khairul,Tun Syed Zahiruddin,2,72.0,72.0,0.0,0.0,2,Tun Syed Zahiruddin,BIO3,Cikgu Khairul
 STPM P3 2026,PA3,300-P018,Cikgu Khairul,Dato Bentara Dalam,11,319.0,319.0,0.0,0.0,1,Dato Bentara Dalam,PA3,Cikgu Khairul
-STPM P3 2026,SJH3,300-K031,Cikgu Khairus,Tinggi Segamat,55,660.0,-740.0,1400.0,0.0,1,Tinggi Segamat,SJH3,Cikgu Khairus
+STPM P3 2026,SJH3,300-K031,Cikgu Khairus,Tinggi Segamat,55,660.0,-1112.0,1772.0,0.0,1,Tinggi Segamat,SJH3,Cikgu Khairus
 STPM P3 2026,PA3,300-K021,Cikgu Khalid,Munshi Abdullah,34,986.0,986.0,0.0,0.0,1,Munshi Abdullah,PA3,Cikgu Khalid
 STPM P3 2026,PA3,300-L012,Cikgu Lasiah Ahmad,STUDI,36,1044.0,1044.0,0.0,0.0,2,STUDI,PA3,Cikgu Lasiah Ahmad
 STPM P3 2026,EK3,300-L007,Cikgu Lau,KUNTUM,0,0.0,0.0,0.0,0.0,2,KUNTUM,EK3,Cikgu Lau
@@ -678,7 +678,7 @@ STPM P3 2026,PA3,300-M082,Cikgu Mardiah (KP),Penggawa Timur,139,3334.0,3334.0,0.
 STPM P3 2026,PA3,300-M011,Cikgu Mardziah,Semerah,17,493.0,493.0,0.0,0.0,1,Semerah,PA3,Cikgu Mardziah
 STPM P3 2026,SJH3,300-M023,Cikgu Maria,Parit Bunga,28,448.0,230.0,218.0,0.0,2,Parit Bunga,SJH3,Cikgu Maria
 STPM P3 2026,PA3,300-K018,Cikgu Mariah (Kop),KUNTUM,351,7348.0,7348.0,0.0,0.0,11,KUNTUM,PA3,Cikgu Mariah (Kop)
-STPM P3 2026,SJH3,300-M024,Cikgu Marini,Johor Jaya 1,120,1816.0,-1426.0,3242.0,0.0,5,Johor Jaya 1,SJH3,Cikgu Marini
+STPM P3 2026,SJH3,300-M024,Cikgu Marini,Johor Jaya 1,120,1816.0,-1886.0,3702.0,0.0,5,Johor Jaya 1,SJH3,Cikgu Marini
 STPM P3 2026,PA3,300-M039,Cikgu Maya,Sultan Alauddin,28,659.0,659.0,0.0,0.0,3,Sultan Alauddin,PA3,Cikgu Maya
 STPM P3 2026,PA3,300-M054,Cikgu Mazamahdi,Johor Jaya 1,130,3770.0,3770.0,0.0,0.0,2,Johor Jaya 1,PA3,Cikgu Mazamahdi
 STPM P3 2026,SJH3,300-M046,Cikgu Mazlaini,Lubok China,24,288.0,288.0,0.0,0.0,1,Lubok China,SJH3,Cikgu Mazlaini
@@ -703,7 +703,7 @@ STPM P3 2026,EK3,300-N127,Cikgu Nazri,Bukit Gambir,17,510.0,510.0,0.0,0.0,1,Buki
 STPM P3 2026,EK3,300-N097,Cikgu Neraiza Nen,Bandar Easter,17,510.0,255.0,255.0,0.0,1,Bandar Easter,EK3,Cikgu Neraiza Nen
 STPM P3 2026,EK3,300-N148,Cikgu Nizam,Munshi Abdullah,47,1410.0,-506.0,1916.0,0.0,1,Munshi Abdullah,EK3,Cikgu Nizam
 STPM P3 2026,AKAUN3,300-N158,Cikgu Noor Fadhlina,Munshi Abdullah,22,748.0,-504.0,1252.0,0.0,1,Munshi Abdullah,AKAUN3,Cikgu Noor Fadhlina
-STPM P3 2026,BM3,300-N020,Cikgu Noor Zaihan,Dato Mohd Yunos Sulaiman,35,630.0,198.0,432.0,0.0,1,Dato Mohd Yunos Sulaiman,BM3,Cikgu Noor Zaihan
+STPM P3 2026,BM3,300-N020,Cikgu Noor Zaihan,Dato Mohd Yunos Sulaiman,35,630.0,-486.0,1116.0,0.0,1,Dato Mohd Yunos Sulaiman,BM3,Cikgu Noor Zaihan
 STPM P3 2026,SJH3,300-N135,Cikgu Nor Azela,Seri Medan,13,156.0,-320.0,476.0,0.0,1,Seri Medan,SJH3,Cikgu Nor Azela
 STPM P3 2026,SJH3,300-A025,Cikgu Nor Aziah,Bandar Tenggara,15,180.0,-270.0,450.0,0.0,1,Bandar Tenggara,SJH3,Cikgu Nor Aziah
 STPM P3 2026,SJH3,300-A059,Cikgu Nor Azizan,STMI,0,0.0,0.0,0.0,0.0,2,STMI,SJH3,Cikgu Nor Azizan
@@ -725,7 +725,7 @@ STPM P3 2026,EK3,300-H100,Cikgu Norhafizah,Tinggi Muar,20,600.0,600.0,0.0,0.0,1,
 STPM P3 2026,SJH3,300-S261,Cikgu Norhayati,Penggawa Timur,95,1204.0,1204.0,0.0,0.0,2,Penggawa Timur,SJH3,Cikgu Norhayati
 STPM P3 2026,AKAUN3,300-N141,Cikgu Norisah,Tinggi Melaka,20,680.0,680.0,0.0,0.0,1,Tinggi Melaka,AKAUN3,Cikgu Norisah
 STPM P3 2026,EK3,300-N084,Cikgu Norizah,Kolej T6 Pontian,22,660.0,0.0,660.0,0.0,1,Kolej T6 Pontian,EK3,Cikgu Norizah
-STPM P3 2026,EK3,300-N040,Cikgu Norlaila,Skudai,40,1200.0,-630.0,1830.0,0.0,3,Skudai,EK3,Cikgu Norlaila
+STPM P3 2026,EK3,300-N040,Cikgu Norlaila,Skudai,40,1200.0,-1110.0,2310.0,0.0,3,Skudai,EK3,Cikgu Norlaila
 STPM P3 2026,PA3,300-N091,Cikgu Norlyda,Sultan Alauddin,36,738.0,738.0,0.0,0.0,2,Sultan Alauddin,PA3,Cikgu Norlyda
 STPM P3 2026,BIO3,300-N079,Cikgu Normala,Tun Habab,2,72.0,72.0,0.0,0.0,2,Tun Habab,BIO3,Cikgu Normala
 STPM P3 2026,BM3,300-N098,Cikgu Normalawati,Tengku Mahkota,60,900.0,900.0,0.0,0.0,2,Tengku Mahkota,BM3,Cikgu Normalawati
