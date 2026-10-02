@@ -72,7 +72,7 @@ GKT LK 2026,GKT4,300-S115,Cikgu Salahuddin,Permas Jaya 2,38,1110.0,350.0,760.0,0
 GKT LK 2026,GKT4,300-S235,Cikgu Shaiful,Desa Cemerlang,34,1013.0,0.0,1013.0,0.0,3,Desa Cemerlang,GKT4,Cikgu Shaiful
 GKT LK 2026,GKT4,300-K032,Cikgu Shakira,Bandar T6,87,2503.0,0.0,2503.0,0.0,3,Bandar T6,GKT4,Cikgu Shakira
 GKT LK 2026,GKT4,300-S068,Cikgu Shamsul,Bandar Maharani,42,1207.0,0.0,1207.0,0.0,4,Bandar Maharani,GKT4,Cikgu Shamsul
-GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,-28.0,1248.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
+GKT LK 2026,GKT4,300-A004,Cikgu Siti Aisyah,Dato Jaafar,38,1220.0,0.0,1220.0,0.0,2,Dato Jaafar,GKT4,Cikgu Siti Aisyah
 GKT LK 2026,GKT4,300-S227,Cikgu Suhaili,Pasir Putih,124,3670.0,0.0,3670.0,0.0,3,Pasir Putih,GKT4,Cikgu Suhaili
 GKT LK 2026,GKT4,300-S130,Cikgu Suraya,Kota Masai,40,1204.0,0.0,1204.0,0.0,6,Kota Masai,GKT4,Cikgu Suraya
 GKT LK 2026,GKT4,300-T003,Cikgu Taufiq,Tun Syed Zahiruddin,22,670.0,670.0,0.0,0.0,3,Tun Syed Zahiruddin,GKT4,Cikgu Taufiq
@@ -367,7 +367,7 @@ STPM P1 2027,SJH1,300-S261,Cikgu Norhayati,Penggawa Timur,128,1280.0,-2320.0,360
 STPM P1 2027,MUET,300-N159,Cikgu Norini,Haji Hassan Yunus,52,1976.0,836.0,1140.0,0.0,4,Haji Hassan Yunus,MUET,Cikgu Norini
 STPM P1 2027,AKAUN1,300-N141,Cikgu Norisah,Tinggi Melaka,25,900.0,-1120.0,2020.0,0.0,1,Tinggi Melaka,AKAUN1,Cikgu Norisah
 STPM P1 2027,EK1,300-N084,Cikgu Norizah,Kolej T6 Pontian,0,0.0,0.0,0.0,0.0,2,Kolej T6 Pontian,EK1,Cikgu Norizah
-STPM P1 2027,EK1,300-N040,Cikgu Norlaila,Skudai,35,525.0,525.0,0.0,0.0,1,Skudai,EK1,Cikgu Norlaila
+STPM P1 2027,EK1,300-N040,Cikgu Norlaila,Skudai,32,480.0,480.0,0.0,0.0,2,Skudai,EK1,Cikgu Norlaila
 STPM P1 2027,PA1,300-N091,Cikgu Norlyda,Sultan Alauddin,34,799.0,-1678.0,2477.0,0.0,4,Sultan Alauddin,PA1,Cikgu Norlyda
 STPM P1 2027,GEO1,300-N052,Cikgu Norma,Tengku Mahkota,32,784.0,232.0,552.0,0.0,2,Tengku Mahkota,GEO1,Cikgu Norma
 STPM P1 2027,BIO1,300-N079,Cikgu Normala,Tun Habab,6,180.0,-114.0,294.0,0.0,3,Tun Habab,BIO1,Cikgu Normala
