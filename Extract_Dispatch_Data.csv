@@ -17,8 +17,6 @@ E,,Tengku Mahkota,Cikgu Norma,Payment,GEO1_LEMB,,,,,E250
 E,,Tengku Mahkota,Cikgu Norma,Payment,GEO1_MTP,,,,,E250
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
-E,,Amar Diraja,Cikgu Aidah,Payment,SJH1_MTP,,,,,E300
-E,,Amar Diraja,Cikgu Farahdilah,Delivery,SJH1_MTP,,5,,LOW STOCK,E300
 E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
 G,2026-09-25,Munshi Sulaiman,Azwan,Deliver,PSV,,6.0,1#,,G100
@@ -29,10 +27,11 @@ H,2026-09-29,Tan Sri Osman Saat,Irmala,Deliver,PIslam,,,1#,,H330
 H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
+I,2026-10-05,Senai,Diela,Deliver,PSV,,1.0,1#,,I225
 I,2026-09-30,Ulu Tiram,Diana,Deliver,PSV,,,1,K,I550
-J,2026-09-29,Desa Tebrau,Salleha,Deliver,PSV,,,1,K,J
+J,2026-09-29,Desa Tebrau,Salleha,Deliver,PSV,,10.0,1,K,J
 J,2026-10-05,Kiang,,Collect,,,,0,,J120
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
-K,2026-10-02,Desa Cemerlang,Baizura,Pending,PSV,,,1,,K225
+K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,2.0,1,,K225
 
-# Last Sync Check: 2026-10-05 14:00:53
+# Last Sync Check: 2026-10-05 14:30:58
