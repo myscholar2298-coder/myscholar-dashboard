@@ -32,7 +32,7 @@ H,2026-09-30,Seri Perhentian,Almy,Deliver,PSV,,4.0,0,K,H275
 H,2026-10-06,SDAHA,Rahana,Pending,SAINS,,,0,,H325
 H,2026-09-29,Tan Sri Osman Saat,Irmala,Deliver,PIslam,,4.0,1#,2 INV,H330
 H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
-H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
+H,2026-09-30,Tan Sri Osman Saat,Suriani,Deliver,RBT,,8.0,0,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,2026-10-06,Telok Kerang,Pejabat,Cheque,PSV,,,0,,H340
 I,2026-10-05,Senai,Diela,Deliver,PSV,,1.0,1#,,I225
@@ -42,4 +42,4 @@ J,2026-10-05,Kiang,,Collect,,,,0,,J120
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,2.0,1,,K225
 
-# Last Sync Check: 2026-10-06 16:30:28
+# Last Sync Check: 2026-10-06 17:00:47
