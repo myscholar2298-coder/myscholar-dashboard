@@ -1,6 +1,7 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
 A,2026-10-01,Tun Haji Abd Malek,Pejabat,Cheque,PSV,,,0,,A450
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
+B,2026-10-06,Air Molek,Nadia,Pending,RBT,,,0,,B300
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
@@ -21,10 +22,13 @@ E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
 G,2026-09-25,Munshi Sulaiman,Azwan,Deliver,PSV,,6.0,1#,,G100
 G,2026-10-05,Munshi Sulaiman,Hazila,Deliver,PSV,,,1#,,G100
+G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,0,,G110
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOCK,G113
 G,2026-10-01,Kluang Barat,Pejabat,Cheque,SAINS,,,0,,G300
 G,2026-10-05,Sains Johor,Pejabat (Lily),Cheque,KIMIA,,,0,Chop & Sign Document,G325
+G,2026-10-06,SDARA,Pejabat,Cheque,PSV,,,0,,G640
 H,2026-09-30,Seri Perhentian,Almy,Pending,PSV,,,0,K,H275
+H,2026-10-06,SDAHA,Rahana,Pending,SAINS,,,0,,H325
 H,2026-09-29,Tan Sri Osman Saat,Irmala,Deliver,PIslam,,,1#,,H330
 H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Pending,RBT,,,0,K,H330
@@ -36,4 +40,4 @@ J,2026-10-05,Kiang,,Collect,,,,0,,J120
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,2.0,1,,K225
 
-# Last Sync Check: 2026-10-06 13:31:04
+# Last Sync Check: 2026-10-06 14:00:33
