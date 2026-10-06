@@ -23,7 +23,7 @@ E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
 G,2026-09-25,Munshi Sulaiman,Azwan,Deliver,PSV,,6.0,1#,,G100
 G,2026-10-05,Munshi Sulaiman,Hazila,Deliver,PSV,,,1#,,G100
-G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,0,,G110
+G,2026-10-06,KV Batu Pahat,Fauzi,Deliver,3DP,,,1,,G110
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOCK,G113
 G,2026-10-01,Kluang Barat,Pejabat,Cheque,SAINS,,,0,,G300
 G,2026-10-05,Sains Johor,Pejabat (Lily),Cheque,KIMIA,,,0,Chop & Sign Document,G325
@@ -42,4 +42,4 @@ J,2026-10-05,Kiang,,Collect,,,,0,,J120
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,2.0,1,,K225
 
-# Last Sync Check: 2026-10-06 18:30:58
+# Last Sync Check: 2026-10-06 19:01:00
