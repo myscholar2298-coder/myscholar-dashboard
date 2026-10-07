@@ -28,6 +28,7 @@ G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,NO STOC
 G,2026-10-01,Kluang Barat,Pejabat,Cheque,SAINS,,,0,,G300
 G,2026-10-05,Sains Johor,Pejabat (Lily),Cheque,KIMIA,,,0,Chop & Sign Document,G325
 G,2026-10-06,SDARA,Pejabat,Cheque,PSV,,,0,,G640
+H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,,H100
 H,2026-09-30,Seri Perhentian,Almy,Deliver,PSV,,4.0,1#,K,H275
 H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,2.0,1#,,H325
 H,2026-09-29,Tan Sri Osman Saat,Irmala,Deliver,PIslam,,4.0,1#,2 INV,H330
@@ -35,11 +36,7 @@ H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
 H,2026-09-30,Tan Sri Osman Saat,Suriani,Deliver,RBT,,8.0,1#,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,2026-10-06,Telok Kerang,Pejabat,Cheque,PSV,,,0,,H340
-I,2026-10-05,Senai,Diela,Deliver,PSV,,1.0,1#,,I225
-I,2026-09-30,Ulu Tiram,Diana,Deliver,PSV,,2.0,1#,K,I550
-J,2026-09-29,Desa Tebrau,Salleha,Deliver,PSV,,10.0,1,K,J
-J,2026-10-05,Kiang,,Collect,,,,0,,J120
+J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
-K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,2.0,1,,K225
 
-# Last Sync Check: 2026-10-07 08:30:52
+# Last Sync Check: 2026-10-07 09:00:58
