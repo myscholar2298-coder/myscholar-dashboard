@@ -1,12 +1,20 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
+A,,Seri Tanjung,Cikgu Lina,Return,PA1_MTP,,-6,,,A400
+A,,Seri Tanjung,Cikgu Lina,Return,PA1_NOTA,,-6,,,A400
+A,,Seri Tanjung,Cikgu Lina,Return,PA3_MTP,,-1,,,A400
+A,,Seri Tanjung,Cikgu Lina,Return,PA3_NOTA,,-1,,,A400
+A,,Seri Tanjung,Cikgu Jumali,Payment,SJH1_MTP,,,,,A400
+A,,Seri Tanjung,Cikgu Jumali,Payment,SJH3_MTP,,,,,A400
 A,2026-10-01,Tun Haji Abd Malek,Pejabat,Cheque,PSV,,,0,,A450
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,2026-10-06,Air Molek,Nadia,Pending,RBT,,,0,,B300
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
+B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN RIZALINA,Return,SINTAKSIS,,-64,,,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
+C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
@@ -21,6 +29,11 @@ E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_ESEI,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
 G,2026-09-25,Munshi Sulaiman,Azwan,Deliver,PSV,,6.0,1#,,G100
 G,2026-10-05,Munshi Sulaiman,Hazila,Deliver,PSV,,,1#,,G100
 G,2026-10-06,KV Batu Pahat,Fauzi,Deliver,3DP,,,1,,G110
@@ -37,7 +50,8 @@ H,2026-09-30,Tan Sri Osman Saat,Suriani,Deliver,RBT,,8.0,1#,K,H330
 H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
 H,2026-10-06,Telok Kerang,Pejabat,Cheque,PSV,,,0,,H340
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
+J,,Mutiara Rini,Cikgu Ramlah,Delivery,SJH3_MTP,1,12,,NO SAMPLE,J275
 J,2026-10-07,Taman Pelangi,Wanfa,Pending,PSV,,,0,Hadiah,J440
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 
-# Last Sync Check: 2026-10-07 11:30:38
+# Last Sync Check: 2026-10-07 12:01:12
