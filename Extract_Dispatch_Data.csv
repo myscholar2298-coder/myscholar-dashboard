@@ -30,27 +30,17 @@ F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
-G,2026-09-25,Munshi Sulaiman,Azwan,Deliver,PSV,,6.0,1#,,G100
-G,2026-10-05,Munshi Sulaiman,Hazila,Deliver,PSV,,,1#,,G100
-G,2026-10-06,KV Batu Pahat,Fauzi,Deliver,3DP,,,1,,G110
+G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,1,,G110
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,,G113
-G,2026-10-01,Kluang Barat,Pejabat,Cheque,SAINS,,,0,,G300
-G,2026-10-05,Sains Johor,Pejabat (Lily),Cheque,KIMIA,,,0,Chop & Sign Document,G325
+G,2026-10-07,Kluang Barat,Fatimah,Deliver,PSV,,,1#,,G300
 G,2026-10-07,Sains Sembrong,Pn Fairus,Pending,KIMIA,,,0,,G475
-G,2026-10-06,SDARA,Pejabat,Cheque,PSV,,,0,,G640
 H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,,H100
 H,2026-10-07,Tun Sardon,Zul,Deliver,PSV,,0.0,0,Hantar Dokumen,H150
-H,2026-09-30,Seri Perhentian,Almy,Deliver,PSV,,4.0,1#,K,H275
-H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,2.0,1#,,H325
-H,2026-09-29,Tan Sri Osman Saat,Irmala,Deliver,PIslam,,4.0,1#,2 INV,H330
-H,2026-09-30,Tan Sri Osman Saat,Pejabat,Cheque,RBT,,,0,,H330
-H,2026-09-30,Tan Sri Osman Saat,Suriani,Deliver,RBT,,8.0,1#,K,H330
-H,,Matriks Pontian,Madam  Selvakumari,Return,MUET_MTP,,-49,,,H335
-H,2026-10-06,Telok Kerang,Pejabat,Cheque,PSV,,,0,,H340
+H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,1.0,1#,,H325
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
 J,2026-10-07,Taman Universiti,En Naz,Pending,SAINS,,,0,,J125
 J,,Mutiara Rini,Cikgu Ramlah,Delivery,SJH3_MTP,1,12,,NO SAMPLE,J275
 J,2026-10-07,Taman Pelangi,Wanfa,Pending,PSV,,,0,Hadiah,J440
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,60,,LOW STOCK,J530
 
-# Last Sync Check: 2026-10-07 17:00:59
+# Last Sync Check: 2026-10-07 17:30:56
