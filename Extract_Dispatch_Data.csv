@@ -31,10 +31,11 @@ B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
+B,2026-10-08,Padang Temu,Saerah,Pending,GKT,,,0,,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT5_LEMB,1,20,,NO SAMPLE AND NO STOCK,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,B275
-B,2026-10-06,Air Molek,Nadia,Pending,RBT,,,0,,B300
+B,2026-10-06,Air Molek,Nadia,Deliver,RBT,,3.0,1#,,B300
 B,,Teknik Melaka,Cikgu Faris,Delivery,LK4_LEMB,9,220,,NO SAMPLE AND NO STOCK,B325
 B,,Teknik Melaka,Cikgu Faris,Delivery,LK5_LEMB,9,220,,NO SAMPLE AND NO STOCK,B325
 B,,Teknik Melaka,Cikgu Faris,Delivery,LK_SPM,9,220,,NO SAMPLE AND NO STOCK,B325
@@ -112,6 +113,7 @@ F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
+G,2026-10-08,Munshi Sulaiman,Maryam,Pending,RBT,,,0,,G100
 G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,1,,G110
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
@@ -231,4 +233,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-08 14:30:24
+# Last Sync Check: 2026-10-08 15:00:43
