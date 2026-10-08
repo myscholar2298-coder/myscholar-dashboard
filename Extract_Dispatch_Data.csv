@@ -27,7 +27,6 @@ B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT4_LEMB,1,14,,NO SAMPLE AND NO STOCK,
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
-B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,2026-10-08,Padang Temu,Saerah,Pending,GKT,,,0,,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT5_LEMB,1,20,,NO SAMPLE AND NO STOCK,B275
@@ -50,8 +49,6 @@ B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK 
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN RIZALINA,Return,SINTAKSIS,,-64,,,B480
 B,,KUNTUM,Cikgu Gunavathy,Delivery,SJH3_MTP,,1,,,B500
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
-B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
-B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
@@ -225,4 +222,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-08 17:30:57
+# Last Sync Check: 2026-10-08 18:00:21
