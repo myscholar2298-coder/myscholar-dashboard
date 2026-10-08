@@ -6,9 +6,12 @@ A,,Dato Hj Talib Karim,Cikgu Norazura,Delivery,GKT5_LEMB,2,24,,NO SAMPLE AND NO 
 A,,Sultan Alauddin,Cikgu Nurul Simaa,Delivery,GKT4_LEMB,1,10,,NO SAMPLE AND NO STOCK,A350
 A,,Sultan Alauddin,Cikgu Nurul Simaa,Delivery,GKT5_LEMB,1,8,,NO SAMPLE AND NO STOCK,A350
 A,,Seri Tanjung,Cikgu Lina,Return,PA1_MTP,,-6,,,A400
+A,,Seri Tanjung,Cikgu Lina,Return,PA1_MTP,,-6,,,A400
+A,,Seri Tanjung,Cikgu Lina,Return,PA1_NOTA,,-6,,,A400
 A,,Seri Tanjung,Cikgu Lina,Return,PA1_NOTA,,-6,,,A400
 A,,Seri Tanjung,Cikgu Lina,Return,PA3_MTP,,-1,,,A400
 A,,Seri Tanjung,Cikgu Lina,Return,PA3_NOTA,,-1,,,A400
+A,,Seri Tanjung,Cikgu Jumali,Payment,SJH1_MTP,,,,,A400
 A,,Seri Tanjung,Cikgu Jumali,Payment,SJH1_MTP,,,,,A400
 A,,Seri Tanjung,Cikgu Jumali,Payment,SJH3_MTP,,,,,A400
 A,2026-10-01,Tun Haji Abd Malek,Pejabat,Cheque,PSV,,,0,,A450
@@ -26,6 +29,7 @@ B,,Dang Anum,Cikgu Hamizah,Delivery,GKT_SPM,2,19,,NO SAMPLE AND NO STOCK,B150
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT4_LEMB,1,14,,NO SAMPLE AND NO STOCK,B250
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,B250
+B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,B275
 B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT5_LEMB,1,20,,NO SAMPLE AND NO STOCK,B275
@@ -47,8 +51,12 @@ B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOC
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN RIZALINA,Return,SINTAKSIS,,-64,,,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
+B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
+B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
+C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
+C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
@@ -82,7 +90,9 @@ D,2026-10-06,Sains Muar,En Yuzri,Pending,SAINS,,,0,,D475
 D,,Datuk Bendahara,Cikgu Nurul Ain,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,D600
 D,,Datuk Bendahara,Cikgu Nurul Ain,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,D600
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
+E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
+E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
 E,,Sungai Abong,Cikgu Norida,Delivery,GKT4_LEMB,1,14,,NO SAMPLE AND NO STOCK,E500
@@ -95,7 +105,10 @@ F,,TIGS,Cikgu Nurul Aini,Delivery,GKT5_LEMB,1,26,,NO SAMPLE AND NO STOCK,F100
 F,,TIGS,Cikgu Nurul Aini,Delivery,GKT_SPM,1,26,,NO SAMPLE AND NO STOCK,F100
 F,,Dato Onn,Cikgu Norlin,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,F300
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_ESEI,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_ESEI,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
+F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
@@ -218,4 +231,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-08 13:00:24
+# Last Sync Check: 2026-10-08 13:30:25
