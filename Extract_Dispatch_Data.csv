@@ -180,9 +180,8 @@ J,,Maktab SAB,Cikgu Koh,Delivery,GKT5_LEMB,1,24,,NO SAMPLE AND NO STOCK,J450
 J,,Permas Jaya 2,Cikgu Amir Reza,Delivery,GKT4_LEMB,1,15,,NO SAMPLE AND NO STOCK,J525
 J,,Permas Jaya 2,Cikgu Amir Reza,Delivery,GKT5_LEMB,1,11,,NO SAMPLE AND NO STOCK,J525
 J,,Permas Jaya 2,Cikgu Amir Reza,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J525
-J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,60,,LOW STOCK,J530
+J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,40,,NO STOCK,J530
 J,,Teknik JB,Cikgu Shahima,Delivery,LK4_LEMB,5,130,,NO SAMPLE AND NO STOCK,J550
-J,,Teknik JB,Cikgu Shahima,Delivery,LK5_LEMB,5,186,,LOW SAMPLE / LOW STOCK,J550
 J,,Teknik JB,Cikgu Shahima,Delivery,LK_SPM,5,186,,NO SAMPLE AND NO STOCK,J550
 K,,Tun Fatimah Hashim,Cikgu Liyana,Delivery,GKT4_LEMB,1,25,,NO SAMPLE AND NO STOCK,K100
 K,,Tun Fatimah Hashim,Cikgu Liyana,Delivery,GKT5_LEMB,1,22,,NO SAMPLE AND NO STOCK,K100
@@ -199,6 +198,7 @@ K,,Taman Seri Saujana,Cikgu Anis,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,K
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT4_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT5_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT_SPM,1,17,,NO SAMPLE AND NO STOCK,K225
+K,2026-10-02,Desa Cemerlang,Baizura,Pending,PSV,,,2,,K225
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT4_LEMB,1,10,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,K250
@@ -224,4 +224,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-08 16:30:50
+# Last Sync Check: 2026-10-08 17:01:17
