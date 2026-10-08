@@ -552,47 +552,6 @@ STPM P1 2027,USUL1,300-H070,Ustaz Hakki,Sultan Muhammad,20,400.0,-170.0,570.0,0.
 STPM P1 2027,USUL1,300-N151,Ustazah Norjumahaton,Agama Sharifah Rodziah,20,400.0,55.0,345.0,0.0,1,Agama Sharifah Rodziah,USUL1,Ustazah Norjumahaton
 STPM P1 2027,ARAB1,300-N150,Ustazah Nur Aisyah,Agama Sharifah Rodziah,37,1110.0,135.0,975.0,0.0,2,Agama Sharifah Rodziah,ARAB1,Ustazah Nur Aisyah
 STPM P1 2027,ARAB1,300-N149,Ustazah Nur Imani,Sultan Muhammad,23,690.0,75.0,615.0,0.0,2,Sultan Muhammad,ARAB1,Ustazah Nur Imani
-STPM P2 2027,SYARIAH1,300-A141,Cigku Azran,Bandar Tenggara,12,336.0,336.0,0.0,0.0,1,Bandar Tenggara,SYARIAH1,Cigku Azran
-STPM P2 2027,SYARIAH1,300-A136,Cikgu Abdul Aziz,Sultan Muhammad,26,728.0,728.0,0.0,0.0,2,Sultan Muhammad,SYARIAH1,Cikgu Abdul Aziz
-STPM P2 2027,BIO1,300-B012,Cikgu Aiman,Datuk Bendahara,3,90.0,90.0,0.0,0.0,3,Datuk Bendahara,BIO1,Cikgu Aiman
-STPM P2 2027,KIMIA1,300-C300,Cikgu Farah Jaafar,Labis,4,80.0,80.0,0.0,0.0,2,Labis,KIMIA1,Cikgu Farah Jaafar
-STPM P2 2027,KIMIA1,300-K082,Cikgu Faridah Semor,Ledang,7,140.0,140.0,0.0,0.0,1,Ledang,KIMIA1,Cikgu Faridah Semor
-STPM P2 2027,SYARIAH1,,Cikgu Fatin,Pasir Gudang 2,0,0.0,0.0,0.0,0.0,2,Pasir Gudang 2,SYARIAH1,Cikgu Fatin
-STPM P2 2027,BIO1,,Cikgu Ismazianti,SDBL,0,0.0,0.0,0.0,0.0,2,SDBL,BIO1,Cikgu Ismazianti
-STPM P2 2027,BIO1,300-J022,Cikgu Jeya,SAB Muar,0,0.0,0.0,0.0,0.0,6,SAB Muar,BIO1,Cikgu Jeya
-STPM P2 2027,KIMIA1,300-K079,Cikgu Kamarudin Bahari,Amar Diraja,2,40.0,40.0,0.0,0.0,1,Amar Diraja,KIMIA1,Cikgu Kamarudin Bahari
-STPM P2 2027,BIO1,300-K072,Cikgu Khadijah,Tinggi BP,1,16.0,16.0,0.0,0.0,2,Tinggi BP,BIO1,Cikgu Khadijah
-STPM P2 2027,BIO1,300-K059,Cikgu Khairul,Tun Syed Zahiruddin,5,80.0,80.0,0.0,0.0,1,Tun Syed Zahiruddin,BIO1,Cikgu Khairul
-STPM P2 2027,KIMIA1,,Cikgu Letchumy,SAB Muar,0,0.0,0.0,0.0,0.0,2,SAB Muar,KIMIA1,Cikgu Letchumy
-STPM P2 2027,BIO1,300-M042,Cikgu Mahnun,Ghafar Baba,0,0.0,0.0,0.0,0.0,6,Ghafar Baba,BIO1,Cikgu Mahnun
-STPM P2 2027,KIMIA1,300-M081,Cikgu Maslina,Tinggi BP,10,200.0,200.0,0.0,0.0,2,Tinggi BP,KIMIA1,Cikgu Maslina
-STPM P2 2027,KIMIA1,300-N164,Cikgu Niza,Tun Habab,4,80.0,80.0,0.0,0.0,2,Tun Habab,KIMIA1,Cikgu Niza
-STPM P2 2027,KIMIA1,300-N162,Cikgu Nor Aznizah,Tinggi Muar,9,180.0,180.0,0.0,0.0,1,Tinggi Muar,KIMIA1,Cikgu Nor Aznizah
-STPM P2 2027,KIMIA1,300-N160,Cikgu Norafizan,Haji Hassan Yunus,9,180.0,180.0,0.0,0.0,2,Haji Hassan Yunus,KIMIA1,Cikgu Norafizan
-STPM P2 2027,BIO1,300-N071,Cikgu Noraini,Gajah Berang,5,260.0,260.0,0.0,0.0,1,Gajah Berang,BIO1,Cikgu Noraini
-STPM P2 2027,BIO1,300-N079,Cikgu Normala,Tun Habab,6,180.0,180.0,0.0,0.0,3,Tun Habab,BIO1,Cikgu Normala
-STPM P2 2027,KIMIA1,300-N166,Cikgu Nurul,Kolej T6 Pontian,6,120.0,120.0,0.0,0.0,1,Kolej T6 Pontian,KIMIA1,Cikgu Nurul
-STPM P2 2027,KIMIA1,300-O003,Cikgu Ong,Tinggi Segamat,7,140.0,140.0,0.0,0.0,2,Tinggi Segamat,KIMIA1,Cikgu Ong
-STPM P2 2027,KIMIA1,300-O004,Cikgu Ong Lay Hong,Maktab SAB,15,300.0,300.0,0.0,0.0,1,Maktab SAB,KIMIA1,Cikgu Ong Lay Hong
-STPM P2 2027,KIMIA1,300-R085,Cikgu Rashidah Musa,Tinggi Melaka,5,100.0,100.0,0.0,0.0,2,Tinggi Melaka,KIMIA1,Cikgu Rashidah Musa
-STPM P2 2027,SYARIAH1,300-R086,Cikgu Rosilah,Agama Sharifah Rodziah,10,280.0,280.0,0.0,0.0,1,Agama Sharifah Rodziah,SYARIAH1,Cikgu Rosilah
-STPM P2 2027,BIO1,300-S210,Cikgu Salbiah,Taman Daya,4,64.0,64.0,0.0,0.0,1,Taman Daya,BIO1,Cikgu Salbiah
-STPM P2 2027,BIO1,300-K010,Cikgu Siti Fairus (KOP),Haji Hassan Yunus,7,202.0,202.0,0.0,0.0,4,Haji Hassan Yunus,BIO1,Cikgu Siti Fairus (KOP)
-STPM P2 2027,KIMIA1,300-S344,Cikgu Subadhra A.R.V,Penggawa Timur,9,180.0,180.0,0.0,0.0,1,Penggawa Timur,KIMIA1,Cikgu Subadhra A.R.V
-STPM P2 2027,SYARIAH1,300-S151,Cikgu Suhaina,Agama Bandar Penawar,10,280.0,280.0,0.0,0.0,1,Agama Bandar Penawar,SYARIAH1,Cikgu Suhaina
-STPM P2 2027,KIMIA1,300-S343,Cikgu Suria,Taman Daya,5,100.0,100.0,0.0,0.0,2,Taman Daya,KIMIA1,Cikgu Suria
-STPM P2 2027,KIMIA1,300-S349,Cikgu Syuhada,Johor Jaya 1,7,140.0,140.0,0.0,0.0,2,Johor Jaya 1,KIMIA1,Cikgu Syuhada
-STPM P2 2027,KIMIA1,300-T015,Cikgu Tan,Seg Hwa,2,40.0,40.0,0.0,0.0,2,Seg Hwa,KIMIA1,Cikgu Tan
-STPM P2 2027,BIO1,300-W006,Cikgu Wan Aziela,Maktab SAB,12,228.0,228.0,0.0,0.0,2,Maktab SAB,BIO1,Cikgu Wan Aziela
-STPM P2 2027,KIMIA1,,Cikgu Yap,Tasek Utara,0,0.0,0.0,0.0,0.0,2,Tasek Utara,KIMIA1,Cikgu Yap
-STPM P2 2027,KIMIA1,300-Y017,Cikgu Yusnitah,Gajah Berang,12,240.0,240.0,0.0,0.0,2,Gajah Berang,KIMIA1,Cikgu Yusnitah
-STPM P2 2027,KIMIA1,300-Z058,Cikgu Zaimah,Tun Syed Zahiruddin,5,100.0,100.0,0.0,0.0,1,Tun Syed Zahiruddin,KIMIA1,Cikgu Zaimah
-STPM P2 2027,KIMIA1,300-K083,Cikgu Zolkefli Hani,Datuk Bendahara,3,60.0,60.0,0.0,0.0,1,Datuk Bendahara,KIMIA1,Cikgu Zolkefli Hani
-STPM P2 2027,ARAB1,300-A113,Ustaz Azmi,Maahad Muar,0,0.0,0.0,0.0,0.0,2,Maahad Muar,ARAB1,Ustaz Azmi
-STPM P2 2027,USUL1,300-H070,Ustaz Hakki,Sultan Muhammad,20,400.0,400.0,0.0,0.0,1,Sultan Muhammad,USUL1,Ustaz Hakki
-STPM P2 2027,USUL1,300-N151,Ustazah Norjumahaton,Agama Sharifah Rodziah,20,400.0,400.0,0.0,0.0,1,Agama Sharifah Rodziah,USUL1,Ustazah Norjumahaton
-STPM P2 2027,ARAB1,300-N150,Ustazah Nur Aisyah,Agama Sharifah Rodziah,37,1110.0,1110.0,0.0,0.0,2,Agama Sharifah Rodziah,ARAB1,Ustazah Nur Aisyah
-STPM P2 2027,ARAB1,300-N149,Ustazah Nur Imani,Sultan Muhammad,23,690.0,690.0,0.0,0.0,2,Sultan Muhammad,ARAB1,Ustazah Nur Imani
 STPM P3 2026,PA3,300-W012,Cikgu  Asmadi,Dol Said,8,96.0,-36.0,132.0,0.0,1,Dol Said,PA3,Cikgu  Asmadi
 STPM P3 2026,BM3,300-A084,Cikgu Adania,Pengerang Utama @ Tanjung Datuk,13,156.0,156.0,0.0,0.0,1,Pengerang Utama @ Tanjung Datuk,BM3,Cikgu Adania
 STPM P3 2026,PA3,300-A016,Cikgu Adha,SSAJ,30,615.0,615.0,0.0,0.0,2,SSAJ,PA3,Cikgu Adha
