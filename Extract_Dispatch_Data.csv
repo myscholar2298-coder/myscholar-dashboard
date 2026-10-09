@@ -101,8 +101,8 @@ F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
-G,2026-10-08,Munshi Sulaiman,Maryam,Pending,RBT,,,0,,G100
-G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,1,,G110
+G,2026-10-08,Munshi Sulaiman,Maryam,Pending,RBT,,,0,K,G100
+G,2026-10-06,KV Batu Pahat,Fauzi,Pending,3DP,,,1,K,G110
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,38,,,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
 G,,Datuk Menteri,Cikgu Azmi,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,G200
@@ -117,7 +117,7 @@ G,,SSAJ,Cikgu Arifah,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,G450
 G,2026-10-07,Sains Sembrong,Pn Fairus,Pending,KIMIA,,,0,,G475
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,G500
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT5_LEMB,1,18,,NO SAMPLE AND NO STOCK,G500
-H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,,H100
+H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,K,H100
 H,2026-10-07,Tun Sardon,Zul,Deliver,PSV,,0.0,0,Hantar Dokumen,H150
 H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,1.0,1#,,H325
 H,,Sri Kukup,Cikgu Indrawati,Delivery,GKT4_LEMB,2,30,,NO SAMPLE AND NO STOCK,H350
@@ -223,4 +223,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-09 12:00:23
+# Last Sync Check: 2026-10-09 12:30:48
