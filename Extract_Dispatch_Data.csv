@@ -115,7 +115,7 @@ G,2026-10-08,Kluang Barat,Isma,Deliver,SAINS,,,1#,Sumbangan,G300
 G,,SSAJ,Cikgu Arifah,Delivery,GKT4_LEMB,1,15,,NO SAMPLE AND NO STOCK,G450
 G,,SSAJ,Cikgu Arifah,Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,G450
 G,,SSAJ,Cikgu Arifah,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,G450
-G,2026-10-07,Sains Sembrong,Pn Fairus,Pending,KIMIA,,,0,,G475
+G,2026-10-07,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,,3#,,G475
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,G500
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT5_LEMB,1,18,,NO SAMPLE AND NO STOCK,G500
 H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,K,H100
@@ -196,7 +196,7 @@ K,,Taman Seri Saujana,Cikgu Anis,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,K
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT4_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT5_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT_SPM,1,17,,NO SAMPLE AND NO STOCK,K225
-K,2026-10-02,Desa Cemerlang,Baizura,Pending,PSV,,,2,,K225
+K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,,3#,,K225
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT4_LEMB,1,10,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,K250
@@ -223,4 +223,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-10 12:00:18
+# Last Sync Check: 2026-10-10 12:30:42
