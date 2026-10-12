@@ -1864,7 +1864,10 @@ elif main_menu == '💰 7. Receivables':
     return inv, pay
 
   inv, pay = _load_ar()
-
+  for c in ['SCHOOL', 'AGENT', 'INV_NO', 'INV_DATE', 'BUCKET']:
+    inv[c] = inv[c].fillna('')
+  for c in ['SCHOOL', 'OR_NO', 'DESCRIPTION']:
+    pay[c] = pay[c].fillna('')
   if inv.empty:
     st.success('No outstanding invoices - everyone has paid!')
     st.stop()
