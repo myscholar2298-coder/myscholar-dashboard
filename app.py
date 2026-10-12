@@ -186,6 +186,7 @@ main_menu = st.sidebar.radio(
         '🚨 4. Cancel Order & High Return Analysis',
         '📋 5. Inventory Audit',
         '📦 6. Purchase and Return Analysis',
+        '💰 7. Receivables',
     ],
     key='main_menu',
     label_visibility='collapsed',
@@ -1836,3 +1837,119 @@ elif main_menu == '📦 6. Purchase and Return Analysis':
 
       st.dataframe(styled_ledger, use_container_width=True)
 
+# ==========================================
+# MODULE 7: RECEIVABLES (AR AGING + RECEIPTS)
+# ==========================================
+elif main_menu == '💰 7. Receivables':
+  st.title('💰 Receivables')
+  st.caption('AR aging · from AROutstanding.csv / ARPayments.csv (backend sync)')
+
+  AR_OUT_URL = ('https://raw.githubusercontent.com/myscholar2298-coder/'
+                'myscholar-dashboard/main/AROutstanding.csv')
+  AR_PAY_URL = ('https://raw.githubusercontent.com/myscholar2298-coder/'
+                'myscholar-dashboard/main/ARPayments.csv')
+
+  @st.cache_data(ttl=300)
+  def _load_ar():
+    try:
+      inv = pd.read_csv(AR_OUT_URL)
+    except Exception:
+      inv = (pd.read_csv('AROutstanding.csv')
+             if os.path.exists('AROutstanding.csv') else pd.DataFrame())
+    try:
+      pay = pd.read_csv(AR_PAY_URL)
+    except Exception:
+      pay = (pd.read_csv('ARPayments.csv')
+             if os.path.exists('ARPayments.csv') else pd.DataFrame())
+    return inv, pay
+
+  inv, pay = _load_ar()
+
+  if inv.empty:
+    st.success('No outstanding invoices - everyone has paid!')
+    st.stop()
+
+  inv['OUTSTANDING'] = pd.to_numeric(inv['OUTSTANDING'], errors='coerce').fillna(0)
+  inv['TOTAL'] = pd.to_numeric(inv['TOTAL'], errors='coerce').fillna(0)
+  inv['AGING_DAYS'] = pd.to_numeric(inv['AGING_DAYS'], errors='coerce').fillna(0).astype(int)
+  inv['GROUP'] = inv['SCHOOL'].str.split(':').str[0].str.strip().str.upper()
+  inv['SCHOOL_SHORT'] = inv['SCHOOL'].str.split(':', n=1).str[-1].str.strip()
+
+  groups = sorted(inv['GROUP'].unique())
+  agents = sorted([a for a in inv['AGENT'].unique() if str(a).strip()])
+  buckets = ['Current', '31-60', '61-90', '90+']
+
+  f1, f2, f3 = st.columns(3)
+  sel_groups = f1.multiselect('Customer group', groups,
+                              default=[g for g in ['SMK'] if g in groups])
+  sel_agents = f2.multiselect('Agent (subject) - blank = all', agents, default=[])
+  sel_bucket = f3.selectbox('Aging bucket', ['All'] + buckets, index=0)
+
+  mask = inv['GROUP'].isin(sel_groups)
+  if sel_agents:
+    mask &= inv['AGENT'].isin(sel_agents)
+  if sel_bucket != 'All':
+    mask &= inv['BUCKET'] == sel_bucket
+  view = inv[mask]
+
+  m1, m2, m3, m4 = st.columns(4)
+  m1.metric('Outstanding (filtered)', f'RM {view["OUTSTANDING"].sum():,.2f}')
+  m2.metric('Schools owing', view['SCHOOL_SHORT'].nunique())
+  m3.metric('Invoices 90+', len(view[view['BUCKET'] == '90+']))
+  m4.metric('Oldest invoice', f'{int(view["AGING_DAYS"].max()) if len(view) else 0} days')
+
+  st.subheader('By school')
+  sort_by = st.selectbox('Sort by',
+                         ['Outstanding (biggest first)', 'Oldest invoice', 'School name'])
+  bp = view.pivot_table(index='SCHOOL_SHORT', columns='BUCKET', values='OUTSTANDING',
+                        aggfunc='sum', fill_value=0)
+  summ = view.groupby('SCHOOL_SHORT').agg(
+      invoices=('INV_NO', 'count'),
+      outstanding=('OUTSTANDING', 'sum'),
+      oldest_days=('AGING_DAYS', 'max')).join(bp).reset_index()
+  if sort_by == 'Outstanding (biggest first)':
+    summ = summ.sort_values('outstanding', ascending=False)
+  elif sort_by == 'Oldest invoice':
+    summ = summ.sort_values('oldest_days', ascending=False)
+  else:
+    summ = summ.sort_values('SCHOOL_SHORT')
+  for b in buckets:
+    if b not in summ.columns:
+      summ[b] = 0.0
+  summ = summ[['SCHOOL_SHORT', 'invoices', 'outstanding', 'oldest_days',
+               'Current', '31-60', '61-90', '90+']]
+  summ.columns = ['School', 'Invoices', 'Outstanding (RM)', 'Oldest (days)',
+                  'Current', '31-60', '61-90', '90+']
+  money = {c: '{:,.2f}' for c in ['Outstanding (RM)', 'Current', '31-60', '61-90', '90+']}
+  st.dataframe(summ.style.format(money), use_container_width=True, hide_index=True)
+
+  st.subheader('Open invoices')
+  schools = ['-- all --'] + sorted(view['SCHOOL_SHORT'].unique())
+  d1, d2 = st.columns([3, 1])
+  sel_school = d1.selectbox('School', schools)
+  sort_det = d2.selectbox('Sort invoices by',
+                          ['Aging (oldest first)', 'Date (newest first)', 'Amount (biggest first)'])
+  det = view if sel_school == '-- all --' else view[view['SCHOOL_SHORT'] == sel_school]
+  if sort_det == 'Aging (oldest first)':
+    det = det.sort_values('AGING_DAYS', ascending=False)
+  elif sort_det == 'Date (newest first)':
+    det = det.sort_values('INV_DATE', ascending=False)
+  else:
+    det = det.sort_values('OUTSTANDING', ascending=False)
+  st.dataframe(
+      det[['INV_NO', 'INV_DATE', 'SCHOOL_SHORT', 'AGENT', 'TOTAL',
+           'OUTSTANDING', 'AGING_DAYS', 'BUCKET']].rename(columns={'SCHOOL_SHORT': 'School'}),
+      use_container_width=True, hide_index=True)
+
+  st.subheader('Recent receipts (12 months)')
+  if not pay.empty:
+    pay['AMOUNT'] = pd.to_numeric(pay['AMOUNT'], errors='coerce').fillna(0)
+    pay['GROUP'] = pay['SCHOOL'].str.split(':').str[0].str.strip().str.upper()
+    pv = pay[pay['GROUP'].isin(sel_groups)]
+    pschools = ['-- all --'] + sorted(pv['SCHOOL'].unique())
+    ps = st.selectbox('School (payments)', pschools)
+    if ps != '-- all --':
+      pv = pv[pv['SCHOOL'] == ps]
+    st.dataframe(pv, use_container_width=True, hide_index=True)
+  else:
+    st.info('No receipts in the 12-month window.')
