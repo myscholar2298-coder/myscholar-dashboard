@@ -80,7 +80,7 @@ D,,Seri Tangkak,Cikgu Jannah,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,D300
 D,,Tun Mamat,Cikgu Azura,Delivery,GKT4_LEMB,2,30,,NO SAMPLE AND NO STOCK,D350
 D,,Tun Mamat,Cikgu Azura,Delivery,GKT5_LEMB,2,29,,NO SAMPLE AND NO STOCK,D350
 D,,Tun Mamat,Cikgu Azura,Delivery,GKT_SPM,2,29,,NO SAMPLE AND NO STOCK,D350
-D,2026-10-06,Sains Muar,En Yuzri,Deliver,SAINS,,,1#,,D475
+D,2026-10-06,Sains Muar,En Yuzri,Deliver,SAINS,,2.0,1#,,D475
 D,,Datuk Bendahara,Cikgu Nurul Ain,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,D600
 D,,Datuk Bendahara,Cikgu Nurul Ain,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,D600
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
@@ -115,7 +115,7 @@ G,2026-10-08,Kluang Barat,Isma,Deliver,SAINS,,,1#,Sumbangan,G300
 G,,SSAJ,Cikgu Arifah,Delivery,GKT4_LEMB,1,15,,NO SAMPLE AND NO STOCK,G450
 G,,SSAJ,Cikgu Arifah,Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,G450
 G,,SSAJ,Cikgu Arifah,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,G450
-G,2026-10-07,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,,3#,,G475
+G,2026-10-07,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,1.0,3#,,G475
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,G500
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT5_LEMB,1,18,,NO SAMPLE AND NO STOCK,G500
 H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,K,H100
@@ -223,4 +223,4 @@ K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K52
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K525
 K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 
-# Last Sync Check: 2026-10-12 15:31:05
+# Last Sync Check: 2026-10-12 16:00:29
