@@ -127,6 +127,7 @@ C,,Agama Segamat,Cikgu Syarifah Roha,Delivery,PA2_NOTA,2,,,NO SAMPLE,C500
 C,,Dato Bentara Dalam,Cikgu Elham,Delivery,GKT4_LEMB,1,12,,NO SAMPLE AND NO STOCK,C550
 C,,Dato Bentara Dalam,Cikgu Elham,Delivery,GKT5_LEMB,1,10,,NO SAMPLE AND NO STOCK,C550
 C,,Dato Bentara Dalam,Cikgu Elham,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,C550
+C,,Dato Bentara Dalam,Cikgu Nasuha,Delivery,PA2_NOTA,1,,,NO SAMPLE,C550
 C,,Gemereh,Cikgu Afiq,Delivery,GKT4_LEMB,1,10,,NO SAMPLE AND NO STOCK,C700
 C,,Gemereh,Cikgu Afiq,Delivery,GKT5_LEMB,1,8,,NO SAMPLE AND NO STOCK,C700
 C,,Gemereh,Cikgu Afiq,Delivery,GKT_SPM,1,8,,NO SAMPLE AND NO STOCK,C700
@@ -356,6 +357,7 @@ I,,Sultan Alauddin,Cikgu Azrin,Delivery,GKT_SPM,1,15,,NO SAMPLE AND NO STOCK,I27
 I,,Linggiu,Cikgu Adilah,Delivery,GKT4_LEMB,1,8,,NO SAMPLE AND NO STOCK,I300
 I,,Linggiu,Cikgu Adilah,Delivery,GKT5_LEMB,1,3,,NO SAMPLE AND NO STOCK,I300
 I,,Tun Habab,Cikgu Khairil,Delivery,GKT4_LEMB,1,30,,NO SAMPLE AND NO STOCK,I350
+I,,Tun Habab,Cikgu Azrina,Delivery,PA2_NOTA,2,,,NO SAMPLE,I350
 I,,Tun Habab,Cikgu Shahril,Delivery,SJH2_MTP,1,,,NO SAMPLE,I350
 I,,Laksamana,Cikgu Nor Zaidah,Delivery,EK2_LEMB,1,,,NO SAMPLE,I400
 I,,Laksamana,Cikgu Siti Hajar,Delivery,PA2_MTP,3,,,NO SAMPLE,I400
@@ -565,4 +567,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-15 17:30:42
+# Last Sync Check: 2026-10-15 18:00:30
