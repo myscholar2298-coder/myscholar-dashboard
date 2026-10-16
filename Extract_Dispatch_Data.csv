@@ -223,7 +223,6 @@ F,,TIGS,Cikgu Nurul Aini,Delivery,GKT4_LEMB,1,14,,NO SAMPLE AND NO STOCK,F100
 F,,TIGS,Cikgu Nurul Aini,Delivery,GKT5_LEMB,1,26,,NO SAMPLE AND NO STOCK,F100
 F,,TIGS,Cikgu Nurul Aini,Delivery,GKT_SPM,1,26,,NO SAMPLE AND NO STOCK,F100
 F,,TIGS,Cikgu Riena,Delivery,PA2_MTP,2,,,NO SAMPLE,F100
-F,2026-10-15,Tinggi BP,Pejabat,Cheque,GKT,,,,Bawa Dokumen,F150
 F,,Dato Onn,Cikgu Norlin,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,F300
 F,,Dato Sulaiman,Cikgu Azlina,Delivery,PA2_NOTA,3,,,NO SAMPLE,F350
 F,,Dato Sulaiman,Cikgu Shah Rozi,Delivery,SJH2_MTP,1,,,NO SAMPLE,F350
@@ -241,7 +240,6 @@ F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
 G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_MTP,3,,,NO SAMPLE,G100
 G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_NOTA,3,,,NO SAMPLE,G100
-G,2026-10-06,KV Batu Pahat,Fauzi,Deliver,3DP,,3.0,1#,,G110
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_LEMB,2,,,NO SAMPLE,G200
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_MTP,2,,,NO SAMPLE,G200
@@ -378,13 +376,12 @@ I,,Taman Kota Jaya,Cikgu Yusuf,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,I50
 I,,Ulu Tiram,Cikgu Malma,Delivery,EK2_LEMB,1,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Rosnani,Delivery,PA2_MTP,4,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Rosnani,Delivery,PA2_NOTA,4,,,NO SAMPLE,I550
-I,2026-10-14,Ulu Tiram,Diana,Pending,PSV,,,0,Hadiah,I550
+I,2026-10-14,Ulu Tiram,Diana,Deliver,PSV,,6.0,2#,5 Hadiah + 1 Alat Seni,I550
 I,,Ulu Tiram,Cikgu Hafizah,Delivery,SJH2_MTP,4,,,NO SAMPLE,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
 J,,Impian Emas,Cikgu Nurazreen,Delivery,GKT4_LEMB,1,15,,NO SAMPLE AND NO STOCK,J100
 J,,Impian Emas,Cikgu Nurazreen,Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,J100
 J,,Impian Emas,Cikgu Nurazreen,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,J100
-J,2026-10-09,Kiang,,Collect,,,,,,J120
 J,,Taman Universiti,Cikgu Zunnurain,Delivery,GKT4_LEMB,2,30,,NO SAMPLE AND NO STOCK,J125
 J,,Taman Universiti,Cikgu Zunnurain,Delivery,GKT5_LEMB,2,26,,NO SAMPLE AND NO STOCK,J125
 J,,Taman Universiti,Cikgu Zunnurain,Delivery,GKT_SPM,2,26,,NO SAMPLE AND NO STOCK,J125
@@ -485,7 +482,7 @@ K,,Taman Seri Saujana,Cikgu Anis,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,K
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT4_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT5_LEMB,1,17,,NO SAMPLE AND NO STOCK,K225
 K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT_SPM,1,17,,NO SAMPLE AND NO STOCK,K225
-K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,,3#,,K225
+K,2026-10-02,Desa Cemerlang,Baizura,Deliver,PSV,,1.0,3#,,K225
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT4_LEMB,1,10,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT5_LEMB,1,9,,NO SAMPLE AND NO STOCK,K250
 K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,K250
@@ -503,7 +500,7 @@ K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_RUJ,2,,,NO SAMPLE,K300
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K325
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K325
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K325
-K,2026-10-08,Taman Molek,Emma,Deliver,PSV,,3.0,1#,Goods Exchange,K325
+K,2026-10-08,Taman Molek,Emma,Deliver,PSV,,3.0,1#,Collect 39set M&G Twistable Crayon 24col,K325
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT4_LEMB,2,20,,NO SAMPLE AND NO STOCK,K350
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT5_LEMB,2,18,,NO SAMPLE AND NO STOCK,K350
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT_SPM,2,18,,NO SAMPLE AND NO STOCK,K350
@@ -570,4 +567,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-16 16:30:13
+# Last Sync Check: 2026-10-16 17:00:11
