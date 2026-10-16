@@ -209,6 +209,7 @@ E,,Sungai Abong,Cikgu Norida,Delivery,GKT5_LEMB,1,14,,NO SAMPLE AND NO STOCK,E50
 E,,Tun Perak,Cikgu Mohd Faizal,Delivery,BM2_MTP,2,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Zuraidah,Delivery,EK2_LEMB,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Nura'in,Delivery,GEO2_LEMB,2,,,NO SAMPLE,E550
+E,,Tun Perak,Cikgu Hazalina,Delivery,PA2_MTP,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Norain Nadia,Delivery,SJH2_MTP,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Syahirah,Delivery,SJH2_MTP,1,,,NO SAMPLE,E550
 E,,Bandar Maharani,Cikgu Shamsul,Delivery,GKT4_LEMB,1,5,,NO SAMPLE AND NO STOCK,E600
@@ -240,7 +241,6 @@ G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_MTP,3,,,NO SAMPLE,G100
 G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_NOTA,3,,,NO SAMPLE,G100
 G,2026-10-08,Munshi Sulaiman,Maryam,Deliver,RBT,,2.0,1#,,G100
 G,2026-10-06,KV Batu Pahat,Fauzi,Deliver,3DP,,3.0,1#,,G110
-G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,43,,LOW STOCK,G113
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_LEMB,2,,,NO SAMPLE,G200
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_MTP,2,,,NO SAMPLE,G200
@@ -567,4 +567,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-16 08:33:06
+# Last Sync Check: 2026-10-16 09:00:32
