@@ -117,7 +117,7 @@ C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,2026-09-30,Tenang Stesen,Hisham,Deliver,PSV,,,1#,Sumbangan,C425
+C,2026-09-30,Tenang Stesen,Hisham,Pending,PSV,,,0,Sumbangan,C425
 C,2026-10-05,Tenang Stesen,Pejabat,Cheque,PSV,,,0,,C425
 C,,Bandar Putra,Cikgu Nurul Ainshah,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,C450
 C,,Bandar Putra,Cikgu Nurul Ainshah,Delivery,GKT5_LEMB,1,18,,NO SAMPLE AND NO STOCK,C450
@@ -311,6 +311,7 @@ H,,Kolej T6 Pontian,Cikgu Hamizon,Delivery,PA2_MTP,9,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Hamizon,Delivery,PA2_NOTA,9,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Sanisah,Delivery,SV2_LEMB,2,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Sanisah,Delivery,SV2_RUJ,1,,,NO SAMPLE,H300
+H,2026-10-16,SDAHA,Pejabat,Cheque,,,,,,H325
 H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,1.0,1#,,H325
 H,,Sri Kukup,Cikgu Haliza,Delivery,BM2_LEMB,1,,,NO SAMPLE,H350
 H,,Sri Kukup,Cikgu Indrawati,Delivery,GKT4_LEMB,2,30,,NO SAMPLE AND NO STOCK,H350
@@ -567,4 +568,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-16 10:00:17
+# Last Sync Check: 2026-10-16 10:30:17
