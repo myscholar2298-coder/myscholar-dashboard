@@ -4,7 +4,6 @@ import os
 import re
 import shutil
 import subprocess
-import sys
 import time
 from pathlib import Path
 import openpyxl
@@ -23,43 +22,30 @@ def find_shared_drive():
     alt_path = Path(f'{drive_letter}:\\OPERATION')
     if alt_path.exists():
       return alt_path
-  return Path(r'H:\Shared drives\OPERATION')  # Default fallback
+  return Path(r'G:\Shared drives\OPERATION')  # Default fallback
 
 
 SHARED_DRIVE_ROOT = find_shared_drive()
 LP_FOLDER = SHARED_DRIVE_ROOT / 'LP'
 
-# The git repo is ALWAYS the folder this script lives in.
-# (Old version searched for the ancient Google Drive path and could push
-#  to the wrong copy of the repo.)
-GITHUB_REPO_DIR = Path(__file__).resolve().parent
 
+def find_git_repo():
+  """Locate the git repo folder (where Extract_Dispatch_Data.csv is pushed)."""
+  here = Path(__file__).resolve().parent
+  candidates = [
+      here,
+      here.parent / 'Streamlit',
+      Path(r'C:\Users\SERVER\My Drive (admin@myscholarnow.com)\Coding Script\Streamlit'),
+  ]
+  for c in candidates:
+    if (c / '.git').exists():
+      return c
+  return here
+
+
+GITHUB_REPO_DIR = find_git_repo()
 DELIVERY_PLAN_FOLDER = SHARED_DRIVE_ROOT / 'Delivery Plan'
 CUSTOMER_STATEMENT_FOLDER = SHARED_DRIVE_ROOT / 'Customer Statement'
-
-GIT_NAME = 'myscholar2298-coder'
-GIT_EMAIL = 'myscholar2298@gmail.com'
-
-
-def run_git(args, check=True):
-  """Run a git command; raise RuntimeError with DECODED output on failure."""
-  r = subprocess.run(['git'] + args, capture_output=True)
-  if check and r.returncode != 0:
-    raise RuntimeError(
-        f"git {' '.join(args)} failed (exit {r.returncode}):\n"
-        f"{r.stderr.decode(errors='replace')}"
-    )
-  return r
-
-
-def ensure_git_identity():
-  """Self-heal if git identity is missing."""
-  name = run_git(['config', '--get', 'user.name'], check=False)
-  email = run_git(['config', '--get', 'user.email'], check=False)
-  if not name.stdout.strip() or not email.stdout.strip():
-    run_git(['config', 'user.name', GIT_NAME])
-    run_git(['config', 'user.email', GIT_EMAIL])
-    print(f'Git identity auto-set: {GIT_NAME} / {GIT_EMAIL}')
 
 
 def normalize_subject(subj_str):
@@ -70,8 +56,7 @@ def normalize_subject(subj_str):
 
 
 def save_csv(df, filename, retries=3, delay_s=10):
-  """Write a CSV with retry; survives Excel file locks instead of crashing.
-  Returns True on success, False if the file stayed locked."""
+  """Write a CSV with retry; survives Excel file locks instead of crashing."""
   for attempt in range(1, retries + 1):
     try:
       df.to_csv(filename, index=False)
@@ -105,11 +90,9 @@ def safe_float(val):
 def run_backend_sync():
   print('--- Starting Full Local Shared Drive Sync ---')
 
-  # HARD FAIL if the source folder is unreachable
   if not LP_FOLDER.exists():
-    print(f'FATAL: LP folder not found at {LP_FOLDER}')
-    print('Is Google Drive for Desktop running? Is the drive letter correct?')
-    sys.exit(1)
+    print(f'Error: LP folder not found at {LP_FOLDER}')
+    return
 
   # 1. Load Master Settings Locally from Delivery Plan folder
   #    - Prefer files named exactly "Master_Settings*"
@@ -354,9 +337,19 @@ def run_backend_sync():
                 ):
                   target_col_openpyxl = c_num + p_offset
                   if target_col_openpyxl <= ws_ox.max_column:
-                    phase_col_info.append(
-                        (target_col_openpyxl - 1, phase_name, b_title)
-                    )
+                    # Only accept the column if its header actually says so
+                    # - skips hidden helper/reference columns beyond 3RD
+                    hdr_val = ws_ox.cell(
+                        row=r_num, column=target_col_openpyxl
+                    ).value
+                    if not (
+                        hdr_val
+                        and str(hdr_val).strip().upper() == phase_name
+                    ):
+                      continue
+                    entry = (target_col_openpyxl - 1, phase_name, b_title)
+                    if entry not in phase_col_info:
+                      phase_col_info.append(entry)
 
         for row_idx in range(header_row_idx + 2, len(df_raw)):
           school = df_raw.iloc[row_idx, 1]
@@ -533,24 +526,206 @@ def run_backend_sync():
 
   # Save primary operational CSVs
   df_sales_final = pd.DataFrame(all_sales_records)
-  save_ok = True
-  save_ok &= save_csv(df_sales_final, 'sales_transactions.csv')
-  save_ok &= save_csv(pd.DataFrame(ledger_records), 'stock_ledger.csv')
-  save_ok &= save_csv(pd.DataFrame(summary_audit_records), 'stock_summary.csv')
+  save_csv(df_sales_final, 'sales_transactions.csv')
+  save_csv(pd.DataFrame(ledger_records), 'stock_ledger.csv')
+  save_csv(pd.DataFrame(summary_audit_records), 'stock_summary.csv')
 
-  # 4. Pre-calculate Menu 2 Outstanding Summary
-  print('Pre-calculating Menu 2 Outstanding Summary...')
+  # 4. Pre-calculate Outstanding Summary (NET of payments & credit notes)
+  print('Pre-calculating Outstanding Summary (net of payments)...')
   if not df_sales_final.empty:
+    # --- cross-format book code helpers (same logic as the frontend) ---
+    def _book_code_parts(name):
+      words = str(name).upper().strip().replace("'", ' ')
+      t = words.replace(' ', '_')
+      fam = None
+      m = re.search(r'\b(GKT|LK)\b', words) or re.search(r'(GKT|LK)(\d)', t)
+      if m:
+        fam = m.group(1)
+      form = None
+      m = re.search(r'\b(GKT|LK)\s*T\s?(\d)', words) or re.search(
+          r'(GKT|LK)(\d)', t
+      )
+      if m:
+        form = m.group(2)
+      item = None
+      for kw in ('LEMB', 'SPM', 'MTP', 'NOTA', 'RUJ', 'ESEI', 'THEMA',
+                 'MODUL', 'TOP'):
+        if re.search(rf'\b{kw}\b', words) or t.endswith(f'_{kw}'):
+          item = kw
+          break
+      return fam, form, item
+
+    def _match_book_code(code_clean, valid_books):
+      df_, dm, di = _book_code_parts(code_clean)
+      for b in valid_books:
+        bf, bm, bi = _book_code_parts(b)
+
+        def _c(x, y):
+          return x is None or y is None or x == y
+
+        if (
+            _c(df_, bf) and _c(dm, bm) and _c(di, bi)
+            and ((df_ and df_ == bf) or (di and di == bi))
+        ):
+          return b
+      return None
+
+    def _strict_master_price(code):
+      t = str(code).strip().upper().replace(' ', '_')
+      if t in book_prices:
+        return book_prices[t]
+      df_, dm, di = _book_code_parts(t)
+      for k, v in book_prices.items():
+        ks, _, ki = k.partition('_')
+
+        def _c(x, y):
+          return x is None or y is None or x == y
+
+        if (
+            _c(df_, ks) and _c(dm, None) and _c(di, ki)
+            and ((df_ and df_ == ks) or (di and di == ki))
+        ):
+          return v
+      return None
+
+    df_pay_rec = (
+        pd.read_csv('payments.csv')
+        if os.path.exists('payments.csv') else pd.DataFrame()
+    )
+    df_adj_rec = (
+        pd.read_csv('adjustments.csv')
+        if os.path.exists('adjustments.csv') else pd.DataFrame()
+    )
+
+    def _parse_payments(clean_debtor, valid_books, unit_prices):
+      total = 0.0
+      if df_pay_rec.empty or not clean_debtor:
+        return 0.0
+      for _, pr in df_pay_rec.iterrows():
+        row_str = ' '.join(
+            str(v) for v in pr.values if pd.notna(v)
+        ).upper()
+        if not (
+            f'300-{clean_debtor}' in row_str
+            or row_str.startswith(clean_debtor)
+            or f' {clean_debtor} ' in row_str
+        ):
+          continue
+        desc = str(
+            pr.get('Description', pr.iloc[1] if len(pr) > 1 else '')
+        ).upper()
+        parsed = 0.0
+        for code, qty_str in re.findall(
+            r'([A-Z0-9_\-\.]+)\s*(?:[xX]|\*|\b)(\d+)', desc
+        ):
+          code_clean = code.strip()
+          matched = None
+          for b in valid_books:
+            if (
+                code_clean in b
+                or b in code_clean
+                or code_clean == b.replace(' ', '_')
+            ):
+              matched = b
+              break
+          if not matched:
+            matched = _match_book_code(code_clean, valid_books)
+          if not matched:
+            continue
+          price = _strict_master_price(code_clean)
+          if price is None:
+            price = unit_prices.get(matched, 38.0)
+          parsed += int(qty_str) * price
+        if parsed == 0.0 and any(
+            vb.replace('_', ' ') in desc or vb in desc
+            for vb in valid_books
+        ):
+          loose = re.findall(r'\bRM\s*(\d+(?:\.\d{2})?)', desc)
+          if loose:
+            parsed = sum(float(m) for m in loose)
+        total += parsed
+      return total
+
+    def _parse_adjustments(clean_debtor, subj_norm):
+      total = 0.0
+      if df_adj_rec.empty or not clean_debtor:
+        return 0.0
+      for _, ar in df_adj_rec.iterrows():
+        row_str = ' '.join(
+            str(v) for v in ar.values if pd.notna(v)
+        ).upper()
+        if not (
+            f'300-{clean_debtor}' in row_str
+            or row_str.startswith(clean_debtor)
+            or clean_debtor in row_str
+        ):
+          continue
+        row_subj = normalize_subject(
+            str(ar.iloc[3])
+            if len(ar) > 3 and pd.notna(ar.iloc[3])
+            else ''
+        )
+        if subj_norm and row_subj and row_subj != subj_norm:
+          continue
+        amt = 0.0
+        for val in ar.values:
+          try:
+            v = float(str(val).replace(',', '').replace('RM', '').strip())
+            if v > 0:
+              amt = v
+          except ValueError:
+            pass
+        total += amt
+      return total
+
+    # Per-debtor: union of all his books across files; assign his payments
+    # once, to his largest group (avoids double-deducting across files).
+    all_groups = list(
+        df_sales_final.groupby(['File_Source', 'Teacher', 'Explicit_Debtor'])
+    )
+    debtor_books = {}
+    debtor_prices = {}
+    debtor_best = {}
+    for (f, t, d), g in all_groups:
+      key = str(d).upper().strip() if pd.notna(d) else ''
+      debtor_books.setdefault(key, set()).update(
+          g['Book_Title'].astype(str).str.upper().str.strip().tolist()
+      )
+      debtor_prices.setdefault(key, {}).update({
+          str(r['Book_Title']).upper().strip(): float(r['Unit_Price'])
+          for _, r in g.iterrows()
+      })
+      dv = g['Total_Value'].sum()
+      if key not in debtor_best or dv > debtor_best[key][0]:
+        debtor_best[key] = (dv, (f, t, d))
+
+    debtor_paid = {
+        k: _parse_payments(
+            k.replace('300-', '').strip(), v, debtor_prices.get(k, {})
+        )
+        for k, v in debtor_books.items()
+    }
+
     summary_records = []
-    for (file_src, teacher_name, debtor_code), group_df in df_sales_final.groupby(
-        ['File_Source', 'Teacher', 'Explicit_Debtor']
-    ):
+    for (file_src, teacher_name, debtor_code), group_df in all_groups:
       group_deliveries_val = group_df['Total_Value'].sum()
       group_qty = group_df['Quantity'].sum()
       group_count = len(group_df)
       schools_in_group = group_df['School_Name'].unique().tolist()
       primary_school = schools_in_group[0] if schools_in_group else ''
       primary_subject = normalize_subject(group_df['Subject'].iloc[0])
+      clean_debtor = (
+          str(debtor_code).upper().replace('300-', '').strip()
+          if pd.notna(debtor_code) else ''
+      )
+      pay_key = str(debtor_code).upper().strip() if pd.notna(debtor_code) else ''
+      is_best_group = (
+          debtor_best.get(pay_key, (0, None))[1]
+          == (file_src, teacher_name, debtor_code)
+      )
+      paid = debtor_paid.get(pay_key, 0.0) if is_best_group else 0.0
+      credited = _parse_adjustments(clean_debtor, primary_subject)
+      net_outstanding = group_deliveries_val - paid - credited
 
       summary_records.append({
           'File Source': file_src,
@@ -559,19 +734,17 @@ def run_backend_sync():
           'Teacher': teacher_name if teacher_name and teacher_name != 'N/A' else 'N/A',
           'Associated School(s)': ', '.join(schools_in_group),
           'Net Qty': group_qty,
-          'Outstanding (RM)': group_deliveries_val,
+          'Total Delivered (RM)': round(group_deliveries_val, 2),
+          'Outstanding (RM)': round(net_outstanding, 2),
+          'Payments Received (RM)': round(paid, 2),
+          'Credit Notes (RM)': round(credited, 2),
           'Transactions': group_count,
           '_school': primary_school,
           '_subject': primary_subject,
           '_teacher': teacher_name,
       })
 
-    save_ok &= save_csv(pd.DataFrame(summary_records), 'outstanding_summary.csv')
-
-  if not save_ok:
-    print('FATAL: One or more CSVs could not be saved (still locked?).')
-    print('The data pushed to GitHub would be stale - aborting push.')
-    sys.exit(1)
+    save_csv(pd.DataFrame(summary_records), 'outstanding_summary.csv')
 
   # 5. Push BI CSVs + Master_Settings to GitHub (same repo as dispatch CSV)
   push_files = [
@@ -598,33 +771,40 @@ def run_backend_sync():
       print('GitHub push: no files to push.')
     else:
       os.chdir(GITHUB_REPO_DIR)
-      ensure_git_identity()
-      run_git(['add'] + copied)
-      made_commit = False
-      if run_git(['diff', '--cached', '--quiet'], check=False).returncode != 0:
-        run_git([
-            'commit', '-m',
-            f'BI data sync {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}',
-        ])
-        made_commit = True
-      # ALWAYS push - even if this script committed nothing, AutoUpdate.py
-      # may have left an unpushed commit that only this push can deliver.
-      try:
-        run_git(
-            ['pull', '--rebase', '--autostash', '-X', 'theirs', 'origin', 'main']
+      subprocess.run(
+          ['git', 'add'] + copied, check=True, capture_output=True, text=True
+      )
+      has_new = (
+          subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0
+      )
+      if has_new:
+        subprocess.run(
+            ['git', 'commit', '-m',
+             f'BI data sync {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'],
+            check=True, capture_output=True, text=True,
         )
-      except RuntimeError:
-        run_git(['rebase', '--abort'], check=False)
-        raise
-      run_git(['push', 'origin', 'main'])
-      if made_commit:
-        print(f'GitHub push: {len(copied)} files pushed.')
+      # push if there is anything not yet on the remote (incl. earlier
+      # commits that failed to push)
+      ahead = subprocess.run(
+          ['git', 'rev-list', '--count', 'origin/main..HEAD'],
+          capture_output=True, text=True,
+      ).stdout.strip()
+      if has_new or ahead not in ('0', ''):
+        subprocess.run(
+            ['git', 'pull', '--rebase', 'origin', 'main'],
+            capture_output=True, text=True,
+        )
+        p = subprocess.run(
+            ['git', 'push', 'origin', 'main'], capture_output=True, text=True
+        )
+        if p.returncode == 0:
+          print(f'GitHub push: {len(copied)} files synced.')
+        else:
+          print(f'GitHub push FAILED: {p.stderr.strip()}')
       else:
-        print('GitHub push: no new BI commit, but pending commits were pushed.')
+        print('GitHub push: up to date.')
   except Exception as e:
-    # LOUD failure - Task Scheduler will show a non-zero result
-    print(f'FATAL: GitHub push failed:\n{e}')
-    sys.exit(1)
+    print(f'GitHub push skipped/failed: {e}')
 
   print('--- Local Shared Drive Sync Complete! ---')
 

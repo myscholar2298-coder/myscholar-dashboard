@@ -1,2 +1,6 @@
 credentials.jsoncredentials.json 
 credentials.json 
+token.json
+credentials.json
+logs/
+*.log

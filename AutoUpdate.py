@@ -47,8 +47,7 @@ def run_git(args, check=True):
 
 
 def ensure_git_identity():
-    """Self-heal if git identity is missing (was the 17:26 'Author identity
-    unknown' failure)."""
+    """Self-heal if git identity is missing."""
     name = run_git(["config", "--get", "user.name"], check=False)
     email = run_git(["config", "--get", "user.email"], check=False)
     if not name.stdout.strip() or not email.stdout.strip():
@@ -60,15 +59,6 @@ def ensure_git_identity():
 def push_files_to_github(commit_msg, paths):
     """
     Commit + rebase + push in one safe transaction.
-
-    - pull --rebase: absorbs any commits made directly on the GitHub website
-      (root cause of the 2026-09-15 stall). No more 'fetch first' rejections.
-    - -X theirs: if the SAME auto-generated file conflicts during the rebase,
-      our freshly regenerated version wins (correct for machine-generated data).
-    - --autostash: stray unstaged edits (e.g. appNew.py) no longer block
-      the rebase.
-    Returns True if a new commit was created and pushed.
-    Raises RuntimeError on any failure (caller must exit non-zero).
     """
     os.chdir(BASE_DIR)
     ensure_git_identity()
@@ -136,17 +126,19 @@ def run_daily_compilation():
                             if next_val is not None:
                                 try:
                                     num_val = float(next_val)
-                                    col_letter = openpyxl.utils.get_column_letter(c)
-                                    if col_letter not in metrics:
-                                        metrics[col_letter] = {
-                                            "SAMPLE BALANCE": None,
-                                            "SAMPLE IN HAND": None,
-                                            "STOCK BALANCE": None,
-                                            "STOCK IN HAND": None,
-                                        }
-                                    for key in metrics[col_letter].keys():
-                                        if key in lbl_str:
-                                            metrics[col_letter][key] = num_val
+                                    col_let1 = openpyxl.utils.get_column_letter(c)
+                                    col_let2 = openpyxl.utils.get_column_letter(c + 1)
+                                    for cl in [col_let1, col_let2]:
+                                        if cl not in metrics:
+                                            metrics[cl] = {
+                                                "SAMPLE BALANCE": None,
+                                                "SAMPLE IN HAND": None,
+                                                "STOCK BALANCE": None,
+                                                "STOCK IN HAND": None,
+                                            }
+                                        for key in metrics[cl].keys():
+                                            if key in lbl_str:
+                                                metrics[cl][key] = num_val
                                 except ValueError:
                                     pass
 
@@ -154,7 +146,7 @@ def run_daily_compilation():
                 book_pairs = []
                 columns_checked = set()
 
-                for col in range(7, ws.max_column + 1):
+                for col in range(8, ws.max_column + 1):
                     if col in columns_checked:
                         continue
                     h_val = ws.cell(row=header_row, column=col).value
@@ -344,8 +336,8 @@ def run_daily_compilation():
                                 stock_bal = stock_metrics.get("STOCK BALANCE")
                                 stock_hand = stock_metrics.get("STOCK IN HAND")
 
-                                # Updated Logic: Force NO STOCK if stock is completely exhausted or negative
-                                if stock_hand == 0 or (stock_bal is not None and stock_bal <= 0):
+                                # Corrected logic: only trigger NO STOCK if stock hand is 0 or balance is strictly negative
+                                if (stock_hand is not None and stock_hand == 0) or (stock_bal is not None and stock_bal < 0):
                                     is_stock_no = True
                                 elif stock_bal is not None and stock_bal < 5:
                                     is_stock_low = True
@@ -419,10 +411,8 @@ def run_pipeline():
     print(f"\n[{datetime.now()}] Starting automated task compilation...")
     print(f"[{datetime.now()}] Using Shared Drive location: {SHARED_DRIVE_ROOT}")
 
-    # HARD FAIL if the source folder is unreachable - no more silent staleness
     if not LP_FOLDER.exists():
         print(f"[{datetime.now()}] FATAL: LP folder not found at {LP_FOLDER}")
-        print("Is Google Drive for Desktop running? Is the drive letter correct?")
         sys.exit(1)
 
     daily_df = run_daily_compilation()
@@ -641,8 +631,6 @@ def run_pipeline():
     # ==========================================
     # FORCE COMMIT TIMESTAMP UPDATE
     # ==========================================
-    # Appends a hidden metadata timestamp so Git ALWAYS detects a change,
-    # ensuring a brand new commit timestamp on GitHub every single run.
     try:
         sync_time_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         with open(local_csv_path, "a", encoding="utf-8-sig") as f:
@@ -665,7 +653,6 @@ def run_pipeline():
         else:
             print(f"[{datetime.now()}] Nothing new to push (data unchanged).")
     except Exception as e:
-        # LOUD failure - Task Scheduler will show a non-zero result
         print(f"[{datetime.now()}] FATAL: Git automation error:\n{e}")
         sys.exit(1)
 
