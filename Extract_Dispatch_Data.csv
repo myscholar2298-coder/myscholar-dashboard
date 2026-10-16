@@ -61,6 +61,8 @@ B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT4_LEMB,1,14,,NO SAMPLE AND NO STOCK,
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT5_LEMB,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Agama Sharifah Rodziah,Ustazah Nur Aisyah,Delivery,ARAB2_LEMB,2,,,NO SAMPLE,B260
+B,,Agama Sharifah Rodziah,Cikgu Noraini,Delivery,PA2_MTP,1,,,NO SAMPLE,B260
+B,,Agama Sharifah Rodziah,Cikgu Noraini,Delivery,PA2_NOTA,1,,,NO SAMPLE,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL2_LEMB,2,,,NO SAMPLE,B260
 B,2026-10-08,Padang Temu,Saerah,Deliver,GKT,,2.0,1#,,B275
@@ -567,4 +569,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-16 11:30:10
+# Last Sync Check: 2026-10-16 12:00:14
