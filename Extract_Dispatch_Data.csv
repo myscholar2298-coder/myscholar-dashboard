@@ -502,7 +502,7 @@ K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_RUJ,2,,,NO SAMPLE,K300
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT4_LEMB,2,35,,NO SAMPLE AND NO STOCK,K325
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT5_LEMB,2,33,,NO SAMPLE AND NO STOCK,K325
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K325
-K,2026-10-08,Taman Molek,Emma,Deliver,PSV,,,1#,Goods Exchange,K325
+K,2026-10-08,Taman Molek,Emma,Deliver,PSV,,3.0,1#,Goods Exchange,K325
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT4_LEMB,2,20,,NO SAMPLE AND NO STOCK,K350
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT5_LEMB,2,18,,NO SAMPLE AND NO STOCK,K350
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT_SPM,2,18,,NO SAMPLE AND NO STOCK,K350
@@ -569,4 +569,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-16 12:30:09
+# Last Sync Check: 2026-10-16 13:00:10
