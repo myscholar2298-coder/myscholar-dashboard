@@ -242,6 +242,7 @@ F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
 G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_MTP,3,,,NO SAMPLE,G100
 G,,Munshi Sulaiman,Cikgu Kamisan,Delivery,PA2_NOTA,3,,,NO SAMPLE,G100
+G,2026-10-19,KV Batu Pahat,Fauzi,Deliver,3DP,,2.0,4#,,G110
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_LEMB,2,,,NO SAMPLE,G200
 G,,Datuk Menteri,Cikgu Rosiah,Delivery,BM2_MTP,2,,,NO SAMPLE,G200
@@ -290,6 +291,7 @@ G,,SSAJ,Cikgu Bukhari,Delivery,SJH2_MTP,2,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Bukhari,Delivery,SJH2_RUJ,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Asmawati,Delivery,SV2_LEMB,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Asmawati,Delivery,SV2_RUJ,1,,,NO SAMPLE,G450
+G,2026-10-19,Sains Sembrong,Pejabat,Cheque,,,,,,G475
 G,2026-10-07,Sains Sembrong,Pn Fairus,Deliver,KIMIA,,1.0,3#,,G475
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT4_LEMB,1,20,,NO SAMPLE AND NO STOCK,G500
 G,,Bandar T6,Cikgu Shakira,Delivery,GKT5_LEMB,1,18,,NO SAMPLE AND NO STOCK,G500
@@ -570,4 +572,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-19 11:00:17
+# Last Sync Check: 2026-10-19 11:30:13
