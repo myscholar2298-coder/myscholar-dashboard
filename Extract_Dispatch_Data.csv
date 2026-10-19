@@ -9,10 +9,16 @@ A,,Pulau Sebang,Abd Rashid,Delivery,SJH2_MTP,1,,,NO SAMPLE,A100
 A,,Pulau Sebang,Abd Rashid,Delivery,SJH2_RUJ,1,,,NO SAMPLE,A100
 A,,Dato Hj Talib Karim,Cikgu Norazura,Delivery,GKT4_LEMB,2,24,,NO SAMPLE AND NO STOCK,A150
 A,,Dato Hj Talib Karim,Cikgu Norazura,Delivery,GKT5_LEMB,2,24,,NO SAMPLE AND NO STOCK,A150
+A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Payment,KMK1_MTP,,,,,A150
+A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Payment,KMK1_RUJ,,,,,A150
 A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Delivery,KMK2_RUJ,1,,,NO SAMPLE,A150
 A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Delivery,KMK2_RUJ,1,,,NO SAMPLE,A150
+A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Payment,KMK3_MTP,,,,,A150
+A,,Dato Hj Talib Karim,Cikgu Wan Dafreenade,Payment,KMK3_RUJ,,,,,A150
 A,,Dato Hj Talib Karim,Cikgu Azim,Delivery,PA2_NOTA,3,,,NO SAMPLE,A150
+A,,Dato Hj Talib Karim,Cikgu Zahara,Payment,SJH1_MTP,,,,,A150
 A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH2_MTP,1,,,NO SAMPLE,A150
+A,,Dato Hj Talib Karim,Cikgu Zahara,Payment,SJH3_MTP,,,,,A150
 A,,Dato Hj Talib Karim,Cikgu Adibah,Delivery,SV2_LEMB,2,,,NO SAMPLE,A150
 A,,Dato Hj Talib Karim,Cikgu Adibah,Delivery,SV2_RUJ,2,,,NO SAMPLE,A150
 A,,Dol Said,Cikgu Asmadi,Delivery,PA2_MTP,1,,,NO SAMPLE,A200
@@ -305,7 +311,9 @@ H,,Senggarang,Cikgu Faizal,Delivery,PA2_MTP,2,,,NO SAMPLE,H100
 H,,Senggarang,Cikgu Faizal,Delivery,PA2_NOTA,2,,,NO SAMPLE,H100
 H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,0,,H100
 H,2026-10-07,Tun Sardon,Zul,Deliver,PSV,,0.0,0,Hantar Dokumen,H150
+H,,Benut,Cikgu Yong Rafedah,Return,BM1_NOTA,,,,,H200
 H,,Benut,Cikgu Yong Rafedah,Delivery,BM2_LEMB,4,,,NO SAMPLE,H200
+H,,Benut,Cikgu Yong Rafedah,Return,BM3_MTP,,,,,H200
 H,,Benut,Cikgu Roiza,Delivery,PA2_NOTA,4,,,NO SAMPLE,H200
 H,,Benut,Cikgu Azal,Delivery,SJH2_MTP,1,,,NO SAMPLE,H200
 H,,Benut,Cikgu Azal,Delivery,SJH2_RUJ,1,,,NO SAMPLE,H200
@@ -425,6 +433,7 @@ J,,Taman Sutera,Cikgu Ermyza,Delivery,GKT5_LEMB,1,11,,NO SAMPLE AND NO STOCK,J35
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT4_LEMB,1,27,,NO SAMPLE AND NO STOCK,J375
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT5_LEMB,1,27,,NO SAMPLE AND NO STOCK,J375
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT_SPM,1,27,,NO SAMPLE AND NO STOCK,J375
+J,2026-10-19,St Joseph,Nadzirah,Pending,BI,,,0,,J400
 J,,St. Joseph,Cikgu Atikah,Delivery,GKT5_LEMB,1,11,,NO SAMPLE AND NO STOCK,J400
 J,,St. Joseph,Cikgu Atikah,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J400
 J,,Dato Jaafar,Cikgu Ashsekin,Delivery,BM2_MTP,1,,,NO SAMPLE,J425
@@ -572,4 +581,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-19 12:00:13
+# Last Sync Check: 2026-10-19 12:30:31
