@@ -518,7 +518,7 @@ STPM P1 2027,PA1,300-Y010,Cikgu Yaakub,Dato Mohd Yunos Sulaiman,56,1316.0,-1279.
 STPM P1 2027,KIMIA1,,Cikgu Yap,Tasek Utara,0,0.0,0.0,0.0,0.0,2,Tasek Utara,KIMIA1,Cikgu Yap
 STPM P1 2027,SV1,300-Y005,Cikgu Yazmin,Benut,13,416.0,-374.0,790.0,0.0,1,Benut,SV1,Cikgu Yazmin
 STPM P1 2027,AKAUN1,300-Y016,Cikgu Yee,KUNTUM,10,360.0,-306.0,666.0,0.0,1,KUNTUM,AKAUN1,Cikgu Yee
-STPM P1 2027,BM1,300-Y004,Cikgu Yong Rafedah,Benut,84,1512.0,-693.0,2205.0,0.0,1,Benut,BM1,Cikgu Yong Rafedah
+STPM P1 2027,BM1,300-Y004,Cikgu Yong Rafedah,Benut,72,1296.0,-909.0,2205.0,0.0,2,Benut,BM1,Cikgu Yong Rafedah
 STPM P1 2027,KIMIA1,300-Y017,Cikgu Yusnitah,Gajah Berang,12,240.0,0.0,240.0,0.0,2,Gajah Berang,KIMIA1,Cikgu Yusnitah
 STPM P1 2027,PA1,300-Y012,Cikgu Yusof,Munshi Ibrahim,36,846.0,-1068.0,1914.0,0.0,4,Munshi Ibrahim,PA1,Cikgu Yusof
 STPM P1 2027,PA1,300-Y008,Cikgu Yusrizan,Tan Sri Jaafar Albar,64,1504.0,-1320.0,2824.0,0.0,4,Tan Sri Jaafar Albar,PA1,Cikgu Yusrizan
@@ -852,7 +852,7 @@ STPM P3 2026,KMK3,300-W008,Cikgu Wan Dafreenade,Dato Hj Talib Karim,20,310.0,310
 STPM P3 2026,PA3,300-Y010,Cikgu Yaakub,Dato Mohd Yunos Sulaiman,28,574.0,574.0,0.0,0.0,2,Dato Mohd Yunos Sulaiman,PA3,Cikgu Yaakub
 STPM P3 2026,EK3,300-Y009,Cikgu Yazid Ismail,Datin Onn Jaafar,7,210.0,210.0,0.0,0.0,1,Datin Onn Jaafar,EK3,Cikgu Yazid Ismail
 STPM P3 2026,AKAUN3,300-Y016,Cikgu Yee,KUNTUM,9,306.0,306.0,0.0,0.0,1,KUNTUM,AKAUN3,Cikgu Yee
-STPM P3 2026,BM3,300-Y004,Cikgu Yong Rafedah,Benut,59,708.0,708.0,0.0,0.0,1,Benut,BM3,Cikgu Yong Rafedah
+STPM P3 2026,BM3,300-Y004,Cikgu Yong Rafedah,Benut,58,696.0,696.0,0.0,0.0,2,Benut,BM3,Cikgu Yong Rafedah
 STPM P3 2026,PA3,300-Y012,Cikgu Yusof,Munshi Ibrahim,28,574.0,574.0,0.0,0.0,2,Munshi Ibrahim,PA3,Cikgu Yusof
 STPM P3 2026,PA3,300-Y008,Cikgu Yusrizan,Tan Sri Jaafar Albar,30,615.0,615.0,0.0,0.0,2,Tan Sri Jaafar Albar,PA3,Cikgu Yusrizan
 STPM P3 2026,SJH3,300-Z036,Cikgu Zahara,Dato Hj Talib Karim,16,192.0,192.0,0.0,0.0,1,Dato Hj Talib Karim,SJH3,Cikgu Zahara
