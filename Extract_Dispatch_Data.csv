@@ -56,6 +56,9 @@ A,,Tun Hj Abdul Malek,Cikgu Anisah Jamal,Delivery,KMK2_RUJ,1,,,NO SAMPLE,A450
 A,,Tun Hj Abdul Malek,Cikgu Rosli (Kop),Delivery,PA2_MTP,2,,,NO SAMPLE,A450
 A,,Tun Hj Abdul Malek,Cikgu Rosli (Kop),Delivery,PA2_NOTA,2,,,NO SAMPLE,A450
 A,,Tun Hj Abdul Malek,Cikgu Dalil,Delivery,PP2_LEMB,2,,,NO SAMPLE,A450
+A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Payment,SJH1_MTP,,,,,A450
+A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Payment,SJH3_MTP,,,,,A450
+A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Payment,SJH3_MTP,,,,,A450
 A,,Tun Hj Abdul Malek,Cikgu Azizul,Delivery,SV2_LEMB,1,,,NO SAMPLE,A450
 A,,Tun Hj Abdul Malek,Cikgu Azizul,Delivery,SV2_RUJ,1,,,NO SAMPLE,A450
 A,,Tun Tuah,Cikgu Azamwati,Delivery,PA2_NOTA,3,,,NO SAMPLE,A550
@@ -289,6 +292,7 @@ F,,Dato Sulaiman,Cikgu Shah Rozi,Delivery,SJH2_RUJ,1,,,NO SAMPLE,F350
 F,,Dato Sulaiman,Cikgu Farzila,Delivery,SV2_LEMB,2,,,NO SAMPLE,F350
 F,,Dato Sulaiman,Cikgu Farzila,Delivery,SV2_RUJ,2,,,NO SAMPLE,F350
 F,,Tunku Putra,Cikgu Surianti,Delivery,BM2_MTP,1,,,NO SAMPLE,F400
+F,,Tunku Putra,Cikgu Ayusnida,Payment,EK3_RUJ,,,,,F400
 F,,Tunku Putra,Cikgu Nur Sazela,Delivery,PA2_MTP,2,,,NO SAMPLE,F400
 F,,Tunku Putra,Cikgu Nuraini,Delivery,SJH2_MTP,1,,,NO SAMPLE,F400
 F,,Tunku Putra,Cikgu Nuraini,Delivery,SJH2_RUJ,1,,,NO SAMPLE,F400
@@ -648,4 +652,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-20 11:00:26
+# Last Sync Check: 2026-10-20 11:30:19
