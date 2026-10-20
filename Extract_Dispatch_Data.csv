@@ -371,12 +371,11 @@ G,,Haji Hassan Yunus,Cikgu Siti Fairus (KOP),Delivery,SV2_RUJ,1,,,NO SAMPLE,G550
 H,,Senggarang,Cikgu Romiati,Delivery,GEO2_LEMB,1,,,NO SAMPLE,H100
 H,,Senggarang,Cikgu Faizal,Delivery,PA2_MTP,2,,,NO SAMPLE,H100
 H,,Senggarang,Cikgu Faizal,Delivery,PA2_NOTA,2,,,NO SAMPLE,H100
-H,2026-10-07,Senggarang,Qifitiah,Deliver,PSV,,9.0,1,,H100
+H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,1,,H100
 H,,Senggarang,Cikgu Mariani,Delivery,SV2_LEMB,1,,,NO SAMPLE,H100
 H,,Senggarang,Cikgu Mariani,Delivery,SV2_RUJ,1,,,NO SAMPLE,H100
 H,,Tun Sardon,Cikgu Nurul Hamidah,Delivery,BM2_LEMB,1,,,NO SAMPLE,H150
 H,,Tun Sardon,Cikgu Nurul Hamidah,Delivery,BM2_MTP,1,,,NO SAMPLE,H150
-H,2026-10-07,Tun Sardon,Zul,Deliver,PSV,,0.0,0,Hantar Dokumen,H150
 H,,Benut,Cikgu Yong Rafedah,Return,BM1_NOTA,,,,,H200
 H,,Benut,Cikgu Yong Rafedah,Delivery,BM2_LEMB,4,,,NO SAMPLE,H200
 H,,Benut,Cikgu Yong Rafedah,Return,BM3_MTP,,,,,H200
@@ -391,8 +390,6 @@ H,,Kolej T6 Pontian,Cikgu Hamizon,Delivery,PA2_MTP,9,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Hamizon,Delivery,PA2_NOTA,9,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Sanisah,Delivery,SV2_LEMB,2,,,NO SAMPLE,H300
 H,,Kolej T6 Pontian,Cikgu Sanisah,Delivery,SV2_RUJ,1,,,NO SAMPLE,H300
-H,2026-10-16,SDAHA,Pejabat,Cheque,,,,,,H325
-H,2026-10-06,SDAHA,Rahana,Deliver,SAINS,,1.0,1#,,H325
 H,,Sri Kukup,Cikgu Haliza,Delivery,BM2_LEMB,1,,,NO SAMPLE,H350
 H,,Sri Kukup,Cikgu Indrawati,Delivery,GKT4_LEMB,2,30,,NO SAMPLE AND NO STOCK,H350
 H,,Sri Kukup,Cikgu Indrawati,Delivery,GKT5_LEMB,2,29,,NO SAMPLE AND NO STOCK,H350
@@ -653,4 +650,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-20 16:00:11
+# Last Sync Check: 2026-10-20 16:30:13
