@@ -499,7 +499,7 @@ J,,Taman Sutera,Cikgu Ermyza,Delivery,GKT5_LEMB,1,11,,NO SAMPLE AND NO STOCK,J35
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT4_LEMB,1,27,,NO STOCK / LOW SAMPLE,J375
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT5_LEMB,1,27,,NO SAMPLE AND NO STOCK,J375
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT_SPM,1,27,,NO SAMPLE AND NO STOCK,J375
-J,2026-10-21,Dato Usman Awang,Fazlynda,Pending,PSV,,,0,,J375
+J,2026-10-21,Dato Usman Awang,Fazlynda,Deliver,PSV,,,1#,,J375
 J,2026-10-19,St Joseph,Nadzirah,Pending,BI,,,0,,J400
 J,,St. Joseph,Cikgu Atikah,Delivery,GKT5_LEMB,1,11,,NO SAMPLE AND NO STOCK,J400
 J,,St. Joseph,Cikgu Atikah,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J400
@@ -654,4 +654,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-22 16:30:11
+# Last Sync Check: 2026-10-22 17:00:13
