@@ -609,7 +609,7 @@ STPM P3 2026,PA3,300-F012,Cikgu Fauzan,Tinggi Kluang,132,2706.0,2706.0,0.0,0.0,4
 STPM P3 2026,PA3,300-F057,Cikgu Fauziah,Tun Syed Zahiruddin,5,60.0,60.0,0.0,0.0,1,Tun Syed Zahiruddin,PA3,Cikgu Fauziah
 STPM P3 2026,BM3,300-F049,Cikgu Firdaus,SAB Muar,46,690.0,690.0,0.0,0.0,2,SAB Muar,BM3,Cikgu Firdaus
 STPM P3 2026,PA3,300-F005,Cikgu Fuza,Gelang Patah,74,1517.0,1517.0,0.0,0.0,2,Gelang Patah,PA3,Cikgu Fuza
-STPM P3 2026,SJH3,300-G012,Cikgu Gunavathy,KUNTUM,25,300.0,300.0,0.0,0.0,2,KUNTUM,SJH3,Cikgu Gunavathy
+STPM P3 2026,SJH3,300-G012,Cikgu Gunavathy,KUNTUM,25,300.0,0.0,0.0,300.0,2,KUNTUM,SJH3,Cikgu Gunavathy
 STPM P3 2026,BM3,300-H053,Cikgu Habsah,Tinggi Muar,20,300.0,300.0,0.0,0.0,2,Tinggi Muar,BM3,Cikgu Habsah
 STPM P3 2026,SJH3,300-H079,Cikgu Hafidzah,Tun Hj Abdul Malek,50,800.0,500.0,300.0,0.0,2,Tun Hj Abdul Malek,SJH3,Cikgu Hafidzah
 STPM P3 2026,PA3,300-H091,Cikgu Hafilah,Bandar Tenggara,60,1230.0,-1000.0,2230.0,0.0,2,Bandar Tenggara,PA3,Cikgu Hafilah
@@ -756,7 +756,7 @@ STPM P3 2026,SJH3,300-R079,Cikgu Rajini,Tinggi Muar,13,156.0,-286.0,442.0,0.0,3,
 STPM P3 2026,SJH3,300-R053,Cikgu Ramlah,Mutiara Rini,12,144.0,144.0,0.0,0.0,1,Mutiara Rini,SJH3,Cikgu Ramlah
 STPM P3 2026,KMK3,300-K084,Cikgu Raqib,STAR Putra,60,930.0,930.0,0.0,0.0,4,STAR Putra,KMK3,Cikgu Raqib
 STPM P3 2026,EK3,300-R076,Cikgu Rashid,STUDI,5,150.0,0.0,150.0,0.0,1,STUDI,EK3,Cikgu Rashid
-STPM P3 2026,BM3,300-R009,Cikgu Rasyidah,Tinggi Kluang,25,300.0,300.0,0.0,0.0,1,Tinggi Kluang,BM3,Cikgu Rasyidah
+STPM P3 2026,BM3,300-R009,Cikgu Rasyidah,Tinggi Kluang,25,300.0,100.0,0.0,200.0,1,Tinggi Kluang,BM3,Cikgu Rasyidah
 STPM P3 2026,BM3,300-R037,Cikgu Razilah,Haji Hassan Yunus,18,216.0,216.0,0.0,0.0,1,Haji Hassan Yunus,BM3,Cikgu Razilah
 STPM P3 2026,EK3,300-M076,Cikgu Rezan,Tun Ismail,9,270.0,0.0,270.0,0.0,1,Tun Ismail,EK3,Cikgu Rezan
 STPM P3 2026,EK3,300-E020,Cikgu Ridhwan,SSI Kulai,43,1290.0,0.0,1290.0,0.0,1,SSI Kulai,EK3,Cikgu Ridhwan
