@@ -380,6 +380,7 @@ I,,Ulu Tiram,Cikgu Fatihah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Fatihah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Rosnani,Delivery,PA2_MTP,4,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Rosnani,Delivery,PA2_NOTA,4,,,,I550
+I,2026-10-23,Ulu Tiram,Diana,Pending,PSV,,,0,K,I550
 I,,Ulu Tiram,Cikgu Hafizah,Delivery,SJH2_MTP,4,,,NO SAMPLE,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
 J,,Impian Emas,Cikgu Nurazreen,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,J100
@@ -407,7 +408,7 @@ J,,Skudai,Cikgu Norlaila,Delivery,EK2_LEMB,2,,,NO SAMPLE,J325
 J,,Skudai,Cikgu Hj Wan Adha,Delivery,PA2_NOTA,4,,,,J325
 J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT_SPM,1,27,,NO SAMPLE AND NO STOCK,J375
 J,2026-10-21,Dato Usman Awang,Fazlynda,Deliver,PSV,,,1#,,J375
-J,2026-10-19,St Joseph,Nadzirah,Pending,BI,,,0,,J400
+J,2026-10-19,St Joseph,Nadzirah,Deliver,BI,,1.0,1#,,J400
 J,,St. Joseph,Cikgu Atikah,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J400
 J,,Dato Jaafar,Cikgu Ashsekin,Delivery,BM2_MTP,1,,,NO SAMPLE,J425
 J,,Dato Jaafar,Cikgu Izzat,Delivery,GEO2_LEMB,1,,,LOW SAMPLE,J425
@@ -468,6 +469,7 @@ K,,Johor Jaya 1,Cikgu Marini,Delivery,SJH2_MTP,3,,,NO SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Marini,Delivery,SJH2_RUJ,3,,,NO SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_LEMB,2,,,NO SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_RUJ,2,,,NO SAMPLE,K300
+K,2026-10-23,Taman Molek,,Deliver,,,,1#,Sumbangan - Epson Printer,K325
 K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K325
 K,2026-10-21,Taman Molek,Pejabat,Cheque,PSV,,,0,,K325
 K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT_SPM,2,18,,NO SAMPLE AND NO STOCK,K350
@@ -527,4 +529,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-23 17:30:12
+# Last Sync Check: 2026-10-23 18:00:13
