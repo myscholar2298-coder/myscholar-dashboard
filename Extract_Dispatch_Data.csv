@@ -57,27 +57,17 @@ A,,Tun Tuah,Cikgu Azamwati,Delivery,PA2_NOTA,3,,,,A550
 A,,Tun Tuah,Cikgu Roslina,Delivery,SJH2_MTP,1,,,NO SAMPLE,A550
 A,,Tun Tuah,Cikgu Roslina,Delivery,SJH2_RUJ,1,,,NO SAMPLE,A550
 A,,Tun Tuah,Cikgu Chua,Delivery,SV2_LEMB,1,,,NO SAMPLE,A550
-B,,Sungai Rambai,Cikgu Azilah,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,B050
 B,,Tun Syed Zahiruddin,Cikgu Khairul,Delivery,BIO2_TOP,1,,,NO SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Kamsiah,Delivery,BM2_LEMB,3,,,NO SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Kamsiah,Delivery,BM2_MTP,3,,,NO SAMPLE,B100
 B,,Tun Syed Zahiruddin,Cikgu Azurah,Delivery,EK2_LEMB,1,,,NO SAMPLE,B100
-B,,Tun Syed Zahiruddin,Cikgu Taufiq,Delivery,GKT_SPM,1,6,,NO SAMPLE AND NO STOCK,B100
 B,,Tun Syed Zahiruddin,Cikgu Jannah,Delivery,PA2_NOTA,6,,,,B100
-B,,Dang Anum,Cikgu Hamizah,Delivery,GKT_SPM,2,19,,NO SAMPLE AND NO STOCK,B150
-B,,Telok Mas,Cikgu Farhana (KP),Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,B250
 B,,Agama Sharifah Rodziah,Ustazah Nur Aisyah,Delivery,ARAB2_LEMB,2,,,NO SAMPLE,B260
 B,,Agama Sharifah Rodziah,Cikgu Noraini,Delivery,PA2_MTP,1,,,NO SAMPLE,B260
 B,,Agama Sharifah Rodziah,Cikgu Noraini,Delivery,PA2_NOTA,1,,,,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL2_LEMB,2,,,NO SAMPLE,B260
 B,2026-10-08,Padang Temu,Saerah,Deliver,GKT,,2.0,1#,,B275
-B,,Padang Temu,Cikgu Saerah Anum,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,B275
-B,,Teknik Melaka,Cikgu Faris,Delivery,LK4_LEMB,9,220,,NO SAMPLE AND NO STOCK,B325
-B,,Teknik Melaka,Cikgu Faris,Delivery,LK5_LEMB,7,220,,NO STOCK / LOW SAMPLE,B325
-B,,Teknik Melaka,Cikgu Faris,Delivery,LK_SPM,7,220,,NO STOCK / LOW SAMPLE,B325
-B,,Bukit Katil,Cikgu Maziah,Delivery,GKT_SPM,1,16,,NO SAMPLE AND NO STOCK,B350
-B,,Seri Kota (SSN Melaka),Cikgu Elyasyah,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,B400
 B,,Tinggi Melaka,Cikgu Norisah,Delivery,AKAUN2_RUJ,1,,,NO SAMPLE,B450
 B,,Tinggi Melaka,Cikgu Aiza,Delivery,EK2_LEMB,1,,,NO SAMPLE,B450
 B,,Tinggi Melaka,Cikgu Aiza,Delivery,EK2_RUJ,1,,,NO SAMPLE,B450
@@ -131,15 +121,11 @@ C,,Munshi Ibrahim,Cikgu Yusof,Delivery,PA2_NOTA,1,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,,Bandar Putra,Cikgu Nurul Ainshah,Delivery,GKT_SPM,1,18,,NO SAMPLE AND NO STOCK,C450
 C,,Agama Segamat,Cikgu Syarifah Roha,Delivery,PA2_MTP,2,,,NO SAMPLE,C500
 C,,Agama Segamat,Cikgu Syarifah Roha,Delivery,PA2_NOTA,2,,,,C500
-C,,Dato Bentara Dalam,Cikgu Elham,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,C550
 C,,Dato Bentara Dalam,Cikgu Nasuha,Delivery,PA2_NOTA,1,,,,C550
 C,,Tinggi Segamat,Cikgu Kartini,Delivery,SV2_LEMB,2,,,NO SAMPLE,C600
 C,,Tinggi Segamat,Cikgu Kartini,Delivery,SV2_RUJ,2,,,NO SAMPLE,C600
-C,,Gemereh,Cikgu Afiq,Delivery,GKT_SPM,1,8,,NO SAMPLE AND NO STOCK,C700
-C,,Seri Kenangan,Cikgu Aida,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,C750
 D,,SARSI,Cikgu Khadijah,Delivery,BM2_LEMB,2,,,NO SAMPLE,D100
 D,,SARSI,Cikgu Khadijah,Delivery,BM2_MTP,2,,,NO SAMPLE,D100
 D,,SARSI,Cikgu Norzilah,Delivery,PA2_MTP,3,,,NO SAMPLE,D100
@@ -147,11 +133,9 @@ D,,SARSI,Cikgu Norzilah,Delivery,PA2_NOTA,3,,,,D100
 D,,SARSI,Cikgu Ilham,Delivery,SJH2_MTP,2,,,NO SAMPLE,D100
 D,,SARSI,Cikgu Suhaila,Delivery,SV2_LEMB,1,,,NO SAMPLE,D100
 D,,SARSI,Cikgu Suhaila,Delivery,SV2_RUJ,1,,,NO SAMPLE,D100
-D,,Agama Pagoh,Cikgu Maizura,Delivery,GKT_SPM,2,40,,NO SAMPLE AND NO STOCK,D109
 D,,Bukit Gambir,Cikgu Nazri,Delivery,EK2_LEMB,1,,,NO SAMPLE,D200
 D,,Bukit Gambir,Cikgu Nazri,Delivery,EK2_RUJ,1,,,NO SAMPLE,D200
 D,,Bukit Gambir,Cikgu Siti Aishah,Delivery,PA2_MTP,2,,,NO SAMPLE,D200
-D,,Tun Mamat,Cikgu Azura,Delivery,GKT_SPM,2,29,,NO SAMPLE AND NO STOCK,D350
 D,,Ledang,Ms Tan Siok Khim,Delivery,EK2_RUJ,1,,,NO SAMPLE,D400
 D,,Ledang,Cikgu Nurul Aqma,Delivery,PA2_NOTA,6,,,,D400
 D,,Ledang,Cikgu Noraniza,Delivery,SJH2_MTP,1,,,NO SAMPLE,D400
@@ -213,7 +197,6 @@ E,,Tun Perak,Cikgu Norain Nadia,Delivery,SJH2_MTP,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Syahirah,Delivery,SJH2_MTP,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Khairul,Delivery,SV2_LEMB,1,,,NO SAMPLE,E550
 E,,Tun Perak,Cikgu Khairul,Delivery,SV2_RUJ,1,,,NO SAMPLE,E550
-E,,Bandar Maharani,Cikgu Shamsul,Delivery,GKT_SPM,1,3,,NO SAMPLE AND NO STOCK,E600
 E,,STUDI,Cikgu Hasrik,Delivery,BM2_LEMB,1,,,NO SAMPLE,E650
 E,,STUDI,Cikgu Hasrik,Delivery,BM2_MTP,1,,,NO SAMPLE,E650
 E,,STUDI,Cikgu Lasiah Ahmad,Delivery,PA2_NOTA,2,,,,E650
@@ -221,7 +204,6 @@ E,,STUDI,Cikgu Salmah,Delivery,SJH2_MTP,1,,,NO SAMPLE,E650
 F,,TIGS,Cikgu Suria,Delivery,BM2_LEMB,1,,,NO SAMPLE,F100
 F,,TIGS,Cikgu Suria,Delivery,BM2_MTP,1,,,NO SAMPLE,F100
 F,,TIGS,Cikgu Nora,Delivery,EK2_LEMB,1,,,NO SAMPLE,F100
-F,,TIGS,Cikgu Nurul Aini,Delivery,GKT_SPM,1,26,,NO SAMPLE AND NO STOCK,F100
 F,,TIGS,Cikgu Riena,Delivery,PA2_MTP,2,,,NO SAMPLE,F100
 F,,Tinggi BP,Cikgu Noryati,Delivery,SV2_LEMB,1,,,NO SAMPLE,F150
 F,,SDBL,Cikgu Siti Ainon,Delivery,BM2_MTP,1,,,NO SAMPLE,F200
@@ -292,7 +274,6 @@ G,,SSAJ,Cikgu Abdul Hakeem,Delivery,BM2_MTP,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Norazlina,Delivery,BM2_MTP,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Roslinda,Delivery,BM2_MTP,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Syahira,Delivery,BM2_MTP,1,,,NO SAMPLE,G450
-G,,SSAJ,Cikgu Arifah,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,G450
 G,,SSAJ,Cikgu Adha,Delivery,PA2_MTP,1,,,NO SAMPLE,G450
 G,,SSAJ,Cikgu Adha,Delivery,PA2_NOTA,1,,,,G450
 G,,SSAJ,Cikgu Bukhari,Delivery,SJH2_MTP,2,,,NO SAMPLE,G450
@@ -351,8 +332,6 @@ I,,SSI Kulai,Cikgu Rodiah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I150
 I,,SSI Kulai,Cikgu Rodiah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I150
 I,,SSI Kulai,Cikgu Aida,Delivery,PA2_NOTA,6,,,,I150
 I,,SSI Kulai,Cikgu Rosmawati,Delivery,SJH2_RUJ,1,,,NO SAMPLE,I150
-I,,Indahpura 1,Cikgu Rafidah,Delivery,GKT_SPM,1,14,,NO SAMPLE AND NO STOCK,I185
-I,,Bandar Putra,Cikgu Nurhayati,Delivery,GKT_SPM,1,33,,NO SAMPLE AND NO STOCK,I200
 I,,Bandar Tenggara,Cikgu Zielahafiza,Delivery,BM2_MTP,2,,,NO SAMPLE,I250
 I,,Bandar Tenggara,Cikgu Juliana,Delivery,EK2_RUJ,1,,,NO SAMPLE,I250
 I,,Bandar Tenggara,Cikgu Ainnezah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I250
@@ -360,7 +339,6 @@ I,,Bandar Tenggara,Cikgu Nor Aziah,Delivery,SJH2_MTP,1,,,NO SAMPLE,I250
 I,,Bandar Tenggara,Cikgu Nor Aziah,Delivery,SJH2_RUJ,1,,,NO SAMPLE,I250
 I,,Bandar Tenggara,Cikgu Taufieq,Delivery,SV2_LEMB,1,,,NO SAMPLE,I250
 I,,Bandar Tenggara,Cikgu Taufieq,Delivery,SV2_RUJ,1,,,NO SAMPLE,I250
-I,,Sultan Alauddin,Cikgu Azrin,Delivery,GKT_SPM,1,15,,NO SAMPLE AND NO STOCK,I275
 I,,Tun Habab,Cikgu Azrina,Delivery,PA2_NOTA,2,,,,I350
 I,,Tun Habab,Cikgu Shahril,Delivery,SJH2_MTP,1,,,NO SAMPLE,I350
 I,,Laksamana,Cikgu Nor Zaidah,Delivery,EK2_LEMB,1,,,NO SAMPLE,I400
@@ -374,7 +352,6 @@ I,,Bandar Kota Tinggi,Cikgu Salina,Delivery,PA2_NOTA,2,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Rosnah,Delivery,SJH2_MTP,1,,,NO SAMPLE,I450
 I,,Bandar Kota Tinggi,Cikgu Zaidi,Delivery,SV2_LEMB,1,,,NO SAMPLE,I450
 I,,Bandar Kota Tinggi,Cikgu Zaidi,Delivery,SV2_RUJ,1,,,NO SAMPLE,I450
-I,,Taman Kota Jaya,Cikgu Yusuf,Delivery,GKT_SPM,1,10,,NO SAMPLE AND NO STOCK,I500
 I,,Ulu Tiram,Cikgu Malma,Delivery,EK2_LEMB,1,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Fatihah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I550
 I,,Ulu Tiram,Cikgu Fatihah,Delivery,KMK2_RUJ,1,,,NO SAMPLE,I550
@@ -383,12 +360,8 @@ I,,Ulu Tiram,Cikgu Rosnani,Delivery,PA2_NOTA,4,,,,I550
 I,2026-10-23,Ulu Tiram,Diana,Pending,PSV,,,0,K,I550
 I,,Ulu Tiram,Cikgu Hafizah,Delivery,SJH2_MTP,4,,,NO SAMPLE,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
-J,,Impian Emas,Cikgu Nurazreen,Delivery,GKT_SPM,1,13,,NO SAMPLE AND NO STOCK,J100
-J,,Taman Universiti,Cikgu Zunnurain,Delivery,GKT_SPM,2,26,,NO SAMPLE AND NO STOCK,J125
 J,2026-10-20,Taman Universiti,Naz,Deliver,Makmal,,1.0,1#,,J125
 J,2026-10-21,Taman Universiti,Pejabat,Cheque,SAINS,,,0,,J125
-J,,Taman Universiti 2,Cikgu Fara Adhwa,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,J150
-J,,Desa Skudai,Cikgu Erna,Delivery,GKT_SPM,1,15,,NO SAMPLE AND NO STOCK,J175
 J,,Gelang Patah,Cikgu Zainap,Delivery,BM2_LEMB,2,,,LOW SAMPLE,J250
 J,,Gelang Patah,Cikgu Hamisah Jalal,Delivery,EK2_RUJ,1,,,NO SAMPLE,J250
 J,,Gelang Patah,Cikgu Fuza,Delivery,PA2_MTP,2,,,NO SAMPLE,J250
@@ -402,14 +375,11 @@ J,,Mutiara Rini,Cikgu Najwa,Delivery,PA2_MTP,4,,,NO SAMPLE,J275
 J,,Mutiara Rini,Cikgu Najwa,Delivery,PA2_NOTA,4,,,,J275
 J,,Mutiara Rini,Cikgu Norafidah,Delivery,SV2_LEMB,1,,,NO SAMPLE,J275
 J,,Mutiara Rini,Cikgu Norafidah,Delivery,SV2_RUJ,1,,,NO SAMPLE,J275
-J,,Taman Mutiara Rini 2,Cikgu Zuraishah,Delivery,GKT_SPM,1,16,,NO SAMPLE AND NO STOCK,J300
 J,,Skudai,Cikgu Jamaliah,Delivery,BM2_MTP,4,,,NO SAMPLE,J325
 J,,Skudai,Cikgu Norlaila,Delivery,EK2_LEMB,2,,,NO SAMPLE,J325
 J,,Skudai,Cikgu Hj Wan Adha,Delivery,PA2_NOTA,4,,,,J325
-J,,Dato Usman Awang,Cikgu Norazmey,Delivery,GKT_SPM,1,27,,NO SAMPLE AND NO STOCK,J375
 J,2026-10-21,Dato Usman Awang,Fazlynda,Deliver,PSV,,,1#,,J375
 J,2026-10-19,St Joseph,Nadzirah,Deliver,BI,,1.0,1#,,J400
-J,,St. Joseph,Cikgu Atikah,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J400
 J,,Dato Jaafar,Cikgu Ashsekin,Delivery,BM2_MTP,1,,,NO SAMPLE,J425
 J,,Dato Jaafar,Cikgu Izzat,Delivery,GEO2_LEMB,1,,,LOW SAMPLE,J425
 J,,Dato Jaafar,Cikgu Dhana,Delivery,PA2_MTP,7,,,NO SAMPLE,J425
@@ -439,25 +409,16 @@ J,,SAB JB,Cikgu Zubaidah,Delivery,SJH2_RUJ,3,,,NO SAMPLE,J475
 J,,Sultan Ismail,Cikgu Nurul Suhada,Delivery,BM2_MTP,1,,,NO SAMPLE,J500
 J,,Sultan Ismail,Cikgu Salina,Delivery,EK2_RUJ,1,,,NO SAMPLE,J500
 J,,Sultan Ismail,Cikgu Fitriani,Delivery,SJH2_MTP,1,,,NO SAMPLE,J500
-J,,Permas Jaya 2,Cikgu Amir Reza,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,J525
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,40,,NO STOCK,J530
-J,,Teknik JB,Cikgu Shahima,Delivery,LK4_LEMB,5,130,,NO SAMPLE AND NO STOCK,J550
-J,,Teknik JB,Cikgu Shahima,Delivery,LK_SPM,5,186,,NO STOCK / LOW SAMPLE,J550
 J,,Tasek Utara,Cikgu Wahyu,Delivery,EK2_RUJ,2,,,NO SAMPLE,J575
 J,,Tasek Utara,Cikgu Azliana,Delivery,PA2_NOTA,5,,,,J575
-K,,Tun Fatimah Hashim,Cikgu Liyana,Delivery,GKT_SPM,1,22,,NO SAMPLE AND NO STOCK,K100
 K,,Taman Daya,Cikgu Emizaira,Delivery,BM1_MTP,,4,,LOW STOCK,K150
 K,,Taman Daya,Cikgu Emizaira,Delivery,BM2_MTP,1,,,NO SAMPLE,K150
 K,,Taman Daya,Cikgu Zaifah,Delivery,PA2_MTP,3,,,NO SAMPLE,K150
 K,,Taman Daya,Cikgu Zaifah,Delivery,PA2_NOTA,3,,,,K150
 K,,Taman Daya,Cikgu Muharrani,Delivery,SV2_LEMB,2,,,NO SAMPLE,K150
 K,,Taman Daya,Cikgu Muharrani,Delivery,SV2_RUJ,2,,,NO SAMPLE,K150
-K,,Puteri Wangsa,Cikgu Zaleha,Delivery,GKT_SPM,1,16,,NO SAMPLE AND NO STOCK,K175
-K,,Taman Pelangi Indah,Cikgu Zuraidah,Delivery,GKT_SPM,1,12,,NO SAMPLE AND NO STOCK,K200
-K,,Taman Seri Saujana,Cikgu Anis,Delivery,GKT_SPM,1,11,,NO SAMPLE AND NO STOCK,K210
 K,2026-10-21,Taman Seri Saujana,Pejabat,Cheque,PSV,,,0,Dan cop dokumen lama,K210
-K,,Desa Cemerlang,Cikgu Shaiful,Delivery,GKT_SPM,1,17,,NO SAMPLE AND NO STOCK,K225
-K,,Taman Desa Jaya,Cikgu Halimah,Delivery,GKT_SPM,1,9,,NO SAMPLE AND NO STOCK,K250
 K,2026-10-21,JJ 1,Pejabat,Cheque,PSV,,,0,,K300
 K,,Johor Jaya 1,Cikgu Najiha,Delivery,BM2_LEMB,1,,,LOW SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Najiha,Delivery,BM2_MTP,1,,,NO SAMPLE,K300
@@ -470,10 +431,7 @@ K,,Johor Jaya 1,Cikgu Marini,Delivery,SJH2_RUJ,3,,,NO SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_LEMB,2,,,NO SAMPLE,K300
 K,,Johor Jaya 1,Cikgu Shafie,Delivery,SV2_RUJ,2,,,NO SAMPLE,K300
 K,2026-10-23,Taman Molek,,Deliver,,,,1#,Sumbangan - Epson Printer,K325
-K,,Taman Molek,Cikgu Nurzailah,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K325
 K,2026-10-21,Taman Molek,Pejabat,Cheque,PSV,,,0,,K325
-K,,Seri Kota Puteri,Cikgu Fadzli,Delivery,GKT_SPM,2,18,,NO SAMPLE AND NO STOCK,K350
-K,,Bandar Seri Alam,Cikgu Salahuddin,Delivery,GKT_SPM,1,15,,NO SAMPLE AND NO STOCK,K375
 K,,Penggawa Timur,Cikgu Fatimah,Delivery,EK2_LEMB,3,,,NO SAMPLE,K400
 K,,Penggawa Timur,Cikgu Mardiah (KP),Delivery,PA2_NOTA,5,,,,K400
 K,,Penggawa Timur,Cikgu Norhayati,Delivery,SJH2_MTP,3,,,NO SAMPLE,K400
@@ -486,9 +444,6 @@ K,,Pasir Gudang 2,Cikgu Imran,Delivery,SV2_LEMB,1,,,NO SAMPLE,K425
 K,,Pasir Gudang 2,Cikgu Shahrul Aiman,Delivery,SV2_LEMB,1,,,NO SAMPLE,K425
 K,,Pasir Gudang 2,Cikgu Imran,Delivery,SV2_RUJ,1,,,NO SAMPLE,K425
 K,,Pasir Gudang 2,Cikgu Shahrul Aiman,Delivery,SV2_RUJ,1,,,NO SAMPLE,K425
-K,,Pasir Gudang 3,Cikgu Qabil,Delivery,GKT_SPM,2,42,,NO SAMPLE AND NO STOCK,K450
-K,,Kota Masai,Cikgu Suraya,Delivery,GKT_SPM,1,16,,NO SAMPLE AND NO STOCK,K475
-K,,Pasir Putih,Cikgu Suhaili,Delivery,GKT_SPM,2,33,,NO SAMPLE AND NO STOCK,K525
 L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Delivery,EK2_LEMB,1,,,NO SAMPLE,L100
 L,,Tan Sri Jaafar Albar,Cikgu Siti Nur Azmah,Delivery,EK2_RUJ,1,,,NO SAMPLE,L100
 L,,Tan Sri Jaafar Albar,Cikgu Yusrizan,Delivery,PA2_MTP,1,,,NO SAMPLE,L100
@@ -529,4 +484,4 @@ L,,Adela,Cikgu Jariah,Delivery,PA2_MTP,2,,,NO SAMPLE,L350
 L,,Adela,Cikgu Jariah,Delivery,PA2_NOTA,2,,,,L350
 L,,Adela,Cikgu Syuhada,Delivery,SJH2_MTP,2,,,NO SAMPLE,L350
 
-# Last Sync Check: 2026-10-24 10:30:12
+# Last Sync Check: 2026-10-24 11:00:12
