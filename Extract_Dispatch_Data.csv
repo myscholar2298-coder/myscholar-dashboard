@@ -11,7 +11,6 @@ A,,Tun Hj Abdul Malek,Cikgu Hafidzah,Payment,SJH3_MTP,,,,,A450
 B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK,B260
 B,2026-10-08,Padang Temu,Saerah,Deliver,GKT,,2.0,1#,,B275
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOCK / LOW SAMPLE,B480
-B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN RIZALINA,Return,SINTAKSIS,,-1,,,B480
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
 C,,Munshi Ibrahim,Cikgu Husna,Return,PA1_MTP,,-2,,,C350
@@ -22,32 +21,34 @@ E,,Amar Diraja,Cikgu Muzaffar,Payment,EK1_LEMB,,,,,E300
 E,,Amar Diraja,Cikgu Muzaffar,Payment,EK3_RUJ,,,,,E300
 E,,Tinggi Muar,Cikgu Hafizah,Payment,EK1_LEMB,,,,,E350
 E,,Tinggi Muar,Cikgu Norhafizah,Payment,EK3_RUJ,,,,,E350
+F,,TIGS,Cikgu Sarima,Payment,SJH3_MTP,,,,,F100
+F,,TIGS,Cikgu Sarima,Payment,SJH3_MTP,,,,,F100
+F,2026-10-26,SDBL,Pn Pai,Pending,BIO,,,0,,F200
 F,,Tunku Putra,Cikgu Ayusnida,Payment,EK3_RUJ,,,,,F400
+F,2026-10-26,Tunku Putra,Azirah,Pending,PSV,,,0,,F400
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_ESEI,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA1_NOTA,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_MTP,,,,,F450
 F,,Seri Medan,Cikgu Mislina,Payment,PA3_NOTA,,,,,F450
-F,2026-10-22,Seri Medan,Mawar,Pending,RBT,,,0,,F450
-G,2026-10-19,KV Batu Pahat,Fauzi,Deliver,3DP,,2.0,4#,,G110
+F,2026-10-22,Seri Medan,Mawar,Deliver,RBT,,2.0,1#,,F450
 G,,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,DR. HJ MOHD YUSOFF,Return,ISLAM,,,,,G113
-G,2026-10-22,Seri Lalang,Pejabat,Cheque,HADIAH,,,0,,G250
+G,2026-10-22,Seri Lalang,Pejabat,Cheque,HADIAH,,,,,G250
+G,2026-10-27,Kluang Barat,Fatimah,Pending,PSV,,,0,,G300
 G,2026-10-19,Sains Sembrong,Pejabat,Cheque,,,,,,G475
 G,2026-10-24,Sains Sembrong,Sabarina,Pending,BIO,,,0,,G475
 G,2026-10-19,Sains Sembrong,Nik,Pending,SJH,,,0,K,G475
 H,2026-10-07,Senggarang,Qifitiah,Pending,PSV,,,1,,H100
+H,2026-10-27,Senggarang,Mazatul,Pending,RBT,,,0,,H100
+H,2026-10-27,SDAHA,Pejabat,Cheque,SAINS,,,,,H325
 H,2026-10-24,Tan Sri Osman Saat,Suheibah,Pending,GEO,,,0,K,H330
 I,2026-10-23,Ulu Tiram,Diana,Pending,PSV,,,0,K,I550
 J,2026-09-29,Desa Tebrau,Salleha,Pending,PSV,,,1,,J
-J,2026-10-20,Taman Universiti,Naz,Deliver,Makmal,,1.0,1#,,J125
-J,2026-10-21,Taman Universiti,Pejabat,Cheque,SAINS,,,0,,J125
-J,2026-10-21,Dato Usman Awang,Fazlynda,Deliver,PSV,,,1#,,J375
-J,2026-10-19,St Joseph,Nadzirah,Deliver,BI,,1.0,1#,,J400
+J,2026-10-27,Taman Universiti,Asriyah,Pending,PSV,,,0,K,J125
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,40,,NO STOCK,J530
 K,,Taman Daya,Cikgu Emizaira,Delivery,BM1_MTP,,4,,LOW STOCK,K150
-K,2026-10-21,Taman Seri Saujana,Pejabat,Cheque,PSV,,,0,Dan cop dokumen lama,K210
-K,2026-10-21,JJ 1,Pejabat,Cheque,PSV,,,0,,K300
-K,2026-10-23,Taman Molek,,Deliver,,,,1#,Sumbangan - Epson Printer,K325
+K,2026-10-27,Desa Cemerlang,Pejabat,Cheque,PSV,,,,,K225
 K,2026-10-21,Taman Molek,Pejabat,Cheque,PSV,,,0,,K325
+K,2026-10-27,Taman Molek,Pejabat,Cheque,PSV,,,,,K325
 
-# Last Sync Check: 2026-10-25 02:30:12
+# Last Sync Check: 2026-10-27 22:28:31
